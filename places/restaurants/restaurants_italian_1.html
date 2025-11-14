@@ -3,307 +3,801 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Italian 1 - Google Maps Place</title>
-    <link rel="stylesheet" href="../../shared/css/common.css">
+    <title>La Bella Vita | Authentic Italian Cuisine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .category-badge {
-            background: #e74c3c;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            display: inline-block;
-            margin: 10px 0;
-            font-weight: 600;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        :root {
+            --burgundy: #8B0000;
+            --gold: #FFD700;
+            --cream: #FFF8DC;
+            --dark: #1a1a1a;
+            --olive: #808000;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(139, 0, 0, 0.3);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .reserve-btn {
+            padding: 0.75rem 2rem;
+            background: var(--burgundy);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .reserve-btn:hover {
+            background: var(--gold);
+            color: var(--dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero */
         .hero {
-            background: linear-gradient(135deg, #e74c3cdd 0%, #e74c3c88 100%);
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%238B0000" width="1200" height="800"/><circle fill="%23FFD700" opacity="0.1" cx="200" cy="200" r="300"/><circle fill="%23808000" opacity="0.1" cx="1000" cy="600" r="400"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, var(--gold), var(--cream));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.5rem;
+            color: var(--cream);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            padding: 1.25rem 3rem;
+            background: var(--burgundy);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--burgundy);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(139, 0, 0, 0.5);
+        }
+
+        .btn-secondary {
+            padding: 1.25rem 3rem;
+            background: transparent;
+            color: var(--gold);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        /* Stats */
+        .stats {
+            background: var(--dark);
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--burgundy);
+            border-bottom: 1px solid var(--burgundy);
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--cream);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a0a0a 100%);
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(135deg, var(--burgundy), var(--olive));
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(139, 0, 0, 0.4);
+        }
+
+        .about-image::before {
+            content: '🍝';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15rem;
+            opacity: 0.3;
+        }
+
+        .section-label {
+            font-size: 0.875rem;
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            color: #cccccc;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-style: italic;
+            color: var(--gold);
+            margin-top: 2rem;
+        }
+
+        /* Menu Highlights */
+        .menu-section {
+            padding: 8rem 2rem;
+            background: #0a0a0a;
+        }
+
+        .menu-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .menu-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .menu-card {
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.1), rgba(128, 128, 0, 0.1));
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            transition: all 0.4s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .menu-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .menu-price {
+            font-size: 1.5rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .menu-description {
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+        /* Reviews */
+        .reviews {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, #2a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .review-rating {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: #cccccc;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--burgundy), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .reviewer-info h4 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .reviewer-info p {
+            color: var(--gold);
+            font-size: 0.875rem;
+        }
+
+        /* Location */
+        .location {
+            padding: 8rem 2rem;
+            background: #0a0a0a;
+        }
+
+        .location-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .location-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(139, 0, 0, 0.1);
+            border-radius: 10px;
+            border-left: 3px solid var(--gold);
+        }
+
+        .info-icon {
+            font-size: 2rem;
+        }
+
+        .info-content h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--gold);
+        }
+
+        .info-content p {
+            color: #cccccc;
+        }
+
+        .map-placeholder {
+            height: 500px;
+            background: linear-gradient(135deg, var(--burgundy), var(--olive));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid var(--burgundy);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-text {
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(139, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--burgundy);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--gold);
+            color: var(--dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .about-container,
+            .location-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .menu-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">🍝 Italian 1</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="../../index.html">← Back to All Places</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">La Bella Vita</div>
+            <ul class="nav-links">
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+            <button class="reserve-btn">Reserve Table</button>
         </div>
-    </header>
+    </nav>
 
     <section class="hero">
-        <h1>🍝 Italian 1</h1>
-        <p class="random-quote">Discover amazing places around you!</p>
-        <div class="rating" data-rating="4.9">
-            <span class="stars"></span>
-            <span class="rating-text">4.9 (449 reviews)</span>
-        </div>
-        <div class="price-range">$</div>
-        <div class="tags">
-            <span class="tag">Italian</span>
-            <span class="tag">Restaurants</span>
-            <span class="tag">Verified</span>
+        <div class="hero-content">
+            <p class="hero-subtitle">Authentic Italian Cuisine</p>
+            <h1>La Bella Vita</h1>
+            <p class="hero-description">Experience the true taste of Italy in every bite, crafted with passion and tradition</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">View Menu</a>
+                <a href="#location" class="btn-secondary">Visit Us</a>
+            </div>
         </div>
     </section>
 
-    <div class="container">
-        <div class="content-card" id="overview">
-            <h2>About Italian 1</h2>
-            <div class="category-badge">🍝 Italian</div>
-            <p>Welcome to Italian 1, your premier destination for exceptional italian experiences. We pride ourselves on delivering outstanding service and creating memorable moments for all our visitors.</p>
-            <p>Located in a prime area, Italian 1 has been serving the community with dedication and passion. Our commitment to excellence has earned us a 4.9-star rating from 449 satisfied customers.</p>
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4.9</span>
+                <span class="stat-label">Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">5-Star Reviews</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Authentic Recipes</span>
+            </div>
+        </div>
+    </section>
 
-            <h3 class="mt-3">Why Choose Us?</h3>
-            <div class="info-grid">
-                <div class="info-card">
-                    <span class="info-card-icon">⭐</span>
-                    <h3>Top Rated</h3>
-                    <p>Consistently rated 4.9 stars by our customers</p>
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image"></div>
+            <div class="about-content">
+                <p class="section-label">Our Story</p>
+                <h2 class="section-title">A Taste of Authentic Italy</h2>
+                <p class="about-text">
+                    For over 25 years, La Bella Vita has been bringing the authentic flavors of Italy to your table.
+                    Our passion for traditional Italian cuisine, combined with the finest locally-sourced ingredients,
+                    creates an unforgettable dining experience.
+                </p>
+                <p class="about-text">
+                    Every dish is prepared with recipes passed down through generations, using traditional cooking
+                    methods that honor our Italian heritage. From our handmade pasta to our wood-fired pizzas,
+                    each plate tells a story of dedication, quality, and love for great food.
+                </p>
+                <p class="about-text">
+                    Our head chef, trained in the heart of Tuscany, brings decades of experience and an unwavering
+                    commitment to excellence. Join us and discover why La Bella Vita is more than just a restaurant—it's
+                    a celebration of Italian culture and culinary artistry.
+                </p>
+                <p class="signature">- Chef Antonio Rossi</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="menu-container">
+            <div class="menu-header">
+                <p class="section-label">Our Specialties</p>
+                <h2 class="section-title">Signature Dishes</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-icon">🍝</div>
+                    <h3>Fettuccine Alfredo</h3>
+                    <p class="menu-price">$24</p>
+                    <p class="menu-description">Handmade fettuccine in a rich, creamy Parmesan sauce with a touch of garlic and fresh black pepper. A timeless classic.</p>
                 </div>
-                <div class="info-card">
-                    <span class="info-card-icon">🏆</span>
-                    <h3>Award Winning</h3>
-                    <p>Recognized for excellence in service and quality</p>
+                <div class="menu-card">
+                    <div class="menu-icon">🍕</div>
+                    <h3>Margherita Pizza</h3>
+                    <p class="menu-price">$18</p>
+                    <p class="menu-description">Wood-fired pizza with San Marzano tomatoes, fresh mozzarella, basil, and extra virgin olive oil. Simple perfection.</p>
                 </div>
-                <div class="info-card">
-                    <span class="info-card-icon">💎</span>
-                    <h3>Premium Quality</h3>
-                    <p>We maintain the highest standards in everything we do</p>
+                <div class="menu-card">
+                    <div class="menu-icon">🥩</div>
+                    <h3>Osso Buco</h3>
+                    <p class="menu-price">$38</p>
+                    <p class="menu-description">Braised veal shanks in a rich tomato and wine sauce, served with saffron risotto. Melt-in-your-mouth tender.</p>
                 </div>
-                <div class="info-card">
-                    <span class="info-card-icon">🤝</span>
-                    <h3>Customer First</h3>
-                    <p>Your satisfaction is our top priority</p>
+                <div class="menu-card">
+                    <div class="menu-icon">🦞</div>
+                    <h3>Frutti di Mare</h3>
+                    <p class="menu-price">$32</p>
+                    <p class="menu-description">Fresh seafood medley with linguine in a white wine and garlic sauce. Taste the ocean.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-icon">🍰</div>
+                    <h3>Tiramisu</h3>
+                    <p class="menu-price">$12</p>
+                    <p class="menu-description">Classic Italian dessert with espresso-soaked ladyfingers, mascarpone cream, and cocoa. Pure indulgence.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-icon">🍷</div>
+                    <h3>Wine Selection</h3>
+                    <p class="menu-price">$8-$50</p>
+                    <p class="menu-description">Curated collection of Italian wines from Tuscany, Piedmont, and Veneto. Perfect pairings for every dish.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="content-card" id="features">
-            <h2>Features & Amenities</h2>
-            <div class="amenities">
-                <div class="amenity">
-                    <span class="amenity-icon">📍</span>
-                    <span class="amenity-text">Prime Location</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">🅿️</span>
-                    <span class="amenity-text">Free Parking</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">📶</span>
-                    <span class="amenity-text">Free WiFi</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">♿</span>
-                    <span class="amenity-text">Wheelchair Accessible</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">🔒</span>
-                    <span class="amenity-text">Secure Facility</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">🌡️</span>
-                    <span class="amenity-text">Climate Controlled</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">👨‍👩‍👧‍👦</span>
-                    <span class="amenity-text">Family Friendly</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">💳</span>
-                    <span class="amenity-text">Card Payments</span>
-                </div>
+    <section class="reviews" id="reviews">
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <p class="section-label">Testimonials</p>
+                <h2 class="section-title">What Our Guests Say</h2>
             </div>
-
-            <h3 class="mt-3">What Makes Us Special</h3>
-            <div class="features">
-                <div class="feature-item">
-                    <span class="feature-icon">✨</span>
-                    <h3>Exceptional Service</h3>
-                    <p>Our dedicated team goes above and beyond to ensure your experience is nothing short of perfect.</p>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🎯</span>
-                    <h3>Attention to Detail</h3>
-                    <p>Every aspect of our service is carefully crafted to meet your needs and exceed expectations.</p>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🌟</span>
-                    <h3>Quality Guaranteed</h3>
-                    <p>We stand behind our services with a satisfaction guarantee that puts your mind at ease.</p>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">⚡</span>
-                    <h3>Fast & Efficient</h3>
-                    <p>We value your time and ensure prompt service without compromising on quality.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card" id="reviews">
-            <h2>Customer Reviews</h2>
-            <div class="reviews">
+            <div class="reviews-grid">
                 <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">J</div>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">
+                        "Absolutely incredible! The pasta was handmade and cooked to perfection. The ambiance transported
+                        us straight to Italy. This is now our favorite Italian restaurant in the city."
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">SM</div>
                         <div class="reviewer-info">
-                            <h4>John Smith</h4>
-                            <div class="review-date">2 weeks ago</div>
+                            <h4>Sarah Mitchell</h4>
+                            <p>Food Critic</p>
                         </div>
                     </div>
-                    <div class="rating" data-rating="5">
-                        <span class="stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">Absolutely fantastic experience! The service was impeccable and the attention to detail was remarkable. I highly recommend Italian 1 to anyone looking for top-quality italian service.</p>
                 </div>
-
                 <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">S</div>
-                        <div class="reviewer-info">
-                            <h4>Sarah Johnson</h4>
-                            <div class="review-date">1 month ago</div>
-                        </div>
-                    </div>
-                    <div class="rating" data-rating="5">
-                        <span class="stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">I've been coming here for months and it never disappoints. The staff is friendly, professional, and always ready to help. The facilities are clean and well-maintained. Five stars all the way!</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">M</div>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">
+                        "Chef Antonio's Osso Buco is a masterpiece. Every visit feels like coming home to a warm Italian
+                        family dinner. The attention to detail and authentic flavors are unmatched."
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">MC</div>
                         <div class="reviewer-info">
                             <h4>Michael Chen</h4>
-                            <div class="review-date">2 months ago</div>
+                            <p>Regular Guest</p>
                         </div>
                     </div>
-                    <div class="rating" data-rating="4.5">
-                        <span class="stars">★★★★⯨</span>
-                    </div>
-                    <p class="review-text">Great place with excellent service. The only minor issue was the wait time during peak hours, but the quality of service made up for it. Will definitely return!</p>
                 </div>
-
                 <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">E</div>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">
+                        "From the moment we walked in, we were treated like family. The wine selection is outstanding,
+                        and the tiramisu is the best I've ever had—even better than in Rome!"
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">EP</div>
                         <div class="reviewer-info">
-                            <h4>Emily Davis</h4>
-                            <div class="review-date">3 months ago</div>
+                            <h4>Emily Parker</h4>
+                            <p>Wine Enthusiast</p>
                         </div>
                     </div>
-                    <div class="rating" data-rating="5">
-                        <span class="stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">Outstanding! From the moment I walked in, I felt welcomed. The atmosphere is wonderful and the service is second to none. This is now my go-to place for italian needs.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="content-card">
-            <h2>Opening Hours</h2>
-            <div class="hours-table">
-                <div class="hours-row">
-                    <span class="hours-day">Sunday</span>
-                    <span class="hours-time">9:00 AM - 8:00 PM</span>
+    <section class="location" id="location">
+        <div class="location-container">
+            <div class="location-info">
+                <p class="section-label">Visit Us</p>
+                <h2>Find La Bella Vita</h2>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Address</h3>
+                        <p>123 Via Roma Street<br>Downtown District, City 10001</p>
+                    </div>
                 </div>
-                <div class="hours-row">
-                    <span class="hours-day">Monday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
+                <div class="info-item">
+                    <div class="info-icon">🕐</div>
+                    <div class="info-content">
+                        <h3>Hours</h3>
+                        <p>Tuesday - Sunday: 11:30 AM - 10:00 PM<br>Monday: Closed</p>
+                    </div>
                 </div>
-                <div class="hours-row">
-                    <span class="hours-day">Tuesday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Wednesday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Thursday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Friday</span>
-                    <span class="hours-time">8:00 AM - 11:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Saturday</span>
-                    <span class="hours-time">9:00 AM - 11:00 PM</span>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Contact</h3>
+                        <p>Phone: (555) 123-4567<br>Email: info@labellavita.com</p>
+                    </div>
                 </div>
             </div>
+            <div class="map-placeholder">📍</div>
         </div>
-
-        <div class="content-card" id="contact">
-            <h2>Contact & Location</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <div>
-                        <strong>Address</strong><br>
-                        5393 Main Street, City Center, ST 79284
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📞</span>
-                    <div>
-                        <strong>Phone</strong><br>
-                        +1 (981) 791-4799
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <div>
-                        <strong>Email</strong><br>
-                        info@italian1.com
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🌐</span>
-                    <div>
-                        <strong>Website</strong><br>
-                        www.italian1.com
-                    </div>
-                </div>
-            </div>
-
-            <div class="map-container">
-                🍝 Map Location
-            </div>
-
-            <div class="text-center mt-3">
-                <a href="../../index.html" class="btn btn-primary">← Back to All Places</a>
-                <a href="#" class="btn btn-secondary">Get Directions</a>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
         <div class="footer-content">
-            <div class="logo">🍝 Italian 1</div>
-            <div class="footer-links">
-                <a href="#overview">About</a>
-                <a href="#features">Features</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#contact">Contact</a>
-                <a href="../../index.html">All Places</a>
-            </div>
+            <div class="footer-logo">La Bella Vita</div>
+            <p class="footer-text">Bringing authentic Italian cuisine to your table since 1999</p>
             <div class="social-links">
                 <a href="#">📘</a>
                 <a href="#">📷</a>
                 <a href="#">🐦</a>
                 <a href="#">💼</a>
             </div>
-            <p>&copy; 2024 Italian 1. All rights reserved.</p>
+            <p style="color: #666; margin-bottom: 2rem;">&copy; 2024 La Bella Vita. All rights reserved.</p>
+            <a href="../../index.html" class="back-link">← Back to All Places</a>
         </div>
     </footer>
-
-    <script src="../../shared/js/common.js"></script>
 </body>
 </html>
