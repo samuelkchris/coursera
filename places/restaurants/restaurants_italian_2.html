@@ -3,307 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Italian 2 - Google Maps Place</title>
-    <link rel="stylesheet" href="../../shared/css/common.css">
+    <title>Trattoria Napoli | Family Italian Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        .category-badge {
-            background: #e74c3c;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: #fff;
+            color: #2c3e50;
+        }
+
+        nav {
+            background: #c0392b;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: 900;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover { opacity: 0.8; }
+
+        .hero {
+            background: linear-gradient(rgba(192, 57, 43, 0.9), rgba(192, 57, 43, 0.9)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e74c3c" width="1200" height="600"/></svg>');
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
             display: inline-block;
-            margin: 10px 0;
+            padding: 1rem 2.5rem;
+            background: #fff;
+            color: #c0392b;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #c0392b;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            padding: 2rem;
+            border: 3px solid #c0392b;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(192, 57, 43, 0.3);
+        }
+
+        .menu-item h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #c0392b;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #27ae60;
+            margin: 1rem 0;
+        }
+
+        .reviews {
+            background: #ecf0f1;
+        }
+
+        .review-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #c0392b;
+        }
+
+        .stars {
+            color: #f39c12;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #3498db;
+            text-decoration: none;
             font-weight: 600;
         }
-        .hero {
-            background: linear-gradient(135deg, #e74c3cdd 0%, #e74c3c88 100%);
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .nav-menu { display: none; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">🍝 Italian 2</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="../../index.html">← Back to All Places</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="nav-inner">
+            <div class="brand">Trattoria Napoli</div>
+            <ul class="nav-menu">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section class="hero">
-        <h1>🍝 Italian 2</h1>
-        <p class="random-quote">Discover amazing places around you!</p>
-        <div class="rating" data-rating="4.9">
-            <span class="stars"></span>
-            <span class="rating-text">4.9 (237 reviews)</span>
-        </div>
-        <div class="price-range">$</div>
-        <div class="tags">
-            <span class="tag">Italian</span>
-            <span class="tag">Restaurants</span>
-            <span class="tag">Verified</span>
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="content-card" id="overview">
-            <h2>About Italian 2</h2>
-            <div class="category-badge">🍝 Italian</div>
-            <p>Welcome to Italian 2, your premier destination for exceptional italian experiences. We pride ourselves on delivering outstanding service and creating memorable moments for all our visitors.</p>
-            <p>Located in a prime area, Italian 2 has been serving the community with dedication and passion. Our commitment to excellence has earned us a 4.9-star rating from 237 satisfied customers.</p>
-
-            <h3 class="mt-3">Why Choose Us?</h3>
-            <div class="info-grid">
-                <div class="info-card">
-                    <span class="info-card-icon">⭐</span>
-                    <h3>Top Rated</h3>
-                    <p>Consistently rated 4.9 stars by our customers</p>
-                </div>
-                <div class="info-card">
-                    <span class="info-card-icon">🏆</span>
-                    <h3>Award Winning</h3>
-                    <p>Recognized for excellence in service and quality</p>
-                </div>
-                <div class="info-card">
-                    <span class="info-card-icon">💎</span>
-                    <h3>Premium Quality</h3>
-                    <p>We maintain the highest standards in everything we do</p>
-                </div>
-                <div class="info-card">
-                    <span class="info-card-icon">🤝</span>
-                    <h3>Customer First</h3>
-                    <p>Your satisfaction is our top priority</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card" id="features">
-            <h2>Features & Amenities</h2>
-            <div class="amenities">
-                <div class="amenity">
-                    <span class="amenity-icon">📍</span>
-                    <span class="amenity-text">Prime Location</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">🅿️</span>
-                    <span class="amenity-text">Free Parking</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">📶</span>
-                    <span class="amenity-text">Free WiFi</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">♿</span>
-                    <span class="amenity-text">Wheelchair Accessible</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">🔒</span>
-                    <span class="amenity-text">Secure Facility</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">🌡️</span>
-                    <span class="amenity-text">Climate Controlled</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">👨‍👩‍👧‍👦</span>
-                    <span class="amenity-text">Family Friendly</span>
-                </div>
-                <div class="amenity">
-                    <span class="amenity-icon">💳</span>
-                    <span class="amenity-text">Card Payments</span>
-                </div>
-            </div>
-
-            <h3 class="mt-3">What Makes Us Special</h3>
-            <div class="features">
-                <div class="feature-item">
-                    <span class="feature-icon">✨</span>
-                    <h3>Exceptional Service</h3>
-                    <p>Our dedicated team goes above and beyond to ensure your experience is nothing short of perfect.</p>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🎯</span>
-                    <h3>Attention to Detail</h3>
-                    <p>Every aspect of our service is carefully crafted to meet your needs and exceed expectations.</p>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🌟</span>
-                    <h3>Quality Guaranteed</h3>
-                    <p>We stand behind our services with a satisfaction guarantee that puts your mind at ease.</p>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">⚡</span>
-                    <h3>Fast & Efficient</h3>
-                    <p>We value your time and ensure prompt service without compromising on quality.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card" id="reviews">
-            <h2>Customer Reviews</h2>
-            <div class="reviews">
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">J</div>
-                        <div class="reviewer-info">
-                            <h4>John Smith</h4>
-                            <div class="review-date">2 weeks ago</div>
-                        </div>
-                    </div>
-                    <div class="rating" data-rating="5">
-                        <span class="stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">Absolutely fantastic experience! The service was impeccable and the attention to detail was remarkable. I highly recommend Italian 2 to anyone looking for top-quality italian service.</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">S</div>
-                        <div class="reviewer-info">
-                            <h4>Sarah Johnson</h4>
-                            <div class="review-date">1 month ago</div>
-                        </div>
-                    </div>
-                    <div class="rating" data-rating="5">
-                        <span class="stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">I've been coming here for months and it never disappoints. The staff is friendly, professional, and always ready to help. The facilities are clean and well-maintained. Five stars all the way!</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">M</div>
-                        <div class="reviewer-info">
-                            <h4>Michael Chen</h4>
-                            <div class="review-date">2 months ago</div>
-                        </div>
-                    </div>
-                    <div class="rating" data-rating="4.5">
-                        <span class="stars">★★★★⯨</span>
-                    </div>
-                    <p class="review-text">Great place with excellent service. The only minor issue was the wait time during peak hours, but the quality of service made up for it. Will definitely return!</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-avatar">E</div>
-                        <div class="reviewer-info">
-                            <h4>Emily Davis</h4>
-                            <div class="review-date">3 months ago</div>
-                        </div>
-                    </div>
-                    <div class="rating" data-rating="5">
-                        <span class="stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">Outstanding! From the moment I walked in, I felt welcomed. The atmosphere is wonderful and the service is second to none. This is now my go-to place for italian needs.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2>Opening Hours</h2>
-            <div class="hours-table">
-                <div class="hours-row">
-                    <span class="hours-day">Sunday</span>
-                    <span class="hours-time">9:00 AM - 8:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Monday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Tuesday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Wednesday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Thursday</span>
-                    <span class="hours-time">8:00 AM - 10:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Friday</span>
-                    <span class="hours-time">8:00 AM - 11:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="hours-day">Saturday</span>
-                    <span class="hours-time">9:00 AM - 11:00 PM</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card" id="contact">
-            <h2>Contact & Location</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <div>
-                        <strong>Address</strong><br>
-                        9348 Main Street, City Center, ST 56011
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📞</span>
-                    <div>
-                        <strong>Phone</strong><br>
-                        +1 (842) 639-9645
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <div>
-                        <strong>Email</strong><br>
-                        info@italian2.com
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🌐</span>
-                    <div>
-                        <strong>Website</strong><br>
-                        www.italian2.com
-                    </div>
-                </div>
-            </div>
-
-            <div class="map-container">
-                🍝 Map Location
-            </div>
-
-            <div class="text-center mt-3">
-                <a href="../../index.html" class="btn btn-primary">← Back to All Places</a>
-                <a href="#" class="btn btn-secondary">Get Directions</a>
-            </div>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>🍝 Trattoria Napoli</h1>
+            <p>Traditional Family Recipes from Naples</p>
+            <a href="#menu" class="btn">Explore Menu</a>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="logo">🍝 Italian 2</div>
-            <div class="footer-links">
-                <a href="#overview">About</a>
-                <a href="#features">Features</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#contact">Contact</a>
-                <a href="../../index.html">All Places</a>
+    <section class="section">
+        <h2 class="section-title">Our Signature Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>🍕 Neapolitan Pizza</h3>
+                <p class="price">$16</p>
+                <p>Authentic thin-crust pizza with buffalo mozzarella, San Marzano tomatoes, and fresh basil.</p>
             </div>
-            <div class="social-links">
-                <a href="#">📘</a>
-                <a href="#">📷</a>
-                <a href="#">🐦</a>
-                <a href="#">💼</a>
+            <div class="menu-item">
+                <h3>🍝 Spaghetti Carbonara</h3>
+                <p class="price">$22</p>
+                <p>Classic Roman pasta with guanciale, eggs, Pecorino Romano, and black pepper.</p>
             </div>
-            <p>&copy; 2024 Italian 2. All rights reserved.</p>
+            <div class="menu-item">
+                <h3>🥘 Lasagna Napoletana</h3>
+                <p class="price">$26</p>
+                <p>Layered pasta with rich meat ragù, béchamel, and mozzarella.</p>
+            </div>
+            <div class="menu-item">
+                <h3>🦐 Seafood Risotto</h3>
+                <p class="price">$28</p>
+                <p>Creamy Arborio rice with fresh seafood and saffron.</p>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="../../shared/js/common.js"></script>
+    <section class="section reviews" id="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Best Italian food outside of Italy! The Neapolitan pizza is perfection."</p>
+            <p><strong>- Maria G.</strong></p>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Family-run restaurant with authentic recipes. Love the carbonara!"</p>
+            <p><strong>- James R.</strong></p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Visit Us</h3>
+        <p>📍 456 Naples Avenue, City 10002</p>
+        <p>📞 (555) 234-5678</p>
+        <p>⏰ Mon-Sun: 11AM - 10PM</p>
+        <a href="../../index.html" class="back-link">← Back to Directory</a>
+    </footer>
 </body>
 </html>
