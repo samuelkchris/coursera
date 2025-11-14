@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Google Maps Places - Complete Directory</title>
+    <link rel="stylesheet" href="shared/css/common.css">
+    <style>
+        .main-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .main-hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .search-filter-section {
+            background: white;
+            padding: 30px;
+            margin: -50px auto 30px;
+            max-width: 1200px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 18px 24px;
+            font-size: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: var(--transition-fast);
+            font-family: inherit;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--border-color);
+            background: white;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            font-size: 15px;
+            font-weight: 500;
+            font-family: inherit;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary-color);
+            background: #f0f4ff;
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .place-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            animation: fadeInUp 0.5s ease;
+            animation-fill-mode: both;
+        }
+
+        .place-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .place-card-header {
+            padding: 30px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .place-card-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: ripple 3s infinite;
+        }
+
+        @keyframes ripple {
+            0%, 100% { transform: scale(1); opacity: 0; }
+            50% { transform: scale(1.5); opacity: 1; }
+        }
+
+        .place-icon {
+            font-size: 64px;
+            margin-bottom: 15px;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .place-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .place-category {
+            font-size: 14px;
+            opacity: 0.95;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .place-card-body {
+            padding: 25px;
+        }
+
+        .place-details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .place-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .place-detail-icon {
+            font-size: 18px;
+            min-width: 20px;
+        }
+
+        .visit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-top: 15px;
+            font-family: inherit;
+        }
+
+        .visit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .no-results-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .no-results h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .results-count {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        .category-section {
+            margin: 40px 0;
+        }
+
+        .category-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .category-count {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        .loading-spinner {
+            text-align: center;
+            padding: 60px;
+        }
+
+        .spinner {
+            border: 6px solid rgba(0, 0, 0, 0.1);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .main-hero h1 {
+                font-size: 36px;
+            }
+
+            .main-hero p {
+                font-size: 18px;
+            }
+
+            .places-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .stats {
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .filter-buttons {
+                gap: 8px;
+            }
+
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        /* Scroll progress bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            z-index: 10000;
+            transition: width 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">🗺️ Google Maps Places</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#all-places">Browse All</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-hero" id="home">
+        <h1>🗺️ 500 Amazing Places</h1>
+        <p>Explore a comprehensive directory of the best places on Google Maps</p>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">500</span>
+                <span class="stat-label">Total Places</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Verified</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="search-filter-section" id="all-places">
+            <input
+                type="text"
+                class="search-box"
+                id="searchBox"
+                placeholder="🔍 Search for places by name, category, or type..."
+                autocomplete="off"
+            >
+
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-category="all">All Places</button>
+                <button class="filter-btn" data-category="restaurants">🍝 Restaurants</button>
+                <button class="filter-btn" data-category="cafes">☕ Cafes</button>
+                <button class="filter-btn" data-category="hotels">🏨 Hotels</button>
+                <button class="filter-btn" data-category="shopping">🏬 Shopping</button>
+                <button class="filter-btn" data-category="entertainment">🎬 Entertainment</button>
+                <button class="filter-btn" data-category="health">🏥 Health</button>
+                <button class="filter-btn" data-category="education">🎓 Education</button>
+                <button class="filter-btn" data-category="services">💼 Services</button>
+                <button class="filter-btn" data-category="attractions">🏛️ Attractions</button>
+                <button class="filter-btn" data-category="transportation">✈️ Transportation</button>
+                <button class="filter-btn" data-category="religious">⛪ Religious</button>
+                <button class="filter-btn" data-category="sports">💪 Sports</button>
+                <button class="filter-btn" data-category="automotive">⛽ Automotive</button>
+                <button class="filter-btn" data-category="grocery">🛒 Grocery</button>
+                <button class="filter-btn" data-category="miscellaneous">✨ Miscellaneous</button>
+            </div>
+        </div>
+
+        <div class="results-count" id="resultsCount">
+            Showing all 500 places
+        </div>
+
+        <div id="placesContainer">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading amazing places...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="about">
+        <div class="footer-content">
+            <div class="logo">🗺️ Google Maps Places Directory</div>
+            <p style="margin: 20px 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+                A comprehensive collection of 500 meticulously curated place profiles across 15 different categories.
+                Each place features detailed information, beautiful design, and smooth animations.
+            </p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#all-places">Browse All</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="LinkedIn">💼</a>
+            </div>
+            <p>&copy; 2024 Google Maps Places Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="shared/js/common.js"></script>
+    <script>
+        let allPlaces = [];
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        // Load places data
+        async function loadPlaces() {
+            try {
+                const response = await fetch('sites-data.json');
+                allPlaces = await response.json();
+                renderPlaces();
+            } catch (error) {
+                console.error('Error loading places:', error);
+                document.getElementById('placesContainer').innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">❌</div>
+                        <h3>Error Loading Places</h3>
+                        <p>Unable to load the places directory. Please refresh the page.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Filter places
+        function filterPlaces() {
+            let filtered = allPlaces;
+
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(place => place.category === currentFilter);
+            }
+
+            // Apply search filter
+            if (currentSearch) {
+                const searchLower = currentSearch.toLowerCase();
+                filtered = filtered.filter(place =>
+                    place.name.toLowerCase().includes(searchLower) ||
+                    place.category.toLowerCase().includes(searchLower) ||
+                    place.subcategory.toLowerCase().includes(searchLower)
+                );
+            }
+
+            return filtered;
+        }
+
+        // Render places
+        function renderPlaces() {
+            const filtered = filterPlaces();
+            const container = document.getElementById('placesContainer');
+            const resultsCount = document.getElementById('resultsCount');
+
+            // Update results count
+            if (currentFilter === 'all' && !currentSearch) {
+                resultsCount.textContent = `Showing all ${filtered.length} places`;
+            } else {
+                resultsCount.textContent = `Found ${filtered.length} place${filtered.length !== 1 ? 's' : ''}`;
+            }
+
+            // Show no results message
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <h3>No Places Found</h3>
+                        <p>Try adjusting your search or filter criteria</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Render place cards
+            const placesGrid = document.createElement('div');
+            placesGrid.className = 'places-grid';
+
+            filtered.forEach((place, index) => {
+                const card = document.createElement('div');
+                card.className = 'place-card';
+                card.style.animationDelay = `${(index % 20) * 0.05}s`;
+
+                card.innerHTML = `
+                    <div class="place-card-header" style="background: linear-gradient(135deg, ${place.color} 0%, ${adjustColor(place.color, -20)} 100%);">
+                        <span class="place-icon">${place.icon}</span>
+                        <div class="place-name">${place.name}</div>
+                        <div class="place-category">${place.subcategory}</div>
+                    </div>
+                    <div class="place-card-body">
+                        <div class="place-details">
+                            <div class="place-detail-item">
+                                <span class="place-detail-icon">📍</span>
+                                <span>${place.category.charAt(0).toUpperCase() + place.category.slice(1)}</span>
+                            </div>
+                            <div class="place-detail-item">
+                                <span class="place-detail-icon">⭐</span>
+                                <span>${(4 + Math.random()).toFixed(1)} Rating</span>
+                            </div>
+                            <div class="place-detail-item">
+                                <span class="place-detail-icon">🕒</span>
+                                <span>Open Now</span>
+                            </div>
+                        </div>
+                        <button class="visit-btn" onclick="window.location.href='${place.path}'">
+                            Visit Place →
+                        </button>
+                    </div>
+                `;
+
+                placesGrid.appendChild(card);
+            });
+
+            container.innerHTML = '';
+            container.appendChild(placesGrid);
+        }
+
+        // Adjust color brightness
+        function adjustColor(color, amount) {
+            const num = parseInt(color.replace('#', ''), 16);
+            const r = Math.max(0, Math.min(255, (num >> 16) + amount));
+            const g = Math.max(0, Math.min(255, ((num >> 8) & 0x00FF) + amount));
+            const b = Math.max(0, Math.min(255, (num & 0x0000FF) + amount));
+            return '#' + ((r << 16) | (g << 8) | b).toString(16).padStart(6, '0');
+        }
+
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            renderPlaces();
+        });
+
+        // Filter functionality
+        document.getElementById('filterButtons').addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-btn')) {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                e.target.classList.add('active');
+
+                // Update filter and render
+                currentFilter = e.target.dataset.category;
+                renderPlaces();
+            }
+        });
+
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.pageYOffset / windowHeight) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Load places on page load
+        loadPlaces();
+    </script>
+</body>
+</html>

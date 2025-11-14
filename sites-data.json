@@ -1,0 +1,4002 @@
+[
+  {
+    "name": "Italian 1",
+    "category": "restaurants",
+    "subcategory": "Italian",
+    "icon": "🍝",
+    "color": "#e74c3c",
+    "path": "places/restaurants/restaurants_italian_1.html"
+  },
+  {
+    "name": "Italian 2",
+    "category": "restaurants",
+    "subcategory": "Italian",
+    "icon": "🍝",
+    "color": "#e74c3c",
+    "path": "places/restaurants/restaurants_italian_2.html"
+  },
+  {
+    "name": "Italian 3",
+    "category": "restaurants",
+    "subcategory": "Italian",
+    "icon": "🍝",
+    "color": "#e74c3c",
+    "path": "places/restaurants/restaurants_italian_3.html"
+  },
+  {
+    "name": "Italian 4",
+    "category": "restaurants",
+    "subcategory": "Italian",
+    "icon": "🍝",
+    "color": "#e74c3c",
+    "path": "places/restaurants/restaurants_italian_4.html"
+  },
+  {
+    "name": "Italian 5",
+    "category": "restaurants",
+    "subcategory": "Italian",
+    "icon": "🍝",
+    "color": "#e74c3c",
+    "path": "places/restaurants/restaurants_italian_5.html"
+  },
+  {
+    "name": "Japanese 1",
+    "category": "restaurants",
+    "subcategory": "Japanese",
+    "icon": "🍱",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_japanese_1.html"
+  },
+  {
+    "name": "Japanese 2",
+    "category": "restaurants",
+    "subcategory": "Japanese",
+    "icon": "🍱",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_japanese_2.html"
+  },
+  {
+    "name": "Japanese 3",
+    "category": "restaurants",
+    "subcategory": "Japanese",
+    "icon": "🍱",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_japanese_3.html"
+  },
+  {
+    "name": "Japanese 4",
+    "category": "restaurants",
+    "subcategory": "Japanese",
+    "icon": "🍱",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_japanese_4.html"
+  },
+  {
+    "name": "Japanese 5",
+    "category": "restaurants",
+    "subcategory": "Japanese",
+    "icon": "🍱",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_japanese_5.html"
+  },
+  {
+    "name": "Chinese 1",
+    "category": "restaurants",
+    "subcategory": "Chinese",
+    "icon": "🥢",
+    "color": "#f39c12",
+    "path": "places/restaurants/restaurants_chinese_1.html"
+  },
+  {
+    "name": "Chinese 2",
+    "category": "restaurants",
+    "subcategory": "Chinese",
+    "icon": "🥢",
+    "color": "#f39c12",
+    "path": "places/restaurants/restaurants_chinese_2.html"
+  },
+  {
+    "name": "Chinese 3",
+    "category": "restaurants",
+    "subcategory": "Chinese",
+    "icon": "🥢",
+    "color": "#f39c12",
+    "path": "places/restaurants/restaurants_chinese_3.html"
+  },
+  {
+    "name": "Chinese 4",
+    "category": "restaurants",
+    "subcategory": "Chinese",
+    "icon": "🥢",
+    "color": "#f39c12",
+    "path": "places/restaurants/restaurants_chinese_4.html"
+  },
+  {
+    "name": "Chinese 5",
+    "category": "restaurants",
+    "subcategory": "Chinese",
+    "icon": "🥢",
+    "color": "#f39c12",
+    "path": "places/restaurants/restaurants_chinese_5.html"
+  },
+  {
+    "name": "Mexican 1",
+    "category": "restaurants",
+    "subcategory": "Mexican",
+    "icon": "🌮",
+    "color": "#16a085",
+    "path": "places/restaurants/restaurants_mexican_1.html"
+  },
+  {
+    "name": "Mexican 2",
+    "category": "restaurants",
+    "subcategory": "Mexican",
+    "icon": "🌮",
+    "color": "#16a085",
+    "path": "places/restaurants/restaurants_mexican_2.html"
+  },
+  {
+    "name": "Mexican 3",
+    "category": "restaurants",
+    "subcategory": "Mexican",
+    "icon": "🌮",
+    "color": "#16a085",
+    "path": "places/restaurants/restaurants_mexican_3.html"
+  },
+  {
+    "name": "Mexican 4",
+    "category": "restaurants",
+    "subcategory": "Mexican",
+    "icon": "🌮",
+    "color": "#16a085",
+    "path": "places/restaurants/restaurants_mexican_4.html"
+  },
+  {
+    "name": "Mexican 5",
+    "category": "restaurants",
+    "subcategory": "Mexican",
+    "icon": "🌮",
+    "color": "#16a085",
+    "path": "places/restaurants/restaurants_mexican_5.html"
+  },
+  {
+    "name": "French 1",
+    "category": "restaurants",
+    "subcategory": "French",
+    "icon": "🥖",
+    "color": "#8e44ad",
+    "path": "places/restaurants/restaurants_french_1.html"
+  },
+  {
+    "name": "French 2",
+    "category": "restaurants",
+    "subcategory": "French",
+    "icon": "🥖",
+    "color": "#8e44ad",
+    "path": "places/restaurants/restaurants_french_2.html"
+  },
+  {
+    "name": "French 3",
+    "category": "restaurants",
+    "subcategory": "French",
+    "icon": "🥖",
+    "color": "#8e44ad",
+    "path": "places/restaurants/restaurants_french_3.html"
+  },
+  {
+    "name": "French 4",
+    "category": "restaurants",
+    "subcategory": "French",
+    "icon": "🥖",
+    "color": "#8e44ad",
+    "path": "places/restaurants/restaurants_french_4.html"
+  },
+  {
+    "name": "French 5",
+    "category": "restaurants",
+    "subcategory": "French",
+    "icon": "🥖",
+    "color": "#8e44ad",
+    "path": "places/restaurants/restaurants_french_5.html"
+  },
+  {
+    "name": "Thai 1",
+    "category": "restaurants",
+    "subcategory": "Thai",
+    "icon": "🍜",
+    "color": "#c0392b",
+    "path": "places/restaurants/restaurants_thai_1.html"
+  },
+  {
+    "name": "Thai 2",
+    "category": "restaurants",
+    "subcategory": "Thai",
+    "icon": "🍜",
+    "color": "#c0392b",
+    "path": "places/restaurants/restaurants_thai_2.html"
+  },
+  {
+    "name": "Thai 3",
+    "category": "restaurants",
+    "subcategory": "Thai",
+    "icon": "🍜",
+    "color": "#c0392b",
+    "path": "places/restaurants/restaurants_thai_3.html"
+  },
+  {
+    "name": "Thai 4",
+    "category": "restaurants",
+    "subcategory": "Thai",
+    "icon": "🍜",
+    "color": "#c0392b",
+    "path": "places/restaurants/restaurants_thai_4.html"
+  },
+  {
+    "name": "Thai 5",
+    "category": "restaurants",
+    "subcategory": "Thai",
+    "icon": "🍜",
+    "color": "#c0392b",
+    "path": "places/restaurants/restaurants_thai_5.html"
+  },
+  {
+    "name": "Indian 1",
+    "category": "restaurants",
+    "subcategory": "Indian",
+    "icon": "🍛",
+    "color": "#d35400",
+    "path": "places/restaurants/restaurants_indian_1.html"
+  },
+  {
+    "name": "Indian 2",
+    "category": "restaurants",
+    "subcategory": "Indian",
+    "icon": "🍛",
+    "color": "#d35400",
+    "path": "places/restaurants/restaurants_indian_2.html"
+  },
+  {
+    "name": "Indian 3",
+    "category": "restaurants",
+    "subcategory": "Indian",
+    "icon": "🍛",
+    "color": "#d35400",
+    "path": "places/restaurants/restaurants_indian_3.html"
+  },
+  {
+    "name": "Indian 4",
+    "category": "restaurants",
+    "subcategory": "Indian",
+    "icon": "🍛",
+    "color": "#d35400",
+    "path": "places/restaurants/restaurants_indian_4.html"
+  },
+  {
+    "name": "Indian 5",
+    "category": "restaurants",
+    "subcategory": "Indian",
+    "icon": "🍛",
+    "color": "#d35400",
+    "path": "places/restaurants/restaurants_indian_5.html"
+  },
+  {
+    "name": "American 1",
+    "category": "restaurants",
+    "subcategory": "American",
+    "icon": "🍔",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_american_1.html"
+  },
+  {
+    "name": "American 2",
+    "category": "restaurants",
+    "subcategory": "American",
+    "icon": "🍔",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_american_2.html"
+  },
+  {
+    "name": "American 3",
+    "category": "restaurants",
+    "subcategory": "American",
+    "icon": "🍔",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_american_3.html"
+  },
+  {
+    "name": "American 4",
+    "category": "restaurants",
+    "subcategory": "American",
+    "icon": "🍔",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_american_4.html"
+  },
+  {
+    "name": "American 5",
+    "category": "restaurants",
+    "subcategory": "American",
+    "icon": "🍔",
+    "color": "#e67e22",
+    "path": "places/restaurants/restaurants_american_5.html"
+  },
+  {
+    "name": "Mediterranean 1",
+    "category": "restaurants",
+    "subcategory": "Mediterranean",
+    "icon": "🥙",
+    "color": "#27ae60",
+    "path": "places/restaurants/restaurants_mediterranean_1.html"
+  },
+  {
+    "name": "Mediterranean 2",
+    "category": "restaurants",
+    "subcategory": "Mediterranean",
+    "icon": "🥙",
+    "color": "#27ae60",
+    "path": "places/restaurants/restaurants_mediterranean_2.html"
+  },
+  {
+    "name": "Mediterranean 3",
+    "category": "restaurants",
+    "subcategory": "Mediterranean",
+    "icon": "🥙",
+    "color": "#27ae60",
+    "path": "places/restaurants/restaurants_mediterranean_3.html"
+  },
+  {
+    "name": "Mediterranean 4",
+    "category": "restaurants",
+    "subcategory": "Mediterranean",
+    "icon": "🥙",
+    "color": "#27ae60",
+    "path": "places/restaurants/restaurants_mediterranean_4.html"
+  },
+  {
+    "name": "Mediterranean 5",
+    "category": "restaurants",
+    "subcategory": "Mediterranean",
+    "icon": "🥙",
+    "color": "#27ae60",
+    "path": "places/restaurants/restaurants_mediterranean_5.html"
+  },
+  {
+    "name": "Korean 1",
+    "category": "restaurants",
+    "subcategory": "Korean",
+    "icon": "🍲",
+    "color": "#2980b9",
+    "path": "places/restaurants/restaurants_korean_1.html"
+  },
+  {
+    "name": "Korean 2",
+    "category": "restaurants",
+    "subcategory": "Korean",
+    "icon": "🍲",
+    "color": "#2980b9",
+    "path": "places/restaurants/restaurants_korean_2.html"
+  },
+  {
+    "name": "Korean 3",
+    "category": "restaurants",
+    "subcategory": "Korean",
+    "icon": "🍲",
+    "color": "#2980b9",
+    "path": "places/restaurants/restaurants_korean_3.html"
+  },
+  {
+    "name": "Korean 4",
+    "category": "restaurants",
+    "subcategory": "Korean",
+    "icon": "🍲",
+    "color": "#2980b9",
+    "path": "places/restaurants/restaurants_korean_4.html"
+  },
+  {
+    "name": "Korean 5",
+    "category": "restaurants",
+    "subcategory": "Korean",
+    "icon": "🍲",
+    "color": "#2980b9",
+    "path": "places/restaurants/restaurants_korean_5.html"
+  },
+  {
+    "name": "Coffee Shop 1",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_1.html"
+  },
+  {
+    "name": "Coffee Shop 2",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_2.html"
+  },
+  {
+    "name": "Coffee Shop 3",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_3.html"
+  },
+  {
+    "name": "Coffee Shop 4",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_4.html"
+  },
+  {
+    "name": "Coffee Shop 5",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_5.html"
+  },
+  {
+    "name": "Coffee Shop 6",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_6.html"
+  },
+  {
+    "name": "Coffee Shop 7",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_7.html"
+  },
+  {
+    "name": "Coffee Shop 8",
+    "category": "cafes",
+    "subcategory": "Coffee Shop",
+    "icon": "☕",
+    "color": "#6F4E37",
+    "path": "places/cafes/cafes_coffee_shop_8.html"
+  },
+  {
+    "name": "Tea House 1",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_1.html"
+  },
+  {
+    "name": "Tea House 2",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_2.html"
+  },
+  {
+    "name": "Tea House 3",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_3.html"
+  },
+  {
+    "name": "Tea House 4",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_4.html"
+  },
+  {
+    "name": "Tea House 5",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_5.html"
+  },
+  {
+    "name": "Tea House 6",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_6.html"
+  },
+  {
+    "name": "Tea House 7",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_7.html"
+  },
+  {
+    "name": "Tea House 8",
+    "category": "cafes",
+    "subcategory": "Tea House",
+    "icon": "🍵",
+    "color": "#8B4513",
+    "path": "places/cafes/cafes_tea_house_8.html"
+  },
+  {
+    "name": "Bakery Cafe 1",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_1.html"
+  },
+  {
+    "name": "Bakery Cafe 2",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_2.html"
+  },
+  {
+    "name": "Bakery Cafe 3",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_3.html"
+  },
+  {
+    "name": "Bakery Cafe 4",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_4.html"
+  },
+  {
+    "name": "Bakery Cafe 5",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_5.html"
+  },
+  {
+    "name": "Bakery Cafe 6",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_6.html"
+  },
+  {
+    "name": "Bakery Cafe 7",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_7.html"
+  },
+  {
+    "name": "Bakery Cafe 8",
+    "category": "cafes",
+    "subcategory": "Bakery Cafe",
+    "icon": "🥐",
+    "color": "#D2691E",
+    "path": "places/cafes/cafes_bakery_cafe_8.html"
+  },
+  {
+    "name": "Juice Bar 1",
+    "category": "cafes",
+    "subcategory": "Juice Bar",
+    "icon": "🧃",
+    "color": "#FF6347",
+    "path": "places/cafes/cafes_juice_bar_1.html"
+  },
+  {
+    "name": "Juice Bar 2",
+    "category": "cafes",
+    "subcategory": "Juice Bar",
+    "icon": "🧃",
+    "color": "#FF6347",
+    "path": "places/cafes/cafes_juice_bar_2.html"
+  },
+  {
+    "name": "Juice Bar 3",
+    "category": "cafes",
+    "subcategory": "Juice Bar",
+    "icon": "🧃",
+    "color": "#FF6347",
+    "path": "places/cafes/cafes_juice_bar_3.html"
+  },
+  {
+    "name": "Juice Bar 4",
+    "category": "cafes",
+    "subcategory": "Juice Bar",
+    "icon": "🧃",
+    "color": "#FF6347",
+    "path": "places/cafes/cafes_juice_bar_4.html"
+  },
+  {
+    "name": "Juice Bar 5",
+    "category": "cafes",
+    "subcategory": "Juice Bar",
+    "icon": "🧃",
+    "color": "#FF6347",
+    "path": "places/cafes/cafes_juice_bar_5.html"
+  },
+  {
+    "name": "Juice Bar 6",
+    "category": "cafes",
+    "subcategory": "Juice Bar",
+    "icon": "🧃",
+    "color": "#FF6347",
+    "path": "places/cafes/cafes_juice_bar_6.html"
+  },
+  {
+    "name": "Luxury Hotel 1",
+    "category": "hotels",
+    "subcategory": "Luxury Hotel",
+    "icon": "🏨",
+    "color": "#2c3e50",
+    "path": "places/hotels/hotels_luxury_hotel_1.html"
+  },
+  {
+    "name": "Luxury Hotel 2",
+    "category": "hotels",
+    "subcategory": "Luxury Hotel",
+    "icon": "🏨",
+    "color": "#2c3e50",
+    "path": "places/hotels/hotels_luxury_hotel_2.html"
+  },
+  {
+    "name": "Luxury Hotel 3",
+    "category": "hotels",
+    "subcategory": "Luxury Hotel",
+    "icon": "🏨",
+    "color": "#2c3e50",
+    "path": "places/hotels/hotels_luxury_hotel_3.html"
+  },
+  {
+    "name": "Luxury Hotel 4",
+    "category": "hotels",
+    "subcategory": "Luxury Hotel",
+    "icon": "🏨",
+    "color": "#2c3e50",
+    "path": "places/hotels/hotels_luxury_hotel_4.html"
+  },
+  {
+    "name": "Luxury Hotel 5",
+    "category": "hotels",
+    "subcategory": "Luxury Hotel",
+    "icon": "🏨",
+    "color": "#2c3e50",
+    "path": "places/hotels/hotels_luxury_hotel_5.html"
+  },
+  {
+    "name": "Budget Hotel 1",
+    "category": "hotels",
+    "subcategory": "Budget Hotel",
+    "icon": "🏩",
+    "color": "#34495e",
+    "path": "places/hotels/hotels_budget_hotel_1.html"
+  },
+  {
+    "name": "Budget Hotel 2",
+    "category": "hotels",
+    "subcategory": "Budget Hotel",
+    "icon": "🏩",
+    "color": "#34495e",
+    "path": "places/hotels/hotels_budget_hotel_2.html"
+  },
+  {
+    "name": "Budget Hotel 3",
+    "category": "hotels",
+    "subcategory": "Budget Hotel",
+    "icon": "🏩",
+    "color": "#34495e",
+    "path": "places/hotels/hotels_budget_hotel_3.html"
+  },
+  {
+    "name": "Budget Hotel 4",
+    "category": "hotels",
+    "subcategory": "Budget Hotel",
+    "icon": "🏩",
+    "color": "#34495e",
+    "path": "places/hotels/hotels_budget_hotel_4.html"
+  },
+  {
+    "name": "Budget Hotel 5",
+    "category": "hotels",
+    "subcategory": "Budget Hotel",
+    "icon": "🏩",
+    "color": "#34495e",
+    "path": "places/hotels/hotels_budget_hotel_5.html"
+  },
+  {
+    "name": "Boutique Hotel 1",
+    "category": "hotels",
+    "subcategory": "Boutique Hotel",
+    "icon": "🏰",
+    "color": "#7f8c8d",
+    "path": "places/hotels/hotels_boutique_hotel_1.html"
+  },
+  {
+    "name": "Boutique Hotel 2",
+    "category": "hotels",
+    "subcategory": "Boutique Hotel",
+    "icon": "🏰",
+    "color": "#7f8c8d",
+    "path": "places/hotels/hotels_boutique_hotel_2.html"
+  },
+  {
+    "name": "Boutique Hotel 3",
+    "category": "hotels",
+    "subcategory": "Boutique Hotel",
+    "icon": "🏰",
+    "color": "#7f8c8d",
+    "path": "places/hotels/hotels_boutique_hotel_3.html"
+  },
+  {
+    "name": "Boutique Hotel 4",
+    "category": "hotels",
+    "subcategory": "Boutique Hotel",
+    "icon": "🏰",
+    "color": "#7f8c8d",
+    "path": "places/hotels/hotels_boutique_hotel_4.html"
+  },
+  {
+    "name": "Boutique Hotel 5",
+    "category": "hotels",
+    "subcategory": "Boutique Hotel",
+    "icon": "🏰",
+    "color": "#7f8c8d",
+    "path": "places/hotels/hotels_boutique_hotel_5.html"
+  },
+  {
+    "name": "Resort 1",
+    "category": "hotels",
+    "subcategory": "Resort",
+    "icon": "🏖️",
+    "color": "#16a085",
+    "path": "places/hotels/hotels_resort_1.html"
+  },
+  {
+    "name": "Resort 2",
+    "category": "hotels",
+    "subcategory": "Resort",
+    "icon": "🏖️",
+    "color": "#16a085",
+    "path": "places/hotels/hotels_resort_2.html"
+  },
+  {
+    "name": "Resort 3",
+    "category": "hotels",
+    "subcategory": "Resort",
+    "icon": "🏖️",
+    "color": "#16a085",
+    "path": "places/hotels/hotels_resort_3.html"
+  },
+  {
+    "name": "Resort 4",
+    "category": "hotels",
+    "subcategory": "Resort",
+    "icon": "🏖️",
+    "color": "#16a085",
+    "path": "places/hotels/hotels_resort_4.html"
+  },
+  {
+    "name": "Resort 5",
+    "category": "hotels",
+    "subcategory": "Resort",
+    "icon": "🏖️",
+    "color": "#16a085",
+    "path": "places/hotels/hotels_resort_5.html"
+  },
+  {
+    "name": "Motel 1",
+    "category": "hotels",
+    "subcategory": "Motel",
+    "icon": "🛏️",
+    "color": "#8e44ad",
+    "path": "places/hotels/hotels_motel_1.html"
+  },
+  {
+    "name": "Motel 2",
+    "category": "hotels",
+    "subcategory": "Motel",
+    "icon": "🛏️",
+    "color": "#8e44ad",
+    "path": "places/hotels/hotels_motel_2.html"
+  },
+  {
+    "name": "Motel 3",
+    "category": "hotels",
+    "subcategory": "Motel",
+    "icon": "🛏️",
+    "color": "#8e44ad",
+    "path": "places/hotels/hotels_motel_3.html"
+  },
+  {
+    "name": "Motel 4",
+    "category": "hotels",
+    "subcategory": "Motel",
+    "icon": "🛏️",
+    "color": "#8e44ad",
+    "path": "places/hotels/hotels_motel_4.html"
+  },
+  {
+    "name": "Motel 5",
+    "category": "hotels",
+    "subcategory": "Motel",
+    "icon": "🛏️",
+    "color": "#8e44ad",
+    "path": "places/hotels/hotels_motel_5.html"
+  },
+  {
+    "name": "Hostel 1",
+    "category": "hotels",
+    "subcategory": "Hostel",
+    "icon": "🏠",
+    "color": "#2980b9",
+    "path": "places/hotels/hotels_hostel_1.html"
+  },
+  {
+    "name": "Hostel 2",
+    "category": "hotels",
+    "subcategory": "Hostel",
+    "icon": "🏠",
+    "color": "#2980b9",
+    "path": "places/hotels/hotels_hostel_2.html"
+  },
+  {
+    "name": "Hostel 3",
+    "category": "hotels",
+    "subcategory": "Hostel",
+    "icon": "🏠",
+    "color": "#2980b9",
+    "path": "places/hotels/hotels_hostel_3.html"
+  },
+  {
+    "name": "Hostel 4",
+    "category": "hotels",
+    "subcategory": "Hostel",
+    "icon": "🏠",
+    "color": "#2980b9",
+    "path": "places/hotels/hotels_hostel_4.html"
+  },
+  {
+    "name": "Hostel 5",
+    "category": "hotels",
+    "subcategory": "Hostel",
+    "icon": "🏠",
+    "color": "#2980b9",
+    "path": "places/hotels/hotels_hostel_5.html"
+  },
+  {
+    "name": "Mall 1",
+    "category": "shopping",
+    "subcategory": "Mall",
+    "icon": "🏬",
+    "color": "#e91e63",
+    "path": "places/shopping/shopping_mall_1.html"
+  },
+  {
+    "name": "Mall 2",
+    "category": "shopping",
+    "subcategory": "Mall",
+    "icon": "🏬",
+    "color": "#e91e63",
+    "path": "places/shopping/shopping_mall_2.html"
+  },
+  {
+    "name": "Mall 3",
+    "category": "shopping",
+    "subcategory": "Mall",
+    "icon": "🏬",
+    "color": "#e91e63",
+    "path": "places/shopping/shopping_mall_3.html"
+  },
+  {
+    "name": "Mall 4",
+    "category": "shopping",
+    "subcategory": "Mall",
+    "icon": "🏬",
+    "color": "#e91e63",
+    "path": "places/shopping/shopping_mall_4.html"
+  },
+  {
+    "name": "Mall 5",
+    "category": "shopping",
+    "subcategory": "Mall",
+    "icon": "🏬",
+    "color": "#e91e63",
+    "path": "places/shopping/shopping_mall_5.html"
+  },
+  {
+    "name": "Boutique 1",
+    "category": "shopping",
+    "subcategory": "Boutique",
+    "icon": "👗",
+    "color": "#9c27b0",
+    "path": "places/shopping/shopping_boutique_1.html"
+  },
+  {
+    "name": "Boutique 2",
+    "category": "shopping",
+    "subcategory": "Boutique",
+    "icon": "👗",
+    "color": "#9c27b0",
+    "path": "places/shopping/shopping_boutique_2.html"
+  },
+  {
+    "name": "Boutique 3",
+    "category": "shopping",
+    "subcategory": "Boutique",
+    "icon": "👗",
+    "color": "#9c27b0",
+    "path": "places/shopping/shopping_boutique_3.html"
+  },
+  {
+    "name": "Boutique 4",
+    "category": "shopping",
+    "subcategory": "Boutique",
+    "icon": "👗",
+    "color": "#9c27b0",
+    "path": "places/shopping/shopping_boutique_4.html"
+  },
+  {
+    "name": "Boutique 5",
+    "category": "shopping",
+    "subcategory": "Boutique",
+    "icon": "👗",
+    "color": "#9c27b0",
+    "path": "places/shopping/shopping_boutique_5.html"
+  },
+  {
+    "name": "Electronics Store 1",
+    "category": "shopping",
+    "subcategory": "Electronics Store",
+    "icon": "📱",
+    "color": "#3f51b5",
+    "path": "places/shopping/shopping_electronics_store_1.html"
+  },
+  {
+    "name": "Electronics Store 2",
+    "category": "shopping",
+    "subcategory": "Electronics Store",
+    "icon": "📱",
+    "color": "#3f51b5",
+    "path": "places/shopping/shopping_electronics_store_2.html"
+  },
+  {
+    "name": "Electronics Store 3",
+    "category": "shopping",
+    "subcategory": "Electronics Store",
+    "icon": "📱",
+    "color": "#3f51b5",
+    "path": "places/shopping/shopping_electronics_store_3.html"
+  },
+  {
+    "name": "Electronics Store 4",
+    "category": "shopping",
+    "subcategory": "Electronics Store",
+    "icon": "📱",
+    "color": "#3f51b5",
+    "path": "places/shopping/shopping_electronics_store_4.html"
+  },
+  {
+    "name": "Electronics Store 5",
+    "category": "shopping",
+    "subcategory": "Electronics Store",
+    "icon": "📱",
+    "color": "#3f51b5",
+    "path": "places/shopping/shopping_electronics_store_5.html"
+  },
+  {
+    "name": "Bookstore 1",
+    "category": "shopping",
+    "subcategory": "Bookstore",
+    "icon": "📚",
+    "color": "#00bcd4",
+    "path": "places/shopping/shopping_bookstore_1.html"
+  },
+  {
+    "name": "Bookstore 2",
+    "category": "shopping",
+    "subcategory": "Bookstore",
+    "icon": "📚",
+    "color": "#00bcd4",
+    "path": "places/shopping/shopping_bookstore_2.html"
+  },
+  {
+    "name": "Bookstore 3",
+    "category": "shopping",
+    "subcategory": "Bookstore",
+    "icon": "📚",
+    "color": "#00bcd4",
+    "path": "places/shopping/shopping_bookstore_3.html"
+  },
+  {
+    "name": "Bookstore 4",
+    "category": "shopping",
+    "subcategory": "Bookstore",
+    "icon": "📚",
+    "color": "#00bcd4",
+    "path": "places/shopping/shopping_bookstore_4.html"
+  },
+  {
+    "name": "Bookstore 5",
+    "category": "shopping",
+    "subcategory": "Bookstore",
+    "icon": "📚",
+    "color": "#00bcd4",
+    "path": "places/shopping/shopping_bookstore_5.html"
+  },
+  {
+    "name": "Clothing Store 1",
+    "category": "shopping",
+    "subcategory": "Clothing Store",
+    "icon": "👔",
+    "color": "#4caf50",
+    "path": "places/shopping/shopping_clothing_store_1.html"
+  },
+  {
+    "name": "Clothing Store 2",
+    "category": "shopping",
+    "subcategory": "Clothing Store",
+    "icon": "👔",
+    "color": "#4caf50",
+    "path": "places/shopping/shopping_clothing_store_2.html"
+  },
+  {
+    "name": "Clothing Store 3",
+    "category": "shopping",
+    "subcategory": "Clothing Store",
+    "icon": "👔",
+    "color": "#4caf50",
+    "path": "places/shopping/shopping_clothing_store_3.html"
+  },
+  {
+    "name": "Clothing Store 4",
+    "category": "shopping",
+    "subcategory": "Clothing Store",
+    "icon": "👔",
+    "color": "#4caf50",
+    "path": "places/shopping/shopping_clothing_store_4.html"
+  },
+  {
+    "name": "Clothing Store 5",
+    "category": "shopping",
+    "subcategory": "Clothing Store",
+    "icon": "👔",
+    "color": "#4caf50",
+    "path": "places/shopping/shopping_clothing_store_5.html"
+  },
+  {
+    "name": "Jewelry Store 1",
+    "category": "shopping",
+    "subcategory": "Jewelry Store",
+    "icon": "💎",
+    "color": "#ff9800",
+    "path": "places/shopping/shopping_jewelry_store_1.html"
+  },
+  {
+    "name": "Jewelry Store 2",
+    "category": "shopping",
+    "subcategory": "Jewelry Store",
+    "icon": "💎",
+    "color": "#ff9800",
+    "path": "places/shopping/shopping_jewelry_store_2.html"
+  },
+  {
+    "name": "Jewelry Store 3",
+    "category": "shopping",
+    "subcategory": "Jewelry Store",
+    "icon": "💎",
+    "color": "#ff9800",
+    "path": "places/shopping/shopping_jewelry_store_3.html"
+  },
+  {
+    "name": "Jewelry Store 4",
+    "category": "shopping",
+    "subcategory": "Jewelry Store",
+    "icon": "💎",
+    "color": "#ff9800",
+    "path": "places/shopping/shopping_jewelry_store_4.html"
+  },
+  {
+    "name": "Jewelry Store 5",
+    "category": "shopping",
+    "subcategory": "Jewelry Store",
+    "icon": "💎",
+    "color": "#ff9800",
+    "path": "places/shopping/shopping_jewelry_store_5.html"
+  },
+  {
+    "name": "Toy Store 1",
+    "category": "shopping",
+    "subcategory": "Toy Store",
+    "icon": "🧸",
+    "color": "#ff5722",
+    "path": "places/shopping/shopping_toy_store_1.html"
+  },
+  {
+    "name": "Toy Store 2",
+    "category": "shopping",
+    "subcategory": "Toy Store",
+    "icon": "🧸",
+    "color": "#ff5722",
+    "path": "places/shopping/shopping_toy_store_2.html"
+  },
+  {
+    "name": "Toy Store 3",
+    "category": "shopping",
+    "subcategory": "Toy Store",
+    "icon": "🧸",
+    "color": "#ff5722",
+    "path": "places/shopping/shopping_toy_store_3.html"
+  },
+  {
+    "name": "Toy Store 4",
+    "category": "shopping",
+    "subcategory": "Toy Store",
+    "icon": "🧸",
+    "color": "#ff5722",
+    "path": "places/shopping/shopping_toy_store_4.html"
+  },
+  {
+    "name": "Toy Store 5",
+    "category": "shopping",
+    "subcategory": "Toy Store",
+    "icon": "🧸",
+    "color": "#ff5722",
+    "path": "places/shopping/shopping_toy_store_5.html"
+  },
+  {
+    "name": "Sports Store 1",
+    "category": "shopping",
+    "subcategory": "Sports Store",
+    "icon": "⚽",
+    "color": "#795548",
+    "path": "places/shopping/shopping_sports_store_1.html"
+  },
+  {
+    "name": "Sports Store 2",
+    "category": "shopping",
+    "subcategory": "Sports Store",
+    "icon": "⚽",
+    "color": "#795548",
+    "path": "places/shopping/shopping_sports_store_2.html"
+  },
+  {
+    "name": "Sports Store 3",
+    "category": "shopping",
+    "subcategory": "Sports Store",
+    "icon": "⚽",
+    "color": "#795548",
+    "path": "places/shopping/shopping_sports_store_3.html"
+  },
+  {
+    "name": "Sports Store 4",
+    "category": "shopping",
+    "subcategory": "Sports Store",
+    "icon": "⚽",
+    "color": "#795548",
+    "path": "places/shopping/shopping_sports_store_4.html"
+  },
+  {
+    "name": "Sports Store 5",
+    "category": "shopping",
+    "subcategory": "Sports Store",
+    "icon": "⚽",
+    "color": "#795548",
+    "path": "places/shopping/shopping_sports_store_5.html"
+  },
+  {
+    "name": "Movie Theater 1",
+    "category": "entertainment",
+    "subcategory": "Movie Theater",
+    "icon": "🎬",
+    "color": "#e74c3c",
+    "path": "places/entertainment/entertainment_movie_theater_1.html"
+  },
+  {
+    "name": "Movie Theater 2",
+    "category": "entertainment",
+    "subcategory": "Movie Theater",
+    "icon": "🎬",
+    "color": "#e74c3c",
+    "path": "places/entertainment/entertainment_movie_theater_2.html"
+  },
+  {
+    "name": "Movie Theater 3",
+    "category": "entertainment",
+    "subcategory": "Movie Theater",
+    "icon": "🎬",
+    "color": "#e74c3c",
+    "path": "places/entertainment/entertainment_movie_theater_3.html"
+  },
+  {
+    "name": "Movie Theater 4",
+    "category": "entertainment",
+    "subcategory": "Movie Theater",
+    "icon": "🎬",
+    "color": "#e74c3c",
+    "path": "places/entertainment/entertainment_movie_theater_4.html"
+  },
+  {
+    "name": "Movie Theater 5",
+    "category": "entertainment",
+    "subcategory": "Movie Theater",
+    "icon": "🎬",
+    "color": "#e74c3c",
+    "path": "places/entertainment/entertainment_movie_theater_5.html"
+  },
+  {
+    "name": "Concert Hall 1",
+    "category": "entertainment",
+    "subcategory": "Concert Hall",
+    "icon": "🎭",
+    "color": "#9b59b6",
+    "path": "places/entertainment/entertainment_concert_hall_1.html"
+  },
+  {
+    "name": "Concert Hall 2",
+    "category": "entertainment",
+    "subcategory": "Concert Hall",
+    "icon": "🎭",
+    "color": "#9b59b6",
+    "path": "places/entertainment/entertainment_concert_hall_2.html"
+  },
+  {
+    "name": "Concert Hall 3",
+    "category": "entertainment",
+    "subcategory": "Concert Hall",
+    "icon": "🎭",
+    "color": "#9b59b6",
+    "path": "places/entertainment/entertainment_concert_hall_3.html"
+  },
+  {
+    "name": "Concert Hall 4",
+    "category": "entertainment",
+    "subcategory": "Concert Hall",
+    "icon": "🎭",
+    "color": "#9b59b6",
+    "path": "places/entertainment/entertainment_concert_hall_4.html"
+  },
+  {
+    "name": "Concert Hall 5",
+    "category": "entertainment",
+    "subcategory": "Concert Hall",
+    "icon": "🎭",
+    "color": "#9b59b6",
+    "path": "places/entertainment/entertainment_concert_hall_5.html"
+  },
+  {
+    "name": "Night Club 1",
+    "category": "entertainment",
+    "subcategory": "Night Club",
+    "icon": "🎪",
+    "color": "#3498db",
+    "path": "places/entertainment/entertainment_night_club_1.html"
+  },
+  {
+    "name": "Night Club 2",
+    "category": "entertainment",
+    "subcategory": "Night Club",
+    "icon": "🎪",
+    "color": "#3498db",
+    "path": "places/entertainment/entertainment_night_club_2.html"
+  },
+  {
+    "name": "Night Club 3",
+    "category": "entertainment",
+    "subcategory": "Night Club",
+    "icon": "🎪",
+    "color": "#3498db",
+    "path": "places/entertainment/entertainment_night_club_3.html"
+  },
+  {
+    "name": "Night Club 4",
+    "category": "entertainment",
+    "subcategory": "Night Club",
+    "icon": "🎪",
+    "color": "#3498db",
+    "path": "places/entertainment/entertainment_night_club_4.html"
+  },
+  {
+    "name": "Night Club 5",
+    "category": "entertainment",
+    "subcategory": "Night Club",
+    "icon": "🎪",
+    "color": "#3498db",
+    "path": "places/entertainment/entertainment_night_club_5.html"
+  },
+  {
+    "name": "Arcade 1",
+    "category": "entertainment",
+    "subcategory": "Arcade",
+    "icon": "🎮",
+    "color": "#f39c12",
+    "path": "places/entertainment/entertainment_arcade_1.html"
+  },
+  {
+    "name": "Arcade 2",
+    "category": "entertainment",
+    "subcategory": "Arcade",
+    "icon": "🎮",
+    "color": "#f39c12",
+    "path": "places/entertainment/entertainment_arcade_2.html"
+  },
+  {
+    "name": "Arcade 3",
+    "category": "entertainment",
+    "subcategory": "Arcade",
+    "icon": "🎮",
+    "color": "#f39c12",
+    "path": "places/entertainment/entertainment_arcade_3.html"
+  },
+  {
+    "name": "Arcade 4",
+    "category": "entertainment",
+    "subcategory": "Arcade",
+    "icon": "🎮",
+    "color": "#f39c12",
+    "path": "places/entertainment/entertainment_arcade_4.html"
+  },
+  {
+    "name": "Arcade 5",
+    "category": "entertainment",
+    "subcategory": "Arcade",
+    "icon": "🎮",
+    "color": "#f39c12",
+    "path": "places/entertainment/entertainment_arcade_5.html"
+  },
+  {
+    "name": "Bowling 1",
+    "category": "entertainment",
+    "subcategory": "Bowling",
+    "icon": "🎳",
+    "color": "#1abc9c",
+    "path": "places/entertainment/entertainment_bowling_1.html"
+  },
+  {
+    "name": "Bowling 2",
+    "category": "entertainment",
+    "subcategory": "Bowling",
+    "icon": "🎳",
+    "color": "#1abc9c",
+    "path": "places/entertainment/entertainment_bowling_2.html"
+  },
+  {
+    "name": "Bowling 3",
+    "category": "entertainment",
+    "subcategory": "Bowling",
+    "icon": "🎳",
+    "color": "#1abc9c",
+    "path": "places/entertainment/entertainment_bowling_3.html"
+  },
+  {
+    "name": "Bowling 4",
+    "category": "entertainment",
+    "subcategory": "Bowling",
+    "icon": "🎳",
+    "color": "#1abc9c",
+    "path": "places/entertainment/entertainment_bowling_4.html"
+  },
+  {
+    "name": "Bowling 5",
+    "category": "entertainment",
+    "subcategory": "Bowling",
+    "icon": "🎳",
+    "color": "#1abc9c",
+    "path": "places/entertainment/entertainment_bowling_5.html"
+  },
+  {
+    "name": "Hospital 1",
+    "category": "health",
+    "subcategory": "Hospital",
+    "icon": "🏥",
+    "color": "#c0392b",
+    "path": "places/health/health_hospital_1.html"
+  },
+  {
+    "name": "Hospital 2",
+    "category": "health",
+    "subcategory": "Hospital",
+    "icon": "🏥",
+    "color": "#c0392b",
+    "path": "places/health/health_hospital_2.html"
+  },
+  {
+    "name": "Hospital 3",
+    "category": "health",
+    "subcategory": "Hospital",
+    "icon": "🏥",
+    "color": "#c0392b",
+    "path": "places/health/health_hospital_3.html"
+  },
+  {
+    "name": "Hospital 4",
+    "category": "health",
+    "subcategory": "Hospital",
+    "icon": "🏥",
+    "color": "#c0392b",
+    "path": "places/health/health_hospital_4.html"
+  },
+  {
+    "name": "Hospital 5",
+    "category": "health",
+    "subcategory": "Hospital",
+    "icon": "🏥",
+    "color": "#c0392b",
+    "path": "places/health/health_hospital_5.html"
+  },
+  {
+    "name": "Clinic 1",
+    "category": "health",
+    "subcategory": "Clinic",
+    "icon": "⚕️",
+    "color": "#e74c3c",
+    "path": "places/health/health_clinic_1.html"
+  },
+  {
+    "name": "Clinic 2",
+    "category": "health",
+    "subcategory": "Clinic",
+    "icon": "⚕️",
+    "color": "#e74c3c",
+    "path": "places/health/health_clinic_2.html"
+  },
+  {
+    "name": "Clinic 3",
+    "category": "health",
+    "subcategory": "Clinic",
+    "icon": "⚕️",
+    "color": "#e74c3c",
+    "path": "places/health/health_clinic_3.html"
+  },
+  {
+    "name": "Clinic 4",
+    "category": "health",
+    "subcategory": "Clinic",
+    "icon": "⚕️",
+    "color": "#e74c3c",
+    "path": "places/health/health_clinic_4.html"
+  },
+  {
+    "name": "Clinic 5",
+    "category": "health",
+    "subcategory": "Clinic",
+    "icon": "⚕️",
+    "color": "#e74c3c",
+    "path": "places/health/health_clinic_5.html"
+  },
+  {
+    "name": "Pharmacy 1",
+    "category": "health",
+    "subcategory": "Pharmacy",
+    "icon": "💊",
+    "color": "#27ae60",
+    "path": "places/health/health_pharmacy_1.html"
+  },
+  {
+    "name": "Pharmacy 2",
+    "category": "health",
+    "subcategory": "Pharmacy",
+    "icon": "💊",
+    "color": "#27ae60",
+    "path": "places/health/health_pharmacy_2.html"
+  },
+  {
+    "name": "Pharmacy 3",
+    "category": "health",
+    "subcategory": "Pharmacy",
+    "icon": "💊",
+    "color": "#27ae60",
+    "path": "places/health/health_pharmacy_3.html"
+  },
+  {
+    "name": "Pharmacy 4",
+    "category": "health",
+    "subcategory": "Pharmacy",
+    "icon": "💊",
+    "color": "#27ae60",
+    "path": "places/health/health_pharmacy_4.html"
+  },
+  {
+    "name": "Pharmacy 5",
+    "category": "health",
+    "subcategory": "Pharmacy",
+    "icon": "💊",
+    "color": "#27ae60",
+    "path": "places/health/health_pharmacy_5.html"
+  },
+  {
+    "name": "Dental Clinic 1",
+    "category": "health",
+    "subcategory": "Dental Clinic",
+    "icon": "🦷",
+    "color": "#2ecc71",
+    "path": "places/health/health_dental_clinic_1.html"
+  },
+  {
+    "name": "Dental Clinic 2",
+    "category": "health",
+    "subcategory": "Dental Clinic",
+    "icon": "🦷",
+    "color": "#2ecc71",
+    "path": "places/health/health_dental_clinic_2.html"
+  },
+  {
+    "name": "Dental Clinic 3",
+    "category": "health",
+    "subcategory": "Dental Clinic",
+    "icon": "🦷",
+    "color": "#2ecc71",
+    "path": "places/health/health_dental_clinic_3.html"
+  },
+  {
+    "name": "Dental Clinic 4",
+    "category": "health",
+    "subcategory": "Dental Clinic",
+    "icon": "🦷",
+    "color": "#2ecc71",
+    "path": "places/health/health_dental_clinic_4.html"
+  },
+  {
+    "name": "Dental Clinic 5",
+    "category": "health",
+    "subcategory": "Dental Clinic",
+    "icon": "🦷",
+    "color": "#2ecc71",
+    "path": "places/health/health_dental_clinic_5.html"
+  },
+  {
+    "name": "Eye Clinic 1",
+    "category": "health",
+    "subcategory": "Eye Clinic",
+    "icon": "👁️",
+    "color": "#3498db",
+    "path": "places/health/health_eye_clinic_1.html"
+  },
+  {
+    "name": "Eye Clinic 2",
+    "category": "health",
+    "subcategory": "Eye Clinic",
+    "icon": "👁️",
+    "color": "#3498db",
+    "path": "places/health/health_eye_clinic_2.html"
+  },
+  {
+    "name": "Eye Clinic 3",
+    "category": "health",
+    "subcategory": "Eye Clinic",
+    "icon": "👁️",
+    "color": "#3498db",
+    "path": "places/health/health_eye_clinic_3.html"
+  },
+  {
+    "name": "Eye Clinic 4",
+    "category": "health",
+    "subcategory": "Eye Clinic",
+    "icon": "👁️",
+    "color": "#3498db",
+    "path": "places/health/health_eye_clinic_4.html"
+  },
+  {
+    "name": "Eye Clinic 5",
+    "category": "health",
+    "subcategory": "Eye Clinic",
+    "icon": "👁️",
+    "color": "#3498db",
+    "path": "places/health/health_eye_clinic_5.html"
+  },
+  {
+    "name": "Veterinary 1",
+    "category": "health",
+    "subcategory": "Veterinary",
+    "icon": "🐾",
+    "color": "#9b59b6",
+    "path": "places/health/health_veterinary_1.html"
+  },
+  {
+    "name": "Veterinary 2",
+    "category": "health",
+    "subcategory": "Veterinary",
+    "icon": "🐾",
+    "color": "#9b59b6",
+    "path": "places/health/health_veterinary_2.html"
+  },
+  {
+    "name": "Veterinary 3",
+    "category": "health",
+    "subcategory": "Veterinary",
+    "icon": "🐾",
+    "color": "#9b59b6",
+    "path": "places/health/health_veterinary_3.html"
+  },
+  {
+    "name": "Veterinary 4",
+    "category": "health",
+    "subcategory": "Veterinary",
+    "icon": "🐾",
+    "color": "#9b59b6",
+    "path": "places/health/health_veterinary_4.html"
+  },
+  {
+    "name": "Veterinary 5",
+    "category": "health",
+    "subcategory": "Veterinary",
+    "icon": "🐾",
+    "color": "#9b59b6",
+    "path": "places/health/health_veterinary_5.html"
+  },
+  {
+    "name": "University 1",
+    "category": "education",
+    "subcategory": "University",
+    "icon": "🎓",
+    "color": "#2980b9",
+    "path": "places/education/education_university_1.html"
+  },
+  {
+    "name": "University 2",
+    "category": "education",
+    "subcategory": "University",
+    "icon": "🎓",
+    "color": "#2980b9",
+    "path": "places/education/education_university_2.html"
+  },
+  {
+    "name": "University 3",
+    "category": "education",
+    "subcategory": "University",
+    "icon": "🎓",
+    "color": "#2980b9",
+    "path": "places/education/education_university_3.html"
+  },
+  {
+    "name": "University 4",
+    "category": "education",
+    "subcategory": "University",
+    "icon": "🎓",
+    "color": "#2980b9",
+    "path": "places/education/education_university_4.html"
+  },
+  {
+    "name": "University 5",
+    "category": "education",
+    "subcategory": "University",
+    "icon": "🎓",
+    "color": "#2980b9",
+    "path": "places/education/education_university_5.html"
+  },
+  {
+    "name": "School 1",
+    "category": "education",
+    "subcategory": "School",
+    "icon": "🏫",
+    "color": "#3498db",
+    "path": "places/education/education_school_1.html"
+  },
+  {
+    "name": "School 2",
+    "category": "education",
+    "subcategory": "School",
+    "icon": "🏫",
+    "color": "#3498db",
+    "path": "places/education/education_school_2.html"
+  },
+  {
+    "name": "School 3",
+    "category": "education",
+    "subcategory": "School",
+    "icon": "🏫",
+    "color": "#3498db",
+    "path": "places/education/education_school_3.html"
+  },
+  {
+    "name": "School 4",
+    "category": "education",
+    "subcategory": "School",
+    "icon": "🏫",
+    "color": "#3498db",
+    "path": "places/education/education_school_4.html"
+  },
+  {
+    "name": "School 5",
+    "category": "education",
+    "subcategory": "School",
+    "icon": "🏫",
+    "color": "#3498db",
+    "path": "places/education/education_school_5.html"
+  },
+  {
+    "name": "Library 1",
+    "category": "education",
+    "subcategory": "Library",
+    "icon": "📚",
+    "color": "#16a085",
+    "path": "places/education/education_library_1.html"
+  },
+  {
+    "name": "Library 2",
+    "category": "education",
+    "subcategory": "Library",
+    "icon": "📚",
+    "color": "#16a085",
+    "path": "places/education/education_library_2.html"
+  },
+  {
+    "name": "Library 3",
+    "category": "education",
+    "subcategory": "Library",
+    "icon": "📚",
+    "color": "#16a085",
+    "path": "places/education/education_library_3.html"
+  },
+  {
+    "name": "Library 4",
+    "category": "education",
+    "subcategory": "Library",
+    "icon": "📚",
+    "color": "#16a085",
+    "path": "places/education/education_library_4.html"
+  },
+  {
+    "name": "Library 5",
+    "category": "education",
+    "subcategory": "Library",
+    "icon": "📚",
+    "color": "#16a085",
+    "path": "places/education/education_library_5.html"
+  },
+  {
+    "name": "Training Center 1",
+    "category": "education",
+    "subcategory": "Training Center",
+    "icon": "📖",
+    "color": "#27ae60",
+    "path": "places/education/education_training_center_1.html"
+  },
+  {
+    "name": "Training Center 2",
+    "category": "education",
+    "subcategory": "Training Center",
+    "icon": "📖",
+    "color": "#27ae60",
+    "path": "places/education/education_training_center_2.html"
+  },
+  {
+    "name": "Training Center 3",
+    "category": "education",
+    "subcategory": "Training Center",
+    "icon": "📖",
+    "color": "#27ae60",
+    "path": "places/education/education_training_center_3.html"
+  },
+  {
+    "name": "Training Center 4",
+    "category": "education",
+    "subcategory": "Training Center",
+    "icon": "📖",
+    "color": "#27ae60",
+    "path": "places/education/education_training_center_4.html"
+  },
+  {
+    "name": "Training Center 5",
+    "category": "education",
+    "subcategory": "Training Center",
+    "icon": "📖",
+    "color": "#27ae60",
+    "path": "places/education/education_training_center_5.html"
+  },
+  {
+    "name": "Preschool 1",
+    "category": "education",
+    "subcategory": "Preschool",
+    "icon": "🧒",
+    "color": "#f39c12",
+    "path": "places/education/education_preschool_1.html"
+  },
+  {
+    "name": "Preschool 2",
+    "category": "education",
+    "subcategory": "Preschool",
+    "icon": "🧒",
+    "color": "#f39c12",
+    "path": "places/education/education_preschool_2.html"
+  },
+  {
+    "name": "Preschool 3",
+    "category": "education",
+    "subcategory": "Preschool",
+    "icon": "🧒",
+    "color": "#f39c12",
+    "path": "places/education/education_preschool_3.html"
+  },
+  {
+    "name": "Preschool 4",
+    "category": "education",
+    "subcategory": "Preschool",
+    "icon": "🧒",
+    "color": "#f39c12",
+    "path": "places/education/education_preschool_4.html"
+  },
+  {
+    "name": "Preschool 5",
+    "category": "education",
+    "subcategory": "Preschool",
+    "icon": "🧒",
+    "color": "#f39c12",
+    "path": "places/education/education_preschool_5.html"
+  },
+  {
+    "name": "Bank 1",
+    "category": "services",
+    "subcategory": "Bank",
+    "icon": "🏦",
+    "color": "#34495e",
+    "path": "places/services/services_bank_1.html"
+  },
+  {
+    "name": "Bank 2",
+    "category": "services",
+    "subcategory": "Bank",
+    "icon": "🏦",
+    "color": "#34495e",
+    "path": "places/services/services_bank_2.html"
+  },
+  {
+    "name": "Bank 3",
+    "category": "services",
+    "subcategory": "Bank",
+    "icon": "🏦",
+    "color": "#34495e",
+    "path": "places/services/services_bank_3.html"
+  },
+  {
+    "name": "Bank 4",
+    "category": "services",
+    "subcategory": "Bank",
+    "icon": "🏦",
+    "color": "#34495e",
+    "path": "places/services/services_bank_4.html"
+  },
+  {
+    "name": "Bank 5",
+    "category": "services",
+    "subcategory": "Bank",
+    "icon": "🏦",
+    "color": "#34495e",
+    "path": "places/services/services_bank_5.html"
+  },
+  {
+    "name": "Post Office 1",
+    "category": "services",
+    "subcategory": "Post Office",
+    "icon": "📮",
+    "color": "#7f8c8d",
+    "path": "places/services/services_post_office_1.html"
+  },
+  {
+    "name": "Post Office 2",
+    "category": "services",
+    "subcategory": "Post Office",
+    "icon": "📮",
+    "color": "#7f8c8d",
+    "path": "places/services/services_post_office_2.html"
+  },
+  {
+    "name": "Post Office 3",
+    "category": "services",
+    "subcategory": "Post Office",
+    "icon": "📮",
+    "color": "#7f8c8d",
+    "path": "places/services/services_post_office_3.html"
+  },
+  {
+    "name": "Post Office 4",
+    "category": "services",
+    "subcategory": "Post Office",
+    "icon": "📮",
+    "color": "#7f8c8d",
+    "path": "places/services/services_post_office_4.html"
+  },
+  {
+    "name": "Post Office 5",
+    "category": "services",
+    "subcategory": "Post Office",
+    "icon": "📮",
+    "color": "#7f8c8d",
+    "path": "places/services/services_post_office_5.html"
+  },
+  {
+    "name": "Salon 1",
+    "category": "services",
+    "subcategory": "Salon",
+    "icon": "💇",
+    "color": "#e91e63",
+    "path": "places/services/services_salon_1.html"
+  },
+  {
+    "name": "Salon 2",
+    "category": "services",
+    "subcategory": "Salon",
+    "icon": "💇",
+    "color": "#e91e63",
+    "path": "places/services/services_salon_2.html"
+  },
+  {
+    "name": "Salon 3",
+    "category": "services",
+    "subcategory": "Salon",
+    "icon": "💇",
+    "color": "#e91e63",
+    "path": "places/services/services_salon_3.html"
+  },
+  {
+    "name": "Salon 4",
+    "category": "services",
+    "subcategory": "Salon",
+    "icon": "💇",
+    "color": "#e91e63",
+    "path": "places/services/services_salon_4.html"
+  },
+  {
+    "name": "Salon 5",
+    "category": "services",
+    "subcategory": "Salon",
+    "icon": "💇",
+    "color": "#e91e63",
+    "path": "places/services/services_salon_5.html"
+  },
+  {
+    "name": "Spa 1",
+    "category": "services",
+    "subcategory": "Spa",
+    "icon": "🧖",
+    "color": "#9c27b0",
+    "path": "places/services/services_spa_1.html"
+  },
+  {
+    "name": "Spa 2",
+    "category": "services",
+    "subcategory": "Spa",
+    "icon": "🧖",
+    "color": "#9c27b0",
+    "path": "places/services/services_spa_2.html"
+  },
+  {
+    "name": "Spa 3",
+    "category": "services",
+    "subcategory": "Spa",
+    "icon": "🧖",
+    "color": "#9c27b0",
+    "path": "places/services/services_spa_3.html"
+  },
+  {
+    "name": "Spa 4",
+    "category": "services",
+    "subcategory": "Spa",
+    "icon": "🧖",
+    "color": "#9c27b0",
+    "path": "places/services/services_spa_4.html"
+  },
+  {
+    "name": "Spa 5",
+    "category": "services",
+    "subcategory": "Spa",
+    "icon": "🧖",
+    "color": "#9c27b0",
+    "path": "places/services/services_spa_5.html"
+  },
+  {
+    "name": "Laundry 1",
+    "category": "services",
+    "subcategory": "Laundry",
+    "icon": "🧺",
+    "color": "#3f51b5",
+    "path": "places/services/services_laundry_1.html"
+  },
+  {
+    "name": "Laundry 2",
+    "category": "services",
+    "subcategory": "Laundry",
+    "icon": "🧺",
+    "color": "#3f51b5",
+    "path": "places/services/services_laundry_2.html"
+  },
+  {
+    "name": "Laundry 3",
+    "category": "services",
+    "subcategory": "Laundry",
+    "icon": "🧺",
+    "color": "#3f51b5",
+    "path": "places/services/services_laundry_3.html"
+  },
+  {
+    "name": "Laundry 4",
+    "category": "services",
+    "subcategory": "Laundry",
+    "icon": "🧺",
+    "color": "#3f51b5",
+    "path": "places/services/services_laundry_4.html"
+  },
+  {
+    "name": "Laundry 5",
+    "category": "services",
+    "subcategory": "Laundry",
+    "icon": "🧺",
+    "color": "#3f51b5",
+    "path": "places/services/services_laundry_5.html"
+  },
+  {
+    "name": "Repair Shop 1",
+    "category": "services",
+    "subcategory": "Repair Shop",
+    "icon": "🔧",
+    "color": "#ff9800",
+    "path": "places/services/services_repair_shop_1.html"
+  },
+  {
+    "name": "Repair Shop 2",
+    "category": "services",
+    "subcategory": "Repair Shop",
+    "icon": "🔧",
+    "color": "#ff9800",
+    "path": "places/services/services_repair_shop_2.html"
+  },
+  {
+    "name": "Repair Shop 3",
+    "category": "services",
+    "subcategory": "Repair Shop",
+    "icon": "🔧",
+    "color": "#ff9800",
+    "path": "places/services/services_repair_shop_3.html"
+  },
+  {
+    "name": "Repair Shop 4",
+    "category": "services",
+    "subcategory": "Repair Shop",
+    "icon": "🔧",
+    "color": "#ff9800",
+    "path": "places/services/services_repair_shop_4.html"
+  },
+  {
+    "name": "Repair Shop 5",
+    "category": "services",
+    "subcategory": "Repair Shop",
+    "icon": "🔧",
+    "color": "#ff9800",
+    "path": "places/services/services_repair_shop_5.html"
+  },
+  {
+    "name": "Legal Services 1",
+    "category": "services",
+    "subcategory": "Legal Services",
+    "icon": "⚖️",
+    "color": "#795548",
+    "path": "places/services/services_legal_services_1.html"
+  },
+  {
+    "name": "Legal Services 2",
+    "category": "services",
+    "subcategory": "Legal Services",
+    "icon": "⚖️",
+    "color": "#795548",
+    "path": "places/services/services_legal_services_2.html"
+  },
+  {
+    "name": "Legal Services 3",
+    "category": "services",
+    "subcategory": "Legal Services",
+    "icon": "⚖️",
+    "color": "#795548",
+    "path": "places/services/services_legal_services_3.html"
+  },
+  {
+    "name": "Legal Services 4",
+    "category": "services",
+    "subcategory": "Legal Services",
+    "icon": "⚖️",
+    "color": "#795548",
+    "path": "places/services/services_legal_services_4.html"
+  },
+  {
+    "name": "Legal Services 5",
+    "category": "services",
+    "subcategory": "Legal Services",
+    "icon": "⚖️",
+    "color": "#795548",
+    "path": "places/services/services_legal_services_5.html"
+  },
+  {
+    "name": "Accounting 1",
+    "category": "services",
+    "subcategory": "Accounting",
+    "icon": "💼",
+    "color": "#607d8b",
+    "path": "places/services/services_accounting_1.html"
+  },
+  {
+    "name": "Accounting 2",
+    "category": "services",
+    "subcategory": "Accounting",
+    "icon": "💼",
+    "color": "#607d8b",
+    "path": "places/services/services_accounting_2.html"
+  },
+  {
+    "name": "Accounting 3",
+    "category": "services",
+    "subcategory": "Accounting",
+    "icon": "💼",
+    "color": "#607d8b",
+    "path": "places/services/services_accounting_3.html"
+  },
+  {
+    "name": "Accounting 4",
+    "category": "services",
+    "subcategory": "Accounting",
+    "icon": "💼",
+    "color": "#607d8b",
+    "path": "places/services/services_accounting_4.html"
+  },
+  {
+    "name": "Accounting 5",
+    "category": "services",
+    "subcategory": "Accounting",
+    "icon": "💼",
+    "color": "#607d8b",
+    "path": "places/services/services_accounting_5.html"
+  },
+  {
+    "name": "Museum 1",
+    "category": "attractions",
+    "subcategory": "Museum",
+    "icon": "🏛️",
+    "color": "#8e44ad",
+    "path": "places/attractions/attractions_museum_1.html"
+  },
+  {
+    "name": "Museum 2",
+    "category": "attractions",
+    "subcategory": "Museum",
+    "icon": "🏛️",
+    "color": "#8e44ad",
+    "path": "places/attractions/attractions_museum_2.html"
+  },
+  {
+    "name": "Museum 3",
+    "category": "attractions",
+    "subcategory": "Museum",
+    "icon": "🏛️",
+    "color": "#8e44ad",
+    "path": "places/attractions/attractions_museum_3.html"
+  },
+  {
+    "name": "Museum 4",
+    "category": "attractions",
+    "subcategory": "Museum",
+    "icon": "🏛️",
+    "color": "#8e44ad",
+    "path": "places/attractions/attractions_museum_4.html"
+  },
+  {
+    "name": "Museum 5",
+    "category": "attractions",
+    "subcategory": "Museum",
+    "icon": "🏛️",
+    "color": "#8e44ad",
+    "path": "places/attractions/attractions_museum_5.html"
+  },
+  {
+    "name": "Art Gallery 1",
+    "category": "attractions",
+    "subcategory": "Art Gallery",
+    "icon": "🎨",
+    "color": "#9b59b6",
+    "path": "places/attractions/attractions_art_gallery_1.html"
+  },
+  {
+    "name": "Art Gallery 2",
+    "category": "attractions",
+    "subcategory": "Art Gallery",
+    "icon": "🎨",
+    "color": "#9b59b6",
+    "path": "places/attractions/attractions_art_gallery_2.html"
+  },
+  {
+    "name": "Art Gallery 3",
+    "category": "attractions",
+    "subcategory": "Art Gallery",
+    "icon": "🎨",
+    "color": "#9b59b6",
+    "path": "places/attractions/attractions_art_gallery_3.html"
+  },
+  {
+    "name": "Art Gallery 4",
+    "category": "attractions",
+    "subcategory": "Art Gallery",
+    "icon": "🎨",
+    "color": "#9b59b6",
+    "path": "places/attractions/attractions_art_gallery_4.html"
+  },
+  {
+    "name": "Art Gallery 5",
+    "category": "attractions",
+    "subcategory": "Art Gallery",
+    "icon": "🎨",
+    "color": "#9b59b6",
+    "path": "places/attractions/attractions_art_gallery_5.html"
+  },
+  {
+    "name": "Zoo 1",
+    "category": "attractions",
+    "subcategory": "Zoo",
+    "icon": "🦁",
+    "color": "#16a085",
+    "path": "places/attractions/attractions_zoo_1.html"
+  },
+  {
+    "name": "Zoo 2",
+    "category": "attractions",
+    "subcategory": "Zoo",
+    "icon": "🦁",
+    "color": "#16a085",
+    "path": "places/attractions/attractions_zoo_2.html"
+  },
+  {
+    "name": "Zoo 3",
+    "category": "attractions",
+    "subcategory": "Zoo",
+    "icon": "🦁",
+    "color": "#16a085",
+    "path": "places/attractions/attractions_zoo_3.html"
+  },
+  {
+    "name": "Zoo 4",
+    "category": "attractions",
+    "subcategory": "Zoo",
+    "icon": "🦁",
+    "color": "#16a085",
+    "path": "places/attractions/attractions_zoo_4.html"
+  },
+  {
+    "name": "Zoo 5",
+    "category": "attractions",
+    "subcategory": "Zoo",
+    "icon": "🦁",
+    "color": "#16a085",
+    "path": "places/attractions/attractions_zoo_5.html"
+  },
+  {
+    "name": "Aquarium 1",
+    "category": "attractions",
+    "subcategory": "Aquarium",
+    "icon": "🐠",
+    "color": "#1abc9c",
+    "path": "places/attractions/attractions_aquarium_1.html"
+  },
+  {
+    "name": "Aquarium 2",
+    "category": "attractions",
+    "subcategory": "Aquarium",
+    "icon": "🐠",
+    "color": "#1abc9c",
+    "path": "places/attractions/attractions_aquarium_2.html"
+  },
+  {
+    "name": "Aquarium 3",
+    "category": "attractions",
+    "subcategory": "Aquarium",
+    "icon": "🐠",
+    "color": "#1abc9c",
+    "path": "places/attractions/attractions_aquarium_3.html"
+  },
+  {
+    "name": "Aquarium 4",
+    "category": "attractions",
+    "subcategory": "Aquarium",
+    "icon": "🐠",
+    "color": "#1abc9c",
+    "path": "places/attractions/attractions_aquarium_4.html"
+  },
+  {
+    "name": "Aquarium 5",
+    "category": "attractions",
+    "subcategory": "Aquarium",
+    "icon": "🐠",
+    "color": "#1abc9c",
+    "path": "places/attractions/attractions_aquarium_5.html"
+  },
+  {
+    "name": "Park 1",
+    "category": "attractions",
+    "subcategory": "Park",
+    "icon": "🌳",
+    "color": "#27ae60",
+    "path": "places/attractions/attractions_park_1.html"
+  },
+  {
+    "name": "Park 2",
+    "category": "attractions",
+    "subcategory": "Park",
+    "icon": "🌳",
+    "color": "#27ae60",
+    "path": "places/attractions/attractions_park_2.html"
+  },
+  {
+    "name": "Park 3",
+    "category": "attractions",
+    "subcategory": "Park",
+    "icon": "🌳",
+    "color": "#27ae60",
+    "path": "places/attractions/attractions_park_3.html"
+  },
+  {
+    "name": "Park 4",
+    "category": "attractions",
+    "subcategory": "Park",
+    "icon": "🌳",
+    "color": "#27ae60",
+    "path": "places/attractions/attractions_park_4.html"
+  },
+  {
+    "name": "Park 5",
+    "category": "attractions",
+    "subcategory": "Park",
+    "icon": "🌳",
+    "color": "#27ae60",
+    "path": "places/attractions/attractions_park_5.html"
+  },
+  {
+    "name": "Garden 1",
+    "category": "attractions",
+    "subcategory": "Garden",
+    "icon": "🌸",
+    "color": "#2ecc71",
+    "path": "places/attractions/attractions_garden_1.html"
+  },
+  {
+    "name": "Garden 2",
+    "category": "attractions",
+    "subcategory": "Garden",
+    "icon": "🌸",
+    "color": "#2ecc71",
+    "path": "places/attractions/attractions_garden_2.html"
+  },
+  {
+    "name": "Garden 3",
+    "category": "attractions",
+    "subcategory": "Garden",
+    "icon": "🌸",
+    "color": "#2ecc71",
+    "path": "places/attractions/attractions_garden_3.html"
+  },
+  {
+    "name": "Garden 4",
+    "category": "attractions",
+    "subcategory": "Garden",
+    "icon": "🌸",
+    "color": "#2ecc71",
+    "path": "places/attractions/attractions_garden_4.html"
+  },
+  {
+    "name": "Garden 5",
+    "category": "attractions",
+    "subcategory": "Garden",
+    "icon": "🌸",
+    "color": "#2ecc71",
+    "path": "places/attractions/attractions_garden_5.html"
+  },
+  {
+    "name": "Monument 1",
+    "category": "attractions",
+    "subcategory": "Monument",
+    "icon": "🗽",
+    "color": "#f39c12",
+    "path": "places/attractions/attractions_monument_1.html"
+  },
+  {
+    "name": "Monument 2",
+    "category": "attractions",
+    "subcategory": "Monument",
+    "icon": "🗽",
+    "color": "#f39c12",
+    "path": "places/attractions/attractions_monument_2.html"
+  },
+  {
+    "name": "Monument 3",
+    "category": "attractions",
+    "subcategory": "Monument",
+    "icon": "🗽",
+    "color": "#f39c12",
+    "path": "places/attractions/attractions_monument_3.html"
+  },
+  {
+    "name": "Monument 4",
+    "category": "attractions",
+    "subcategory": "Monument",
+    "icon": "🗽",
+    "color": "#f39c12",
+    "path": "places/attractions/attractions_monument_4.html"
+  },
+  {
+    "name": "Monument 5",
+    "category": "attractions",
+    "subcategory": "Monument",
+    "icon": "🗽",
+    "color": "#f39c12",
+    "path": "places/attractions/attractions_monument_5.html"
+  },
+  {
+    "name": "Theme Park 1",
+    "category": "attractions",
+    "subcategory": "Theme Park",
+    "icon": "🎢",
+    "color": "#e67e22",
+    "path": "places/attractions/attractions_theme_park_1.html"
+  },
+  {
+    "name": "Theme Park 2",
+    "category": "attractions",
+    "subcategory": "Theme Park",
+    "icon": "🎢",
+    "color": "#e67e22",
+    "path": "places/attractions/attractions_theme_park_2.html"
+  },
+  {
+    "name": "Theme Park 3",
+    "category": "attractions",
+    "subcategory": "Theme Park",
+    "icon": "🎢",
+    "color": "#e67e22",
+    "path": "places/attractions/attractions_theme_park_3.html"
+  },
+  {
+    "name": "Theme Park 4",
+    "category": "attractions",
+    "subcategory": "Theme Park",
+    "icon": "🎢",
+    "color": "#e67e22",
+    "path": "places/attractions/attractions_theme_park_4.html"
+  },
+  {
+    "name": "Theme Park 5",
+    "category": "attractions",
+    "subcategory": "Theme Park",
+    "icon": "🎢",
+    "color": "#e67e22",
+    "path": "places/attractions/attractions_theme_park_5.html"
+  },
+  {
+    "name": "Beach 1",
+    "category": "attractions",
+    "subcategory": "Beach",
+    "icon": "🏖️",
+    "color": "#3498db",
+    "path": "places/attractions/attractions_beach_1.html"
+  },
+  {
+    "name": "Beach 2",
+    "category": "attractions",
+    "subcategory": "Beach",
+    "icon": "🏖️",
+    "color": "#3498db",
+    "path": "places/attractions/attractions_beach_2.html"
+  },
+  {
+    "name": "Beach 3",
+    "category": "attractions",
+    "subcategory": "Beach",
+    "icon": "🏖️",
+    "color": "#3498db",
+    "path": "places/attractions/attractions_beach_3.html"
+  },
+  {
+    "name": "Beach 4",
+    "category": "attractions",
+    "subcategory": "Beach",
+    "icon": "🏖️",
+    "color": "#3498db",
+    "path": "places/attractions/attractions_beach_4.html"
+  },
+  {
+    "name": "Beach 5",
+    "category": "attractions",
+    "subcategory": "Beach",
+    "icon": "🏖️",
+    "color": "#3498db",
+    "path": "places/attractions/attractions_beach_5.html"
+  },
+  {
+    "name": "Viewpoint 1",
+    "category": "attractions",
+    "subcategory": "Viewpoint",
+    "icon": "🌄",
+    "color": "#2980b9",
+    "path": "places/attractions/attractions_viewpoint_1.html"
+  },
+  {
+    "name": "Viewpoint 2",
+    "category": "attractions",
+    "subcategory": "Viewpoint",
+    "icon": "🌄",
+    "color": "#2980b9",
+    "path": "places/attractions/attractions_viewpoint_2.html"
+  },
+  {
+    "name": "Viewpoint 3",
+    "category": "attractions",
+    "subcategory": "Viewpoint",
+    "icon": "🌄",
+    "color": "#2980b9",
+    "path": "places/attractions/attractions_viewpoint_3.html"
+  },
+  {
+    "name": "Viewpoint 4",
+    "category": "attractions",
+    "subcategory": "Viewpoint",
+    "icon": "🌄",
+    "color": "#2980b9",
+    "path": "places/attractions/attractions_viewpoint_4.html"
+  },
+  {
+    "name": "Viewpoint 5",
+    "category": "attractions",
+    "subcategory": "Viewpoint",
+    "icon": "🌄",
+    "color": "#2980b9",
+    "path": "places/attractions/attractions_viewpoint_5.html"
+  },
+  {
+    "name": "Airport 1",
+    "category": "transportation",
+    "subcategory": "Airport",
+    "icon": "✈️",
+    "color": "#34495e",
+    "path": "places/transportation/transportation_airport_1.html"
+  },
+  {
+    "name": "Airport 2",
+    "category": "transportation",
+    "subcategory": "Airport",
+    "icon": "✈️",
+    "color": "#34495e",
+    "path": "places/transportation/transportation_airport_2.html"
+  },
+  {
+    "name": "Airport 3",
+    "category": "transportation",
+    "subcategory": "Airport",
+    "icon": "✈️",
+    "color": "#34495e",
+    "path": "places/transportation/transportation_airport_3.html"
+  },
+  {
+    "name": "Airport 4",
+    "category": "transportation",
+    "subcategory": "Airport",
+    "icon": "✈️",
+    "color": "#34495e",
+    "path": "places/transportation/transportation_airport_4.html"
+  },
+  {
+    "name": "Airport 5",
+    "category": "transportation",
+    "subcategory": "Airport",
+    "icon": "✈️",
+    "color": "#34495e",
+    "path": "places/transportation/transportation_airport_5.html"
+  },
+  {
+    "name": "Train Station 1",
+    "category": "transportation",
+    "subcategory": "Train Station",
+    "icon": "🚂",
+    "color": "#2c3e50",
+    "path": "places/transportation/transportation_train_station_1.html"
+  },
+  {
+    "name": "Train Station 2",
+    "category": "transportation",
+    "subcategory": "Train Station",
+    "icon": "🚂",
+    "color": "#2c3e50",
+    "path": "places/transportation/transportation_train_station_2.html"
+  },
+  {
+    "name": "Train Station 3",
+    "category": "transportation",
+    "subcategory": "Train Station",
+    "icon": "🚂",
+    "color": "#2c3e50",
+    "path": "places/transportation/transportation_train_station_3.html"
+  },
+  {
+    "name": "Train Station 4",
+    "category": "transportation",
+    "subcategory": "Train Station",
+    "icon": "🚂",
+    "color": "#2c3e50",
+    "path": "places/transportation/transportation_train_station_4.html"
+  },
+  {
+    "name": "Train Station 5",
+    "category": "transportation",
+    "subcategory": "Train Station",
+    "icon": "🚂",
+    "color": "#2c3e50",
+    "path": "places/transportation/transportation_train_station_5.html"
+  },
+  {
+    "name": "Bus Station 1",
+    "category": "transportation",
+    "subcategory": "Bus Station",
+    "icon": "🚌",
+    "color": "#7f8c8d",
+    "path": "places/transportation/transportation_bus_station_1.html"
+  },
+  {
+    "name": "Bus Station 2",
+    "category": "transportation",
+    "subcategory": "Bus Station",
+    "icon": "🚌",
+    "color": "#7f8c8d",
+    "path": "places/transportation/transportation_bus_station_2.html"
+  },
+  {
+    "name": "Bus Station 3",
+    "category": "transportation",
+    "subcategory": "Bus Station",
+    "icon": "🚌",
+    "color": "#7f8c8d",
+    "path": "places/transportation/transportation_bus_station_3.html"
+  },
+  {
+    "name": "Bus Station 4",
+    "category": "transportation",
+    "subcategory": "Bus Station",
+    "icon": "🚌",
+    "color": "#7f8c8d",
+    "path": "places/transportation/transportation_bus_station_4.html"
+  },
+  {
+    "name": "Bus Station 5",
+    "category": "transportation",
+    "subcategory": "Bus Station",
+    "icon": "🚌",
+    "color": "#7f8c8d",
+    "path": "places/transportation/transportation_bus_station_5.html"
+  },
+  {
+    "name": "Parking 1",
+    "category": "transportation",
+    "subcategory": "Parking",
+    "icon": "🅿️",
+    "color": "#95a5a6",
+    "path": "places/transportation/transportation_parking_1.html"
+  },
+  {
+    "name": "Parking 2",
+    "category": "transportation",
+    "subcategory": "Parking",
+    "icon": "🅿️",
+    "color": "#95a5a6",
+    "path": "places/transportation/transportation_parking_2.html"
+  },
+  {
+    "name": "Parking 3",
+    "category": "transportation",
+    "subcategory": "Parking",
+    "icon": "🅿️",
+    "color": "#95a5a6",
+    "path": "places/transportation/transportation_parking_3.html"
+  },
+  {
+    "name": "Parking 4",
+    "category": "transportation",
+    "subcategory": "Parking",
+    "icon": "🅿️",
+    "color": "#95a5a6",
+    "path": "places/transportation/transportation_parking_4.html"
+  },
+  {
+    "name": "Parking 5",
+    "category": "transportation",
+    "subcategory": "Parking",
+    "icon": "🅿️",
+    "color": "#95a5a6",
+    "path": "places/transportation/transportation_parking_5.html"
+  },
+  {
+    "name": "Church 1",
+    "category": "religious",
+    "subcategory": "Church",
+    "icon": "⛪",
+    "color": "#8e44ad",
+    "path": "places/religious/religious_church_1.html"
+  },
+  {
+    "name": "Church 2",
+    "category": "religious",
+    "subcategory": "Church",
+    "icon": "⛪",
+    "color": "#8e44ad",
+    "path": "places/religious/religious_church_2.html"
+  },
+  {
+    "name": "Church 3",
+    "category": "religious",
+    "subcategory": "Church",
+    "icon": "⛪",
+    "color": "#8e44ad",
+    "path": "places/religious/religious_church_3.html"
+  },
+  {
+    "name": "Church 4",
+    "category": "religious",
+    "subcategory": "Church",
+    "icon": "⛪",
+    "color": "#8e44ad",
+    "path": "places/religious/religious_church_4.html"
+  },
+  {
+    "name": "Church 5",
+    "category": "religious",
+    "subcategory": "Church",
+    "icon": "⛪",
+    "color": "#8e44ad",
+    "path": "places/religious/religious_church_5.html"
+  },
+  {
+    "name": "Mosque 1",
+    "category": "religious",
+    "subcategory": "Mosque",
+    "icon": "🕌",
+    "color": "#9b59b6",
+    "path": "places/religious/religious_mosque_1.html"
+  },
+  {
+    "name": "Mosque 2",
+    "category": "religious",
+    "subcategory": "Mosque",
+    "icon": "🕌",
+    "color": "#9b59b6",
+    "path": "places/religious/religious_mosque_2.html"
+  },
+  {
+    "name": "Mosque 3",
+    "category": "religious",
+    "subcategory": "Mosque",
+    "icon": "🕌",
+    "color": "#9b59b6",
+    "path": "places/religious/religious_mosque_3.html"
+  },
+  {
+    "name": "Mosque 4",
+    "category": "religious",
+    "subcategory": "Mosque",
+    "icon": "🕌",
+    "color": "#9b59b6",
+    "path": "places/religious/religious_mosque_4.html"
+  },
+  {
+    "name": "Mosque 5",
+    "category": "religious",
+    "subcategory": "Mosque",
+    "icon": "🕌",
+    "color": "#9b59b6",
+    "path": "places/religious/religious_mosque_5.html"
+  },
+  {
+    "name": "Temple 1",
+    "category": "religious",
+    "subcategory": "Temple",
+    "icon": "🛕",
+    "color": "#e67e22",
+    "path": "places/religious/religious_temple_1.html"
+  },
+  {
+    "name": "Temple 2",
+    "category": "religious",
+    "subcategory": "Temple",
+    "icon": "🛕",
+    "color": "#e67e22",
+    "path": "places/religious/religious_temple_2.html"
+  },
+  {
+    "name": "Temple 3",
+    "category": "religious",
+    "subcategory": "Temple",
+    "icon": "🛕",
+    "color": "#e67e22",
+    "path": "places/religious/religious_temple_3.html"
+  },
+  {
+    "name": "Temple 4",
+    "category": "religious",
+    "subcategory": "Temple",
+    "icon": "🛕",
+    "color": "#e67e22",
+    "path": "places/religious/religious_temple_4.html"
+  },
+  {
+    "name": "Temple 5",
+    "category": "religious",
+    "subcategory": "Temple",
+    "icon": "🛕",
+    "color": "#e67e22",
+    "path": "places/religious/religious_temple_5.html"
+  },
+  {
+    "name": "Synagogue 1",
+    "category": "religious",
+    "subcategory": "Synagogue",
+    "icon": "🕍",
+    "color": "#3498db",
+    "path": "places/religious/religious_synagogue_1.html"
+  },
+  {
+    "name": "Synagogue 2",
+    "category": "religious",
+    "subcategory": "Synagogue",
+    "icon": "🕍",
+    "color": "#3498db",
+    "path": "places/religious/religious_synagogue_2.html"
+  },
+  {
+    "name": "Synagogue 3",
+    "category": "religious",
+    "subcategory": "Synagogue",
+    "icon": "🕍",
+    "color": "#3498db",
+    "path": "places/religious/religious_synagogue_3.html"
+  },
+  {
+    "name": "Synagogue 4",
+    "category": "religious",
+    "subcategory": "Synagogue",
+    "icon": "🕍",
+    "color": "#3498db",
+    "path": "places/religious/religious_synagogue_4.html"
+  },
+  {
+    "name": "Synagogue 5",
+    "category": "religious",
+    "subcategory": "Synagogue",
+    "icon": "🕍",
+    "color": "#3498db",
+    "path": "places/religious/religious_synagogue_5.html"
+  },
+  {
+    "name": "Gym 1",
+    "category": "sports",
+    "subcategory": "Gym",
+    "icon": "💪",
+    "color": "#e74c3c",
+    "path": "places/sports/sports_gym_1.html"
+  },
+  {
+    "name": "Gym 2",
+    "category": "sports",
+    "subcategory": "Gym",
+    "icon": "💪",
+    "color": "#e74c3c",
+    "path": "places/sports/sports_gym_2.html"
+  },
+  {
+    "name": "Gym 3",
+    "category": "sports",
+    "subcategory": "Gym",
+    "icon": "💪",
+    "color": "#e74c3c",
+    "path": "places/sports/sports_gym_3.html"
+  },
+  {
+    "name": "Gym 4",
+    "category": "sports",
+    "subcategory": "Gym",
+    "icon": "💪",
+    "color": "#e74c3c",
+    "path": "places/sports/sports_gym_4.html"
+  },
+  {
+    "name": "Gym 5",
+    "category": "sports",
+    "subcategory": "Gym",
+    "icon": "💪",
+    "color": "#e74c3c",
+    "path": "places/sports/sports_gym_5.html"
+  },
+  {
+    "name": "Stadium 1",
+    "category": "sports",
+    "subcategory": "Stadium",
+    "icon": "🏟️",
+    "color": "#c0392b",
+    "path": "places/sports/sports_stadium_1.html"
+  },
+  {
+    "name": "Stadium 2",
+    "category": "sports",
+    "subcategory": "Stadium",
+    "icon": "🏟️",
+    "color": "#c0392b",
+    "path": "places/sports/sports_stadium_2.html"
+  },
+  {
+    "name": "Stadium 3",
+    "category": "sports",
+    "subcategory": "Stadium",
+    "icon": "🏟️",
+    "color": "#c0392b",
+    "path": "places/sports/sports_stadium_3.html"
+  },
+  {
+    "name": "Stadium 4",
+    "category": "sports",
+    "subcategory": "Stadium",
+    "icon": "🏟️",
+    "color": "#c0392b",
+    "path": "places/sports/sports_stadium_4.html"
+  },
+  {
+    "name": "Stadium 5",
+    "category": "sports",
+    "subcategory": "Stadium",
+    "icon": "🏟️",
+    "color": "#c0392b",
+    "path": "places/sports/sports_stadium_5.html"
+  },
+  {
+    "name": "Swimming Pool 1",
+    "category": "sports",
+    "subcategory": "Swimming Pool",
+    "icon": "🏊",
+    "color": "#3498db",
+    "path": "places/sports/sports_swimming_pool_1.html"
+  },
+  {
+    "name": "Swimming Pool 2",
+    "category": "sports",
+    "subcategory": "Swimming Pool",
+    "icon": "🏊",
+    "color": "#3498db",
+    "path": "places/sports/sports_swimming_pool_2.html"
+  },
+  {
+    "name": "Swimming Pool 3",
+    "category": "sports",
+    "subcategory": "Swimming Pool",
+    "icon": "🏊",
+    "color": "#3498db",
+    "path": "places/sports/sports_swimming_pool_3.html"
+  },
+  {
+    "name": "Swimming Pool 4",
+    "category": "sports",
+    "subcategory": "Swimming Pool",
+    "icon": "🏊",
+    "color": "#3498db",
+    "path": "places/sports/sports_swimming_pool_4.html"
+  },
+  {
+    "name": "Swimming Pool 5",
+    "category": "sports",
+    "subcategory": "Swimming Pool",
+    "icon": "🏊",
+    "color": "#3498db",
+    "path": "places/sports/sports_swimming_pool_5.html"
+  },
+  {
+    "name": "Tennis Court 1",
+    "category": "sports",
+    "subcategory": "Tennis Court",
+    "icon": "🎾",
+    "color": "#f39c12",
+    "path": "places/sports/sports_tennis_court_1.html"
+  },
+  {
+    "name": "Tennis Court 2",
+    "category": "sports",
+    "subcategory": "Tennis Court",
+    "icon": "🎾",
+    "color": "#f39c12",
+    "path": "places/sports/sports_tennis_court_2.html"
+  },
+  {
+    "name": "Tennis Court 3",
+    "category": "sports",
+    "subcategory": "Tennis Court",
+    "icon": "🎾",
+    "color": "#f39c12",
+    "path": "places/sports/sports_tennis_court_3.html"
+  },
+  {
+    "name": "Tennis Court 4",
+    "category": "sports",
+    "subcategory": "Tennis Court",
+    "icon": "🎾",
+    "color": "#f39c12",
+    "path": "places/sports/sports_tennis_court_4.html"
+  },
+  {
+    "name": "Tennis Court 5",
+    "category": "sports",
+    "subcategory": "Tennis Court",
+    "icon": "🎾",
+    "color": "#f39c12",
+    "path": "places/sports/sports_tennis_court_5.html"
+  },
+  {
+    "name": "Golf Course 1",
+    "category": "sports",
+    "subcategory": "Golf Course",
+    "icon": "⛳",
+    "color": "#27ae60",
+    "path": "places/sports/sports_golf_course_1.html"
+  },
+  {
+    "name": "Golf Course 2",
+    "category": "sports",
+    "subcategory": "Golf Course",
+    "icon": "⛳",
+    "color": "#27ae60",
+    "path": "places/sports/sports_golf_course_2.html"
+  },
+  {
+    "name": "Golf Course 3",
+    "category": "sports",
+    "subcategory": "Golf Course",
+    "icon": "⛳",
+    "color": "#27ae60",
+    "path": "places/sports/sports_golf_course_3.html"
+  },
+  {
+    "name": "Golf Course 4",
+    "category": "sports",
+    "subcategory": "Golf Course",
+    "icon": "⛳",
+    "color": "#27ae60",
+    "path": "places/sports/sports_golf_course_4.html"
+  },
+  {
+    "name": "Golf Course 5",
+    "category": "sports",
+    "subcategory": "Golf Course",
+    "icon": "⛳",
+    "color": "#27ae60",
+    "path": "places/sports/sports_golf_course_5.html"
+  },
+  {
+    "name": "Yoga Studio 1",
+    "category": "sports",
+    "subcategory": "Yoga Studio",
+    "icon": "🧘",
+    "color": "#9b59b6",
+    "path": "places/sports/sports_yoga_studio_1.html"
+  },
+  {
+    "name": "Yoga Studio 2",
+    "category": "sports",
+    "subcategory": "Yoga Studio",
+    "icon": "🧘",
+    "color": "#9b59b6",
+    "path": "places/sports/sports_yoga_studio_2.html"
+  },
+  {
+    "name": "Yoga Studio 3",
+    "category": "sports",
+    "subcategory": "Yoga Studio",
+    "icon": "🧘",
+    "color": "#9b59b6",
+    "path": "places/sports/sports_yoga_studio_3.html"
+  },
+  {
+    "name": "Yoga Studio 4",
+    "category": "sports",
+    "subcategory": "Yoga Studio",
+    "icon": "🧘",
+    "color": "#9b59b6",
+    "path": "places/sports/sports_yoga_studio_4.html"
+  },
+  {
+    "name": "Yoga Studio 5",
+    "category": "sports",
+    "subcategory": "Yoga Studio",
+    "icon": "🧘",
+    "color": "#9b59b6",
+    "path": "places/sports/sports_yoga_studio_5.html"
+  },
+  {
+    "name": "Gas Station 1",
+    "category": "automotive",
+    "subcategory": "Gas Station",
+    "icon": "⛽",
+    "color": "#e74c3c",
+    "path": "places/automotive/automotive_gas_station_1.html"
+  },
+  {
+    "name": "Gas Station 2",
+    "category": "automotive",
+    "subcategory": "Gas Station",
+    "icon": "⛽",
+    "color": "#e74c3c",
+    "path": "places/automotive/automotive_gas_station_2.html"
+  },
+  {
+    "name": "Gas Station 3",
+    "category": "automotive",
+    "subcategory": "Gas Station",
+    "icon": "⛽",
+    "color": "#e74c3c",
+    "path": "places/automotive/automotive_gas_station_3.html"
+  },
+  {
+    "name": "Gas Station 4",
+    "category": "automotive",
+    "subcategory": "Gas Station",
+    "icon": "⛽",
+    "color": "#e74c3c",
+    "path": "places/automotive/automotive_gas_station_4.html"
+  },
+  {
+    "name": "Gas Station 5",
+    "category": "automotive",
+    "subcategory": "Gas Station",
+    "icon": "⛽",
+    "color": "#e74c3c",
+    "path": "places/automotive/automotive_gas_station_5.html"
+  },
+  {
+    "name": "Car Wash 1",
+    "category": "automotive",
+    "subcategory": "Car Wash",
+    "icon": "🚿",
+    "color": "#3498db",
+    "path": "places/automotive/automotive_car_wash_1.html"
+  },
+  {
+    "name": "Car Wash 2",
+    "category": "automotive",
+    "subcategory": "Car Wash",
+    "icon": "🚿",
+    "color": "#3498db",
+    "path": "places/automotive/automotive_car_wash_2.html"
+  },
+  {
+    "name": "Car Wash 3",
+    "category": "automotive",
+    "subcategory": "Car Wash",
+    "icon": "🚿",
+    "color": "#3498db",
+    "path": "places/automotive/automotive_car_wash_3.html"
+  },
+  {
+    "name": "Car Wash 4",
+    "category": "automotive",
+    "subcategory": "Car Wash",
+    "icon": "🚿",
+    "color": "#3498db",
+    "path": "places/automotive/automotive_car_wash_4.html"
+  },
+  {
+    "name": "Car Wash 5",
+    "category": "automotive",
+    "subcategory": "Car Wash",
+    "icon": "🚿",
+    "color": "#3498db",
+    "path": "places/automotive/automotive_car_wash_5.html"
+  },
+  {
+    "name": "Auto Repair 1",
+    "category": "automotive",
+    "subcategory": "Auto Repair",
+    "icon": "🔧",
+    "color": "#f39c12",
+    "path": "places/automotive/automotive_auto_repair_1.html"
+  },
+  {
+    "name": "Auto Repair 2",
+    "category": "automotive",
+    "subcategory": "Auto Repair",
+    "icon": "🔧",
+    "color": "#f39c12",
+    "path": "places/automotive/automotive_auto_repair_2.html"
+  },
+  {
+    "name": "Auto Repair 3",
+    "category": "automotive",
+    "subcategory": "Auto Repair",
+    "icon": "🔧",
+    "color": "#f39c12",
+    "path": "places/automotive/automotive_auto_repair_3.html"
+  },
+  {
+    "name": "Auto Repair 4",
+    "category": "automotive",
+    "subcategory": "Auto Repair",
+    "icon": "🔧",
+    "color": "#f39c12",
+    "path": "places/automotive/automotive_auto_repair_4.html"
+  },
+  {
+    "name": "Auto Repair 5",
+    "category": "automotive",
+    "subcategory": "Auto Repair",
+    "icon": "🔧",
+    "color": "#f39c12",
+    "path": "places/automotive/automotive_auto_repair_5.html"
+  },
+  {
+    "name": "Car Dealership 1",
+    "category": "automotive",
+    "subcategory": "Car Dealership",
+    "icon": "🚗",
+    "color": "#2ecc71",
+    "path": "places/automotive/automotive_car_dealership_1.html"
+  },
+  {
+    "name": "Car Dealership 2",
+    "category": "automotive",
+    "subcategory": "Car Dealership",
+    "icon": "🚗",
+    "color": "#2ecc71",
+    "path": "places/automotive/automotive_car_dealership_2.html"
+  },
+  {
+    "name": "Car Dealership 3",
+    "category": "automotive",
+    "subcategory": "Car Dealership",
+    "icon": "🚗",
+    "color": "#2ecc71",
+    "path": "places/automotive/automotive_car_dealership_3.html"
+  },
+  {
+    "name": "Car Dealership 4",
+    "category": "automotive",
+    "subcategory": "Car Dealership",
+    "icon": "🚗",
+    "color": "#2ecc71",
+    "path": "places/automotive/automotive_car_dealership_4.html"
+  },
+  {
+    "name": "Car Dealership 5",
+    "category": "automotive",
+    "subcategory": "Car Dealership",
+    "icon": "🚗",
+    "color": "#2ecc71",
+    "path": "places/automotive/automotive_car_dealership_5.html"
+  },
+  {
+    "name": "Tire Shop 1",
+    "category": "automotive",
+    "subcategory": "Tire Shop",
+    "icon": "🛞",
+    "color": "#95a5a6",
+    "path": "places/automotive/automotive_tire_shop_1.html"
+  },
+  {
+    "name": "Tire Shop 2",
+    "category": "automotive",
+    "subcategory": "Tire Shop",
+    "icon": "🛞",
+    "color": "#95a5a6",
+    "path": "places/automotive/automotive_tire_shop_2.html"
+  },
+  {
+    "name": "Tire Shop 3",
+    "category": "automotive",
+    "subcategory": "Tire Shop",
+    "icon": "🛞",
+    "color": "#95a5a6",
+    "path": "places/automotive/automotive_tire_shop_3.html"
+  },
+  {
+    "name": "Tire Shop 4",
+    "category": "automotive",
+    "subcategory": "Tire Shop",
+    "icon": "🛞",
+    "color": "#95a5a6",
+    "path": "places/automotive/automotive_tire_shop_4.html"
+  },
+  {
+    "name": "Tire Shop 5",
+    "category": "automotive",
+    "subcategory": "Tire Shop",
+    "icon": "🛞",
+    "color": "#95a5a6",
+    "path": "places/automotive/automotive_tire_shop_5.html"
+  },
+  {
+    "name": "Car Rental 1",
+    "category": "automotive",
+    "subcategory": "Car Rental",
+    "icon": "🔑",
+    "color": "#34495e",
+    "path": "places/automotive/automotive_car_rental_1.html"
+  },
+  {
+    "name": "Car Rental 2",
+    "category": "automotive",
+    "subcategory": "Car Rental",
+    "icon": "🔑",
+    "color": "#34495e",
+    "path": "places/automotive/automotive_car_rental_2.html"
+  },
+  {
+    "name": "Car Rental 3",
+    "category": "automotive",
+    "subcategory": "Car Rental",
+    "icon": "🔑",
+    "color": "#34495e",
+    "path": "places/automotive/automotive_car_rental_3.html"
+  },
+  {
+    "name": "Car Rental 4",
+    "category": "automotive",
+    "subcategory": "Car Rental",
+    "icon": "🔑",
+    "color": "#34495e",
+    "path": "places/automotive/automotive_car_rental_4.html"
+  },
+  {
+    "name": "Car Rental 5",
+    "category": "automotive",
+    "subcategory": "Car Rental",
+    "icon": "🔑",
+    "color": "#34495e",
+    "path": "places/automotive/automotive_car_rental_5.html"
+  },
+  {
+    "name": "Supermarket 1",
+    "category": "grocery",
+    "subcategory": "Supermarket",
+    "icon": "🛒",
+    "color": "#27ae60",
+    "path": "places/grocery/grocery_supermarket_1.html"
+  },
+  {
+    "name": "Supermarket 2",
+    "category": "grocery",
+    "subcategory": "Supermarket",
+    "icon": "🛒",
+    "color": "#27ae60",
+    "path": "places/grocery/grocery_supermarket_2.html"
+  },
+  {
+    "name": "Supermarket 3",
+    "category": "grocery",
+    "subcategory": "Supermarket",
+    "icon": "🛒",
+    "color": "#27ae60",
+    "path": "places/grocery/grocery_supermarket_3.html"
+  },
+  {
+    "name": "Supermarket 4",
+    "category": "grocery",
+    "subcategory": "Supermarket",
+    "icon": "🛒",
+    "color": "#27ae60",
+    "path": "places/grocery/grocery_supermarket_4.html"
+  },
+  {
+    "name": "Supermarket 5",
+    "category": "grocery",
+    "subcategory": "Supermarket",
+    "icon": "🛒",
+    "color": "#27ae60",
+    "path": "places/grocery/grocery_supermarket_5.html"
+  },
+  {
+    "name": "Convenience Store 1",
+    "category": "grocery",
+    "subcategory": "Convenience Store",
+    "icon": "🏪",
+    "color": "#2ecc71",
+    "path": "places/grocery/grocery_convenience_store_1.html"
+  },
+  {
+    "name": "Convenience Store 2",
+    "category": "grocery",
+    "subcategory": "Convenience Store",
+    "icon": "🏪",
+    "color": "#2ecc71",
+    "path": "places/grocery/grocery_convenience_store_2.html"
+  },
+  {
+    "name": "Convenience Store 3",
+    "category": "grocery",
+    "subcategory": "Convenience Store",
+    "icon": "🏪",
+    "color": "#2ecc71",
+    "path": "places/grocery/grocery_convenience_store_3.html"
+  },
+  {
+    "name": "Convenience Store 4",
+    "category": "grocery",
+    "subcategory": "Convenience Store",
+    "icon": "🏪",
+    "color": "#2ecc71",
+    "path": "places/grocery/grocery_convenience_store_4.html"
+  },
+  {
+    "name": "Convenience Store 5",
+    "category": "grocery",
+    "subcategory": "Convenience Store",
+    "icon": "🏪",
+    "color": "#2ecc71",
+    "path": "places/grocery/grocery_convenience_store_5.html"
+  },
+  {
+    "name": "Farmers Market 1",
+    "category": "grocery",
+    "subcategory": "Farmers Market",
+    "icon": "🥕",
+    "color": "#f39c12",
+    "path": "places/grocery/grocery_farmers_market_1.html"
+  },
+  {
+    "name": "Farmers Market 2",
+    "category": "grocery",
+    "subcategory": "Farmers Market",
+    "icon": "🥕",
+    "color": "#f39c12",
+    "path": "places/grocery/grocery_farmers_market_2.html"
+  },
+  {
+    "name": "Farmers Market 3",
+    "category": "grocery",
+    "subcategory": "Farmers Market",
+    "icon": "🥕",
+    "color": "#f39c12",
+    "path": "places/grocery/grocery_farmers_market_3.html"
+  },
+  {
+    "name": "Farmers Market 4",
+    "category": "grocery",
+    "subcategory": "Farmers Market",
+    "icon": "🥕",
+    "color": "#f39c12",
+    "path": "places/grocery/grocery_farmers_market_4.html"
+  },
+  {
+    "name": "Farmers Market 5",
+    "category": "grocery",
+    "subcategory": "Farmers Market",
+    "icon": "🥕",
+    "color": "#f39c12",
+    "path": "places/grocery/grocery_farmers_market_5.html"
+  },
+  {
+    "name": "Organic Store 1",
+    "category": "grocery",
+    "subcategory": "Organic Store",
+    "icon": "🥬",
+    "color": "#16a085",
+    "path": "places/grocery/grocery_organic_store_1.html"
+  },
+  {
+    "name": "Organic Store 2",
+    "category": "grocery",
+    "subcategory": "Organic Store",
+    "icon": "🥬",
+    "color": "#16a085",
+    "path": "places/grocery/grocery_organic_store_2.html"
+  },
+  {
+    "name": "Organic Store 3",
+    "category": "grocery",
+    "subcategory": "Organic Store",
+    "icon": "🥬",
+    "color": "#16a085",
+    "path": "places/grocery/grocery_organic_store_3.html"
+  },
+  {
+    "name": "Organic Store 4",
+    "category": "grocery",
+    "subcategory": "Organic Store",
+    "icon": "🥬",
+    "color": "#16a085",
+    "path": "places/grocery/grocery_organic_store_4.html"
+  },
+  {
+    "name": "Organic Store 5",
+    "category": "grocery",
+    "subcategory": "Organic Store",
+    "icon": "🥬",
+    "color": "#16a085",
+    "path": "places/grocery/grocery_organic_store_5.html"
+  },
+  {
+    "name": "Bakery 1",
+    "category": "grocery",
+    "subcategory": "Bakery",
+    "icon": "🥖",
+    "color": "#e67e22",
+    "path": "places/grocery/grocery_bakery_1.html"
+  },
+  {
+    "name": "Bakery 2",
+    "category": "grocery",
+    "subcategory": "Bakery",
+    "icon": "🥖",
+    "color": "#e67e22",
+    "path": "places/grocery/grocery_bakery_2.html"
+  },
+  {
+    "name": "Bakery 3",
+    "category": "grocery",
+    "subcategory": "Bakery",
+    "icon": "🥖",
+    "color": "#e67e22",
+    "path": "places/grocery/grocery_bakery_3.html"
+  },
+  {
+    "name": "Bakery 4",
+    "category": "grocery",
+    "subcategory": "Bakery",
+    "icon": "🥖",
+    "color": "#e67e22",
+    "path": "places/grocery/grocery_bakery_4.html"
+  },
+  {
+    "name": "Bakery 5",
+    "category": "grocery",
+    "subcategory": "Bakery",
+    "icon": "🥖",
+    "color": "#e67e22",
+    "path": "places/grocery/grocery_bakery_5.html"
+  },
+  {
+    "name": "Butcher 1",
+    "category": "grocery",
+    "subcategory": "Butcher",
+    "icon": "🥩",
+    "color": "#c0392b",
+    "path": "places/grocery/grocery_butcher_1.html"
+  },
+  {
+    "name": "Butcher 2",
+    "category": "grocery",
+    "subcategory": "Butcher",
+    "icon": "🥩",
+    "color": "#c0392b",
+    "path": "places/grocery/grocery_butcher_2.html"
+  },
+  {
+    "name": "Butcher 3",
+    "category": "grocery",
+    "subcategory": "Butcher",
+    "icon": "🥩",
+    "color": "#c0392b",
+    "path": "places/grocery/grocery_butcher_3.html"
+  },
+  {
+    "name": "Butcher 4",
+    "category": "grocery",
+    "subcategory": "Butcher",
+    "icon": "🥩",
+    "color": "#c0392b",
+    "path": "places/grocery/grocery_butcher_4.html"
+  },
+  {
+    "name": "Butcher 5",
+    "category": "grocery",
+    "subcategory": "Butcher",
+    "icon": "🥩",
+    "color": "#c0392b",
+    "path": "places/grocery/grocery_butcher_5.html"
+  },
+  {
+    "name": "Pet Store 1",
+    "category": "miscellaneous",
+    "subcategory": "Pet Store",
+    "icon": "🐕",
+    "color": "#e67e22",
+    "path": "places/miscellaneous/miscellaneous_pet_store_1.html"
+  },
+  {
+    "name": "Pet Store 2",
+    "category": "miscellaneous",
+    "subcategory": "Pet Store",
+    "icon": "🐕",
+    "color": "#e67e22",
+    "path": "places/miscellaneous/miscellaneous_pet_store_2.html"
+  },
+  {
+    "name": "Pet Store 3",
+    "category": "miscellaneous",
+    "subcategory": "Pet Store",
+    "icon": "🐕",
+    "color": "#e67e22",
+    "path": "places/miscellaneous/miscellaneous_pet_store_3.html"
+  },
+  {
+    "name": "Pet Store 4",
+    "category": "miscellaneous",
+    "subcategory": "Pet Store",
+    "icon": "🐕",
+    "color": "#e67e22",
+    "path": "places/miscellaneous/miscellaneous_pet_store_4.html"
+  },
+  {
+    "name": "Pet Store 5",
+    "category": "miscellaneous",
+    "subcategory": "Pet Store",
+    "icon": "🐕",
+    "color": "#e67e22",
+    "path": "places/miscellaneous/miscellaneous_pet_store_5.html"
+  },
+  {
+    "name": "Florist 1",
+    "category": "miscellaneous",
+    "subcategory": "Florist",
+    "icon": "🌺",
+    "color": "#e91e63",
+    "path": "places/miscellaneous/miscellaneous_florist_1.html"
+  },
+  {
+    "name": "Florist 2",
+    "category": "miscellaneous",
+    "subcategory": "Florist",
+    "icon": "🌺",
+    "color": "#e91e63",
+    "path": "places/miscellaneous/miscellaneous_florist_2.html"
+  },
+  {
+    "name": "Florist 3",
+    "category": "miscellaneous",
+    "subcategory": "Florist",
+    "icon": "🌺",
+    "color": "#e91e63",
+    "path": "places/miscellaneous/miscellaneous_florist_3.html"
+  },
+  {
+    "name": "Florist 4",
+    "category": "miscellaneous",
+    "subcategory": "Florist",
+    "icon": "🌺",
+    "color": "#e91e63",
+    "path": "places/miscellaneous/miscellaneous_florist_4.html"
+  },
+  {
+    "name": "Florist 5",
+    "category": "miscellaneous",
+    "subcategory": "Florist",
+    "icon": "🌺",
+    "color": "#e91e63",
+    "path": "places/miscellaneous/miscellaneous_florist_5.html"
+  },
+  {
+    "name": "Photography Studio 1",
+    "category": "miscellaneous",
+    "subcategory": "Photography Studio",
+    "icon": "📷",
+    "color": "#9c27b0",
+    "path": "places/miscellaneous/miscellaneous_photography_studio_1.html"
+  },
+  {
+    "name": "Photography Studio 2",
+    "category": "miscellaneous",
+    "subcategory": "Photography Studio",
+    "icon": "📷",
+    "color": "#9c27b0",
+    "path": "places/miscellaneous/miscellaneous_photography_studio_2.html"
+  },
+  {
+    "name": "Photography Studio 3",
+    "category": "miscellaneous",
+    "subcategory": "Photography Studio",
+    "icon": "📷",
+    "color": "#9c27b0",
+    "path": "places/miscellaneous/miscellaneous_photography_studio_3.html"
+  },
+  {
+    "name": "Photography Studio 4",
+    "category": "miscellaneous",
+    "subcategory": "Photography Studio",
+    "icon": "📷",
+    "color": "#9c27b0",
+    "path": "places/miscellaneous/miscellaneous_photography_studio_4.html"
+  },
+  {
+    "name": "Photography Studio 5",
+    "category": "miscellaneous",
+    "subcategory": "Photography Studio",
+    "icon": "📷",
+    "color": "#9c27b0",
+    "path": "places/miscellaneous/miscellaneous_photography_studio_5.html"
+  },
+  {
+    "name": "Event Venue 1",
+    "category": "miscellaneous",
+    "subcategory": "Event Venue",
+    "icon": "🎉",
+    "color": "#673ab7",
+    "path": "places/miscellaneous/miscellaneous_event_venue_1.html"
+  },
+  {
+    "name": "Event Venue 2",
+    "category": "miscellaneous",
+    "subcategory": "Event Venue",
+    "icon": "🎉",
+    "color": "#673ab7",
+    "path": "places/miscellaneous/miscellaneous_event_venue_2.html"
+  },
+  {
+    "name": "Event Venue 3",
+    "category": "miscellaneous",
+    "subcategory": "Event Venue",
+    "icon": "🎉",
+    "color": "#673ab7",
+    "path": "places/miscellaneous/miscellaneous_event_venue_3.html"
+  },
+  {
+    "name": "Event Venue 4",
+    "category": "miscellaneous",
+    "subcategory": "Event Venue",
+    "icon": "🎉",
+    "color": "#673ab7",
+    "path": "places/miscellaneous/miscellaneous_event_venue_4.html"
+  },
+  {
+    "name": "Event Venue 5",
+    "category": "miscellaneous",
+    "subcategory": "Event Venue",
+    "icon": "🎉",
+    "color": "#673ab7",
+    "path": "places/miscellaneous/miscellaneous_event_venue_5.html"
+  },
+  {
+    "name": "Coworking Space 1",
+    "category": "miscellaneous",
+    "subcategory": "Coworking Space",
+    "icon": "💻",
+    "color": "#3f51b5",
+    "path": "places/miscellaneous/miscellaneous_coworking_space_1.html"
+  },
+  {
+    "name": "Coworking Space 2",
+    "category": "miscellaneous",
+    "subcategory": "Coworking Space",
+    "icon": "💻",
+    "color": "#3f51b5",
+    "path": "places/miscellaneous/miscellaneous_coworking_space_2.html"
+  },
+  {
+    "name": "Coworking Space 3",
+    "category": "miscellaneous",
+    "subcategory": "Coworking Space",
+    "icon": "💻",
+    "color": "#3f51b5",
+    "path": "places/miscellaneous/miscellaneous_coworking_space_3.html"
+  },
+  {
+    "name": "Coworking Space 4",
+    "category": "miscellaneous",
+    "subcategory": "Coworking Space",
+    "icon": "💻",
+    "color": "#3f51b5",
+    "path": "places/miscellaneous/miscellaneous_coworking_space_4.html"
+  },
+  {
+    "name": "Coworking Space 5",
+    "category": "miscellaneous",
+    "subcategory": "Coworking Space",
+    "icon": "💻",
+    "color": "#3f51b5",
+    "path": "places/miscellaneous/miscellaneous_coworking_space_5.html"
+  },
+  {
+    "name": "Tourist Info 1",
+    "category": "miscellaneous",
+    "subcategory": "Tourist Info",
+    "icon": "ℹ️",
+    "color": "#2196f3",
+    "path": "places/miscellaneous/miscellaneous_tourist_info_1.html"
+  },
+  {
+    "name": "Tourist Info 2",
+    "category": "miscellaneous",
+    "subcategory": "Tourist Info",
+    "icon": "ℹ️",
+    "color": "#2196f3",
+    "path": "places/miscellaneous/miscellaneous_tourist_info_2.html"
+  },
+  {
+    "name": "Tourist Info 3",
+    "category": "miscellaneous",
+    "subcategory": "Tourist Info",
+    "icon": "ℹ️",
+    "color": "#2196f3",
+    "path": "places/miscellaneous/miscellaneous_tourist_info_3.html"
+  },
+  {
+    "name": "Tourist Info 4",
+    "category": "miscellaneous",
+    "subcategory": "Tourist Info",
+    "icon": "ℹ️",
+    "color": "#2196f3",
+    "path": "places/miscellaneous/miscellaneous_tourist_info_4.html"
+  },
+  {
+    "name": "Tourist Info 5",
+    "category": "miscellaneous",
+    "subcategory": "Tourist Info",
+    "icon": "ℹ️",
+    "color": "#2196f3",
+    "path": "places/miscellaneous/miscellaneous_tourist_info_5.html"
+  },
+  {
+    "name": "Real Estate 1",
+    "category": "miscellaneous",
+    "subcategory": "Real Estate",
+    "icon": "🏘️",
+    "color": "#00bcd4",
+    "path": "places/miscellaneous/miscellaneous_real_estate_1.html"
+  },
+  {
+    "name": "Real Estate 2",
+    "category": "miscellaneous",
+    "subcategory": "Real Estate",
+    "icon": "🏘️",
+    "color": "#00bcd4",
+    "path": "places/miscellaneous/miscellaneous_real_estate_2.html"
+  },
+  {
+    "name": "Real Estate 3",
+    "category": "miscellaneous",
+    "subcategory": "Real Estate",
+    "icon": "🏘️",
+    "color": "#00bcd4",
+    "path": "places/miscellaneous/miscellaneous_real_estate_3.html"
+  },
+  {
+    "name": "Real Estate 4",
+    "category": "miscellaneous",
+    "subcategory": "Real Estate",
+    "icon": "🏘️",
+    "color": "#00bcd4",
+    "path": "places/miscellaneous/miscellaneous_real_estate_4.html"
+  },
+  {
+    "name": "Real Estate 5",
+    "category": "miscellaneous",
+    "subcategory": "Real Estate",
+    "icon": "🏘️",
+    "color": "#00bcd4",
+    "path": "places/miscellaneous/miscellaneous_real_estate_5.html"
+  },
+  {
+    "name": "Insurance 1",
+    "category": "miscellaneous",
+    "subcategory": "Insurance",
+    "icon": "🛡️",
+    "color": "#009688",
+    "path": "places/miscellaneous/miscellaneous_insurance_1.html"
+  },
+  {
+    "name": "Insurance 2",
+    "category": "miscellaneous",
+    "subcategory": "Insurance",
+    "icon": "🛡️",
+    "color": "#009688",
+    "path": "places/miscellaneous/miscellaneous_insurance_2.html"
+  },
+  {
+    "name": "Insurance 3",
+    "category": "miscellaneous",
+    "subcategory": "Insurance",
+    "icon": "🛡️",
+    "color": "#009688",
+    "path": "places/miscellaneous/miscellaneous_insurance_3.html"
+  },
+  {
+    "name": "Insurance 4",
+    "category": "miscellaneous",
+    "subcategory": "Insurance",
+    "icon": "🛡️",
+    "color": "#009688",
+    "path": "places/miscellaneous/miscellaneous_insurance_4.html"
+  },
+  {
+    "name": "Insurance 5",
+    "category": "miscellaneous",
+    "subcategory": "Insurance",
+    "icon": "🛡️",
+    "color": "#009688",
+    "path": "places/miscellaneous/miscellaneous_insurance_5.html"
+  },
+  {
+    "name": "Travel Agency 1",
+    "category": "miscellaneous",
+    "subcategory": "Travel Agency",
+    "icon": "✈️",
+    "color": "#4caf50",
+    "path": "places/miscellaneous/miscellaneous_travel_agency_1.html"
+  },
+  {
+    "name": "Travel Agency 2",
+    "category": "miscellaneous",
+    "subcategory": "Travel Agency",
+    "icon": "✈️",
+    "color": "#4caf50",
+    "path": "places/miscellaneous/miscellaneous_travel_agency_2.html"
+  },
+  {
+    "name": "Travel Agency 3",
+    "category": "miscellaneous",
+    "subcategory": "Travel Agency",
+    "icon": "✈️",
+    "color": "#4caf50",
+    "path": "places/miscellaneous/miscellaneous_travel_agency_3.html"
+  },
+  {
+    "name": "Travel Agency 4",
+    "category": "miscellaneous",
+    "subcategory": "Travel Agency",
+    "icon": "✈️",
+    "color": "#4caf50",
+    "path": "places/miscellaneous/miscellaneous_travel_agency_4.html"
+  },
+  {
+    "name": "Travel Agency 5",
+    "category": "miscellaneous",
+    "subcategory": "Travel Agency",
+    "icon": "✈️",
+    "color": "#4caf50",
+    "path": "places/miscellaneous/miscellaneous_travel_agency_5.html"
+  },
+  {
+    "name": "Furniture Store 1",
+    "category": "miscellaneous",
+    "subcategory": "Furniture Store",
+    "icon": "🛋️",
+    "color": "#8bc34a",
+    "path": "places/miscellaneous/miscellaneous_furniture_store_1.html"
+  },
+  {
+    "name": "Furniture Store 2",
+    "category": "miscellaneous",
+    "subcategory": "Furniture Store",
+    "icon": "🛋️",
+    "color": "#8bc34a",
+    "path": "places/miscellaneous/miscellaneous_furniture_store_2.html"
+  },
+  {
+    "name": "Furniture Store 3",
+    "category": "miscellaneous",
+    "subcategory": "Furniture Store",
+    "icon": "🛋️",
+    "color": "#8bc34a",
+    "path": "places/miscellaneous/miscellaneous_furniture_store_3.html"
+  },
+  {
+    "name": "Furniture Store 4",
+    "category": "miscellaneous",
+    "subcategory": "Furniture Store",
+    "icon": "🛋️",
+    "color": "#8bc34a",
+    "path": "places/miscellaneous/miscellaneous_furniture_store_4.html"
+  },
+  {
+    "name": "Furniture Store 5",
+    "category": "miscellaneous",
+    "subcategory": "Furniture Store",
+    "icon": "🛋️",
+    "color": "#8bc34a",
+    "path": "places/miscellaneous/miscellaneous_furniture_store_5.html"
+  }
+]
