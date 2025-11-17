@@ -1,13 +1,253 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Italian 3 | Modern Italian</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#1a1a2e;color:#eee}.hero{min-height:100vh;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;align-items:center;justify-content:center;text-align:center}.hero h1{font-size:5rem;font-weight:800;margin-bottom:2rem}.content{max-width:1200px;margin:0 auto;padding:4rem 2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}.card{background:#16213e;padding:2rem;border-radius:15px;transition:.3s}.card:hover{transform:translateY(-10px);box-shadow:0 10px 30px rgba(102,126,234,.3)}.card h3{color:#f39c12;font-size:1.8rem;margin-bottom:1rem}.price{color:#2ecc71;font-size:1.5rem;font-weight:600;margin:1rem 0}footer{background:#0f3460;padding:3rem 2rem;text-align:center;margin-top:4rem}.back{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#667eea;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back:hover{background:#764ba2;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:3rem}.grid{grid-template-columns:1fr}}</style></head>
-<body><div class="hero"><div><h1>🍝 Italian 3</h1><p style="font-size:1.5rem">Experience Italian Excellence</p></div></div>
-<div class="content"><h2 style="text-align:center;font-size:3rem;margin-bottom:3rem;color:#f39c12">Featured Dishes</h2><div class="grid">
-<div class="card"><h3>🍕 Gourmet Pizza</h3><p class="price">$21</p><p>Wood-fired perfection with premium ingredients</p></div>
-<div class="card"><h3>🍝 Pasta Special</h3><p class="price">$25</p><p>Handmade pasta with authentic Italian sauces</p></div>
-<div class="card"><h3>🥗 Fresh Salads</h3><p class="price">$17</p><p>Garden-fresh ingredients with house dressings</p></div>
-<div class="card"><h3>🍷 Wine Selection</h3><p class="price">$13-$53</p><p>Curated Italian wines from top vineyards</p></div>
-</div><div style="text-align:center;margin:4rem 0;padding:3rem;background:#16213e;border-radius:15px"><h3 style="font-size:2rem;margin-bottom:2rem;color:#f39c12">Visit Us Today</h3><p style="font-size:1.2rem;margin-bottom:1rem">📍 130 Italian Way, City 10003</p><p style="font-size:1.2rem;margin-bottom:1rem">📞 (555) 103-1003</p><p style="font-size:1.2rem">⏰ Daily: 11AM - 11PM</p></div></div>
-<footer><h3 style="margin-bottom:1rem">Italian 3</h3><p>Authentic Italian Cuisine Since 2003</p><a href="../../index.html" class="back">← Back to Directory</a></footer></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osteria Luna | Tuscan Countryside Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #E8D5B7 0%, #C9A86A 100%);
+            color: #3E2723;
+        }
+
+        .vineyard-pattern {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="20" y="60" font-size="40" opacity="0.05">🍇</text></svg>');
+            background-repeat: repeat;
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6B4226 0%, #4E342E 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #F5DEB3;
+            box-shadow: 0 8px 30px rgba(107, 66, 38, 0.4);
+        }
+
+        .moon-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: glow 4s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); text-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
+            50% { filter: brightness(1.2); text-shadow: 0 0 40px rgba(255, 255, 255, 0.6); }
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #6B4226;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 3px solid #6B4226;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .dish:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(107, 66, 38, 0.3);
+        }
+
+        .dish h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2rem;
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #6B4226;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.7;
+            color: #555;
+            font-weight: 300;
+        }
+
+        .tuscan-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #6B4226, #8B4513);
+            color: #F5DEB3;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .countryside-box {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border: 3px solid #8B4513;
+        }
+
+        .countryside-box h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 3rem;
+            color: #6B4226;
+            margin-bottom: 1rem;
+        }
+
+        .countryside-box p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #4E342E;
+            color: #F5DEB3;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .footer-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #6B4226, #8B4513);
+            color: #F5DEB3;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(107, 66, 38, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="vineyard-pattern"></div>
+
+    <header>
+        <div class="moon-icon">🌙</div>
+        <h1>Osteria Luna</h1>
+        <p class="tagline">Tuscan Countryside Dining</p>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">From Our Kitchen</h2>
+
+        <div class="menu">
+            <div class="dish">
+                <h3>Ribollita</h3>
+                <div class="price">$14</div>
+                <p class="description">Hearty Tuscan bread soup with kale, cannellini beans, and vegetables. Drizzled with olive oil.</p>
+                <span class="tuscan-badge">Traditional</span>
+            </div>
+
+            <div class="dish">
+                <h3>Pappardelle al Cinghiale</h3>
+                <div class="price">$26</div>
+                <p class="description">Wide ribbon pasta with wild boar ragu, tomatoes, and red wine sauce.</p>
+                <span class="tuscan-badge">House Favorite</span>
+            </div>
+
+            <div class="dish">
+                <h3>Bistecca alla Fiorentina</h3>
+                <div class="price">$48</div>
+                <p class="description">Grilled T-bone steak from Tuscan Chianina cattle, served with rosemary potatoes.</p>
+                <span class="tuscan-badge">Chef's Special</span>
+            </div>
+
+            <div class="dish">
+                <h3>Panzanella</h3>
+                <div class="price">$15</div>
+                <p class="description">Tuscan bread salad with tomatoes, red onion, basil, and aged balsamic.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Osso Buco</h3>
+                <div class="price">$32</div>
+                <p class="description">Braised veal shanks with white wine, tomatoes, and gremolata. Served with saffron risotto.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Cantucci e Vin Santo</h3>
+                <div class="price">$12</div>
+                <p class="description">Almond biscotti served with sweet dessert wine for dipping - a Tuscan tradition.</p>
+            </div>
+        </div>
+
+        <div class="countryside-box">
+            <h3>🍇 Under the Tuscan Moon 🍇</h3>
+            <p>Experience the rustic elegance of Tuscany's countryside. Our recipes come from generations of Tuscan nonnas, using ingredients sourced from local farms and vineyards. Every dish tells a story of the rolling hills and ancient olive groves of our homeland.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Osteria Luna</h3>
+        <p>📍 1348 Renaissance Drive, San Francisco, CA 94102</p>
+        <p>📞 (415) 134-8134 | ⏰ Mon-Thu: 5PM - 10PM, Fri-Sat: 5PM - 11PM</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
