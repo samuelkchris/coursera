@@ -1,1 +1,284 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>American 3</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#3498db;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#3498db}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#3498db}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #3498db}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#3498db}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#3498db;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🍔 American 3</h1></div><div class="hero"><h1>Welcome to American 3</h1><p>Your trusted American destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$25</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$31</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$21</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$38</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#3498db">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 409 Center Ave, City 40003</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 403-4003</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">American 3</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route 66 Diner | Classic American Roadside</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Baloo 2', cursive;
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #FFE66D 100%);
+            color: #2C3E50;
+        }
+
+        .road-stripes {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent 0,
+                transparent 50px,
+                rgba(255, 255, 255, 0.1) 50px,
+                rgba(255, 255, 255, 0.1) 60px
+            );
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 40px rgba(231, 76, 60, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .route-sign {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: neon 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon {
+            from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF6B6B; }
+            to { text-shadow: 0 0 20px #fff, 0 0 30px #FFE66D, 0 0 40px #FFE66D; }
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 6rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 5px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.8rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #E74C3C;
+            letter-spacing: 4px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 4px solid #4ECDC4;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .dish::before {
+            content: '🚗';
+            position: absolute;
+            font-size: 10rem;
+            top: -3rem;
+            right: -3rem;
+            opacity: 0.05;
+        }
+
+        .dish:hover {
+            transform: translateY(-12px) rotate(-1deg);
+            box-shadow: 0 20px 50px rgba(78, 205, 196, 0.4);
+            border-color: #FFE66D;
+        }
+
+        .dish h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            color: #E74C3C;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4ECDC4;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #555;
+            font-weight: 400;
+        }
+
+        .classic-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #E74C3C, #C0392B);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .roadside-box {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border: 4px solid #FFE66D;
+        }
+
+        .roadside-box h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4rem;
+            color: #E74C3C;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .roadside-box p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #555;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        footer {
+            background: #2C3E50;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .footer-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3.5rem;
+            color: #FFE66D;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #4ECDC4, #45B7AA);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(78, 205, 196, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .section-title { font-size: 3rem; }
+            .route-sign { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="road-stripes"></div>
+
+    <header>
+        <div class="route-sign">🛣️</div>
+        <h1>Route 66 Diner</h1>
+        <p class="tagline">Classic American Roadside</p>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">All-American Classics</h2>
+
+        <div class="menu">
+            <div class="dish">
+                <h3>The Mother Road Burger</h3>
+                <div class="price">$14</div>
+                <p class="description">Half-pound Angus beef, American cheese, crispy bacon, onion rings, and our secret sauce on a toasted brioche bun.</p>
+                <span class="classic-badge">Signature</span>
+            </div>
+
+            <div class="dish">
+                <h3>Chicken & Waffles</h3>
+                <div class="price">$16</div>
+                <p class="description">Crispy fried chicken on fluffy Belgian waffles with maple syrup and honey butter.</p>
+                <span class="classic-badge">Fan Favorite</span>
+            </div>
+
+            <div class="dish">
+                <h3>Classic Milkshake</h3>
+                <div class="price">$7</div>
+                <p class="description">Hand-spun thick milkshakes - chocolate, vanilla, strawberry, or peanut butter cup.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Loaded Chili Cheese Fries</h3>
+                <div class="price">$11</div>
+                <p class="description">Crispy fries topped with homemade beef chili, melted cheddar, bacon bits, and sour cream.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Patty Melt Deluxe</h3>
+                <div class="price">$13</div>
+                <p class="description">Grilled burger patty with Swiss cheese and caramelized onions on toasted rye bread.</p>
+                <span class="classic-badge">Classic</span>
+            </div>
+
+            <div class="dish">
+                <h3>Banana Split</h3>
+                <div class="price">$9</div>
+                <p class="description">Three scoops of ice cream, banana, hot fudge, whipped cream, nuts, and a cherry on top.</p>
+            </div>
+        </div>
+
+        <div class="roadside-box">
+            <h3>🚗 Historic Route 66 Since 1952 🚗</h3>
+            <p>Step back in time to the golden age of American road trips! Our chrome-accented diner sits on the legendary Route 66, serving travelers and locals alike since 1952. With original booths, a vintage jukebox, and classic American comfort food, we're your perfect pit stop on the Mother Road. Free refills on coffee and soda - just like the good old days!</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Route 66 Diner</h3>
+        <p>📍 1952 Historic Route 66, Williams, AZ 86046</p>
+        <p>📞 (928) 195-2195 | ⏰ Daily: 6AM - 10PM</p>
+        <p style="margin-top: 1rem; font-style: italic;">Vintage Jukebox & Free Wi-Fi</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
