@@ -1,1 +1,407 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Japanese 1</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#c41e3a;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#c41e3a}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#c41e3a}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #c41e3a}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#c41e3a}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#c41e3a;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🍱 Japanese 1</h1></div><div class="hero"><h1>Welcome to Japanese 1</h1><p>Your trusted Japanese destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$23</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$29</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$19</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$36</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#c41e3a">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 403 Center Ave, City 40001</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 401-4001</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">Japanese 1</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura House | Traditional Japanese Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --sakura: #FFB7C5;
+            --deep-red: #B91646;
+            --charcoal: #2F2F2F;
+            --cream: #FFF8F0;
+            --gold: #D4A574;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+        }
+
+        .sakura-petals {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(255, 183, 197, 0.1) 10px, transparent 10px),
+                radial-gradient(circle at 80% 60%, rgba(255, 183, 197, 0.08) 8px, transparent 8px),
+                radial-gradient(circle at 40% 80%, rgba(255, 183, 197, 0.12) 12px, transparent 12px);
+            background-size: 200px 200px, 250px 250px, 180px 180px;
+            animation: float 30s linear infinite;
+        }
+
+        @keyframes float {
+            from { background-position: 0 0, 0 0, 0 0; }
+            to { background-position: 200px 200px, -250px 250px, 180px -180px; }
+        }
+
+        nav {
+            background: var(--deep-red);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 20px rgba(185, 22, 70, 0.3);
+        }
+
+        .nav-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 2rem;
+            color: white;
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--sakura);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        .hero {
+            height: 85vh;
+            background: linear-gradient(135deg, var(--sakura) 0%, var(--deep-red) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '🌸';
+            position: absolute;
+            font-size: 30rem;
+            opacity: 0.15;
+            right: -5%;
+            animation: spin 20s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-text {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 6rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 1.3rem 3.5rem;
+            background: white;
+            color: var(--deep-red);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            position: relative;
+            z-index: 1;
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--deep-red);
+            font-weight: 900;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 4rem;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 2rem;
+        }
+
+        .item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            border: 2px solid var(--sakura);
+        }
+
+        .item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(185, 22, 70, 0.2);
+            border-color: var(--deep-red);
+        }
+
+        .item-image {
+            height: 180px;
+            background: linear-gradient(135deg, var(--sakura), var(--deep-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+        }
+
+        .item-content {
+            padding: 2rem;
+        }
+
+        .item h3 {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--deep-red);
+        }
+
+        .item-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .item-description {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .testimonials {
+            background: linear-gradient(to bottom, var(--cream), white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            border-top: 4px solid var(--sakura);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+
+        .author {
+            font-weight: 700;
+            color: var(--deep-red);
+        }
+
+        footer {
+            background: var(--deep-red);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--sakura);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .nav-links { display: none; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sakura-petals"></div>
+
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">🌸 Sakura House</div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Sakura House</h1>
+            <p class="tagline">Traditional Japanese Excellence</p>
+            <a href="#menu" class="cta">View Menu</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <h2 class="section-title">Authentic Japanese Dishes</h2>
+        <p class="section-subtitle">Prepared by master chefs with decades of experience</p>
+
+        <div class="menu-items">
+            <div class="item">
+                <div class="item-image">🍣</div>
+                <div class="item-content">
+                    <h3>Omakase Sushi</h3>
+                    <div class="item-price">$55</div>
+                    <p class="item-description">Chef's choice of 12 pieces of premium nigiri, featuring fresh toro, uni, and seasonal fish.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">🍜</div>
+                <div class="item-content">
+                    <h3>Tonkotsu Ramen</h3>
+                    <div class="item-price">$16</div>
+                    <p class="item-description">Rich pork bone broth simmered for 18 hours, served with chashu pork, soft egg, and fresh noodles.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">🍱</div>
+                <div class="item-content">
+                    <h3>Bento Box</h3>
+                    <div class="item-price">$22</div>
+                    <p class="item-description">Complete meal with teriyaki chicken, California roll, tempura, gyoza, rice, and miso soup.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">🦐</div>
+                <div class="item-content">
+                    <h3>Tempura Platter</h3>
+                    <div class="item-price">$18</div>
+                    <p class="item-description">Lightly battered shrimp and vegetables fried to golden perfection. Served with tentsuyu sauce.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">🥟</div>
+                <div class="item-content">
+                    <h3>Gyoza</h3>
+                    <div class="item-price">$9</div>
+                    <p class="item-description">Pan-fried pork dumplings with a crispy bottom and juicy filling. Six pieces per order.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-image">🍰</div>
+                <div class="item-content">
+                    <h3>Matcha Tiramisu</h3>
+                    <div class="item-price">$10</div>
+                    <p class="item-description">Japanese-Italian fusion dessert with layers of matcha-soaked ladyfingers and mascarpone cream.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials" id="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-subtitle">Hear what our guests have to say</p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The most authentic Japanese food outside of Tokyo! The omakase is absolutely worth it. Fresh fish, beautiful presentation, and incredible flavors."</p>
+                <p class="author">- Yuki Tanaka</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Sakura House is my go-to for ramen. The tonkotsu broth is rich and flavorful, and the noodles are always perfect. Cozy atmosphere too!"</p>
+                <p class="author">- Mike Johnson</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Everything here is delicious! The bento box is great value and the gyoza are the best I've had. Friendly staff and quick service."</p>
+                <p class="author">- Emma Chen</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3 style="font-family: 'Noto Sans JP', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">Sakura House</h3>
+        <p>📍 1234 Cherry Blossom Lane, Seattle, WA 98101</p>
+        <p>📞 (206) 123-4567 | ⏰ Tue-Sun: 11:30AM - 10PM (Closed Mondays)</p>
+        <p style="opacity: 0.8; margin-top: 1rem;">© 2024 Sakura House. All rights reserved.</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
