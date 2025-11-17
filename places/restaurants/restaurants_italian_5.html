@@ -1,13 +1,308 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Italian 5 | Modern Italian</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#1a1a2e;color:#eee}.hero{min-height:100vh;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;align-items:center;justify-content:center;text-align:center}.hero h1{font-size:5rem;font-weight:800;margin-bottom:2rem}.content{max-width:1200px;margin:0 auto;padding:4rem 2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}.card{background:#16213e;padding:2rem;border-radius:15px;transition:.3s}.card:hover{transform:translateY(-10px);box-shadow:0 10px 30px rgba(102,126,234,.3)}.card h3{color:#f39c12;font-size:1.8rem;margin-bottom:1rem}.price{color:#2ecc71;font-size:1.5rem;font-weight:600;margin:1rem 0}footer{background:#0f3460;padding:3rem 2rem;text-align:center;margin-top:4rem}.back{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#667eea;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back:hover{background:#764ba2;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:3rem}.grid{grid-template-columns:1fr}}</style></head>
-<body><div class="hero"><div><h1>🍝 Italian 5</h1><p style="font-size:1.5rem">Experience Italian Excellence</p></div></div>
-<div class="content"><h2 style="text-align:center;font-size:3rem;margin-bottom:3rem;color:#f39c12">Featured Dishes</h2><div class="grid">
-<div class="card"><h3>🍕 Gourmet Pizza</h3><p class="price">$23</p><p>Wood-fired perfection with premium ingredients</p></div>
-<div class="card"><h3>🍝 Pasta Special</h3><p class="price">$27</p><p>Handmade pasta with authentic Italian sauces</p></div>
-<div class="card"><h3>🥗 Fresh Salads</h3><p class="price">$19</p><p>Garden-fresh ingredients with house dressings</p></div>
-<div class="card"><h3>🍷 Wine Selection</h3><p class="price">$15-$55</p><p>Curated Italian wines from top vineyards</p></div>
-</div><div style="text-align:center;margin:4rem 0;padding:3rem;background:#16213e;border-radius:15px"><h3 style="font-size:2rem;margin-bottom:2rem;color:#f39c12">Visit Us Today</h3><p style="font-size:1.2rem;margin-bottom:1rem">📍 150 Italian Way, City 10005</p><p style="font-size:1.2rem;margin-bottom:1rem">📞 (555) 105-1005</p><p style="font-size:1.2rem">⏰ Daily: 11AM - 11PM</p></div></div>
-<footer><h3 style="margin-bottom:1rem">Italian 5</h3><p>Authentic Italian Cuisine Since 2005</p><a href="../../index.html" class="back">← Back to Directory</a></footer></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Venezia | Venetian Seafood & Romance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to bottom, #004E89 0%, #1A659E 50%, #F7B32B 100%);
+            color: #1A1A2E;
+            position: relative;
+        }
+
+        .water-reflection {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.03) 10px,
+                rgba(255, 255, 255, 0.03) 20px
+            );
+            z-index: -1;
+            animation: wave 8s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        header {
+            background: linear-gradient(135deg, #004E89 0%, #1A659E 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #F7F9FB;
+            box-shadow: 0 10px 40px rgba(0, 78, 137, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gondola {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-3deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 6rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 4px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.6rem;
+            letter-spacing: 5px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .canal-waves {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to right, transparent, rgba(247, 179, 43, 0.3), transparent);
+            animation: flow 5s linear infinite;
+        }
+
+        @keyframes flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #004E89;
+            font-weight: 700;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 3px solid #1A659E;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .dish::before {
+            content: '🛶';
+            position: absolute;
+            font-size: 8rem;
+            top: -2rem;
+            right: -2rem;
+            opacity: 0.05;
+            transform: rotate(25deg);
+        }
+
+        .dish:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 60px rgba(26, 101, 158, 0.4);
+            border-color: #F7B32B;
+        }
+
+        .dish h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.3rem;
+            color: #004E89;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #F7B32B;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #444;
+            font-weight: 300;
+        }
+
+        .venetian-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #F7B32B, #DAA520);
+            color: #004E89;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        .romance-box {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(247, 249, 251, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border: 3px solid #F7B32B;
+        }
+
+        .romance-box h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            color: #004E89;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .romance-box p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #2C3E50;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        footer {
+            background: #00283D;
+            color: #F7F9FB;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .footer-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: #F7B32B;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #1A659E, #004E89);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            border: 2px solid #F7B32B;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(247, 179, 43, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .section-title { font-size: 2.8rem; }
+            .gondola { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="water-reflection"></div>
+
+    <header>
+        <div class="gondola">🛶</div>
+        <h1>Ristorante Venezia</h1>
+        <p class="tagline">Venetian Seafood & Romance</p>
+        <div class="canal-waves"></div>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">Treasures of the Lagoon</h2>
+
+        <div class="menu">
+            <div class="dish">
+                <h3>Sarde in Saor</h3>
+                <div class="price">$16</div>
+                <p class="description">Sweet and sour sardines with onions, pine nuts, and raisins - a Venetian classic.</p>
+                <span class="venetian-badge">Traditional</span>
+            </div>
+
+            <div class="dish">
+                <h3>Risotto al Nero di Seppia</h3>
+                <div class="price">$24</div>
+                <p class="description">Black squid ink risotto with fresh cuttlefish, white wine, and parsley.</p>
+                <span class="venetian-badge">Signature</span>
+            </div>
+
+            <div class="dish">
+                <h3>Branzino al Sale</h3>
+                <div class="price">$42</div>
+                <p class="description">Whole Mediterranean sea bass baked in sea salt crust, served tableside.</p>
+                <span class="venetian-badge">Chef's Special</span>
+            </div>
+
+            <div class="dish">
+                <h3>Fegato alla Veneziana</h3>
+                <div class="price">$28</div>
+                <p class="description">Calf's liver with caramelized onions, white wine, and creamy polenta.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Baccalà Mantecato</h3>
+                <div class="price">$18</div>
+                <p class="description">Whipped salt cod mousse with olive oil, served on grilled polenta crostini.</p>
+                <span class="venetian-badge">Cicchetti</span>
+            </div>
+
+            <div class="dish">
+                <h3>Tiramisu Veneziano</h3>
+                <div class="price">$14</div>
+                <p class="description">Classic Venetian tiramisu with espresso-soaked ladyfingers and mascarpone cream.</p>
+            </div>
+        </div>
+
+        <div class="romance-box">
+            <h3>🎭 Romance on the Grand Canal 🎭</h3>
+            <p>Step into the enchanting world of Venice without leaving your table. Our intimate dining room recreates the magic of Venetian canals with live gondolier serenades on Friday and Saturday evenings. Each dish brings the authentic flavors of the floating city, crafted from recipes passed down through generations of Venetian fishermen and chefs.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Ristorante Venezia</h3>
+        <p>📍 717 Canal Street, Seattle, WA 98101</p>
+        <p>📞 (206) 717-7717 | ⏰ Tue-Sun: 5PM - 11PM, Closed Monday</p>
+        <p style="margin-top: 1rem; font-style: italic;">Live Gondolier Serenades Fri-Sat 7PM-10PM</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>

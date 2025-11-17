@@ -1,13 +1,307 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Italian 4 | Modern Italian</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#1a1a2e;color:#eee}.hero{min-height:100vh;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;align-items:center;justify-content:center;text-align:center}.hero h1{font-size:5rem;font-weight:800;margin-bottom:2rem}.content{max-width:1200px;margin:0 auto;padding:4rem 2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}.card{background:#16213e;padding:2rem;border-radius:15px;transition:.3s}.card:hover{transform:translateY(-10px);box-shadow:0 10px 30px rgba(102,126,234,.3)}.card h3{color:#f39c12;font-size:1.8rem;margin-bottom:1rem}.price{color:#2ecc71;font-size:1.5rem;font-weight:600;margin:1rem 0}footer{background:#0f3460;padding:3rem 2rem;text-align:center;margin-top:4rem}.back{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#667eea;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back:hover{background:#764ba2;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:3rem}.grid{grid-template-columns:1fr}}</style></head>
-<body><div class="hero"><div><h1>🍝 Italian 4</h1><p style="font-size:1.5rem">Experience Italian Excellence</p></div></div>
-<div class="content"><h2 style="text-align:center;font-size:3rem;margin-bottom:3rem;color:#f39c12">Featured Dishes</h2><div class="grid">
-<div class="card"><h3>🍕 Gourmet Pizza</h3><p class="price">$22</p><p>Wood-fired perfection with premium ingredients</p></div>
-<div class="card"><h3>🍝 Pasta Special</h3><p class="price">$26</p><p>Handmade pasta with authentic Italian sauces</p></div>
-<div class="card"><h3>🥗 Fresh Salads</h3><p class="price">$18</p><p>Garden-fresh ingredients with house dressings</p></div>
-<div class="card"><h3>🍷 Wine Selection</h3><p class="price">$14-$54</p><p>Curated Italian wines from top vineyards</p></div>
-</div><div style="text-align:center;margin:4rem 0;padding:3rem;background:#16213e;border-radius:15px"><h3 style="font-size:2rem;margin-bottom:2rem;color:#f39c12">Visit Us Today</h3><p style="font-size:1.2rem;margin-bottom:1rem">📍 140 Italian Way, City 10004</p><p style="font-size:1.2rem;margin-bottom:1rem">📞 (555) 104-1004</p><p style="font-size:1.2rem">⏰ Daily: 11AM - 11PM</p></div></div>
-<footer><h3 style="margin-bottom:1rem">Italian 4</h3><p>Authentic Italian Cuisine Since 2004</p><a href="../../index.html" class="back">← Back to Directory</a></footer></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Napolitana | Authentic Neapolitan Pizza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #CE2B37 0%, #009246 50%, #F4F5F0 100%);
+            color: #2C1810;
+            position: relative;
+        }
+
+        .flag-stripes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background: repeating-linear-gradient(
+                90deg,
+                #009246 0px,
+                #009246 33.33%,
+                #F4F5F0 33.33%,
+                #F4F5F0 66.66%,
+                #CE2B37 66.66%,
+                #CE2B37 100%
+            );
+        }
+
+        header {
+            background: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #F4F5F0;
+            box-shadow: 0 10px 40px rgba(183, 28, 28, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pizza-icon {
+            font-size: 7rem;
+            margin-bottom: 1rem;
+            animation: spin 20s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 5.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 1.6rem;
+            letter-spacing: 4px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .oven-flame {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(to top, #FF6B00, #FFA500, transparent);
+            animation: flicker 1.5s ease-in-out infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #D32F2F;
+            text-transform: uppercase;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 4px solid #D32F2F;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .dish::after {
+            content: '🍕';
+            position: absolute;
+            font-size: 12rem;
+            top: -4rem;
+            right: -4rem;
+            opacity: 0.03;
+            transform: rotate(-15deg);
+        }
+
+        .dish:hover {
+            transform: translateY(-12px) rotate(1deg);
+            box-shadow: 0 25px 60px rgba(211, 47, 47, 0.4);
+            border-color: #009246;
+        }
+
+        .dish h3 {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 2.2rem;
+            color: #D32F2F;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #009246;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #444;
+            font-weight: 300;
+        }
+
+        .authentic-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #009246, #008040);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .napoli-story {
+            background: linear-gradient(135deg, #F4F5F0 0%, #E0E0E0 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border: 4px solid #D32F2F;
+        }
+
+        .napoli-story h3 {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+            color: #D32F2F;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .napoli-story p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #2C1810;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        footer {
+            background: #1A1A1A;
+            color: #F4F5F0;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .footer-title {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+            color: #D32F2F;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #D32F2F, #B71C1C);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(211, 47, 47, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .section-title { font-size: 2.5rem; }
+            .pizza-icon { font-size: 5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="flag-stripes"></div>
+
+    <header>
+        <div class="pizza-icon">🍕</div>
+        <h1>Pizzeria Napolitana</h1>
+        <p class="tagline">Authentic Neapolitan Pizza</p>
+        <div class="oven-flame"></div>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">Wood-Fired Classics</h2>
+
+        <div class="menu">
+            <div class="dish">
+                <h3>Pizza Margherita</h3>
+                <div class="price">$16</div>
+                <p class="description">San Marzano tomatoes, fresh buffalo mozzarella, basil, extra virgin olive oil. The original.</p>
+                <span class="authentic-badge">DOC Certified</span>
+            </div>
+
+            <div class="dish">
+                <h3>Pizza Marinara</h3>
+                <div class="price">$14</div>
+                <p class="description">Tomato sauce, garlic, oregano, olive oil. No cheese - pure Neapolitan tradition.</p>
+                <span class="authentic-badge">Classic</span>
+            </div>
+
+            <div class="dish">
+                <h3>Pizza Diavola</h3>
+                <div class="price">$19</div>
+                <p class="description">Spicy salami, mozzarella, tomato sauce, chili oil, fresh basil.</p>
+                <span class="authentic-badge">Spicy</span>
+            </div>
+
+            <div class="dish">
+                <h3>Pizza Quattro Formaggi</h3>
+                <div class="price">$20</div>
+                <p class="description">Mozzarella, gorgonzola, parmesan, fontina. A cheese lover's dream.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Pizza Prosciutto e Rucola</h3>
+                <div class="price">$22</div>
+                <p class="description">Prosciutto di Parma, arugula, cherry tomatoes, parmesan shavings, mozzarella.</p>
+                <span class="authentic-badge">Premium</span>
+            </div>
+
+            <div class="dish">
+                <h3>Calzone Napoletano</h3>
+                <div class="price">$18</div>
+                <p class="description">Folded pizza filled with ricotta, mozzarella, salami, and tomato sauce.</p>
+            </div>
+        </div>
+
+        <div class="napoli-story">
+            <h3>🔥 From Naples with Fire 🔥</h3>
+            <p>Our wood-fired oven reaches 900°F, cooking each pizza in exactly 90 seconds - the authentic Neapolitan way. We use only imported Italian ingredients: San Marzano tomatoes, Caputo 00 flour, and buffalo mozzarella from Campania. Every pizza is hand-stretched and cooked to order, bringing you the true taste of Naples.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Pizzeria Napolitana</h3>
+        <p>📍 1889 Via Napoli, Boston, MA 02108</p>
+        <p>📞 (617) 188-9188 | ⏰ Mon-Thu: 11AM - 10PM, Fri-Sun: 11AM - 11PM</p>
+        <p style="margin-top: 1rem; font-style: italic;">Wood-Fired Oven Imported from Naples</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
