@@ -1,1 +1,287 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>American 2</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:#0f172a;color:#e2e8f0}.hero{min-height:100vh;background:linear-gradient(135deg,#3498dbdd,#3498db55),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="#3498db" width="1200" height="800"/></svg>');background-size:cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}.hero h1{font-size:4rem;font-weight:800;margin-bottom:1.5rem}.hero p{font-size:1.5rem;margin-bottom:2rem}.content{max-width:1200px;margin:0 auto;padding:4rem 2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}.card{background:#1e293b;padding:2.5rem;border-radius:16px;border:1px solid #334155;transition:.3s}.card:hover{transform:translateY(-5px);border-color:#3498db;box-shadow:0 10px 40px rgba(0,0,0,.3)}.card h3{font-size:1.8rem;color:#3498db;margin-bottom:1rem}.price{font-size:1.4rem;color:#10b981;font-weight:700;margin:1rem 0}footer{background:#020617;padding:4rem 2rem;text-align:center;margin-top:5rem}.btn{display:inline-block;padding:1rem 2.5rem;background:#3498db;color:#fff;text-decoration:none;border-radius:30px;margin-top:2rem;font-weight:600;transition:.3s}.btn:hover{transform:scale(1.05);box-shadow:0 5px 20px #3498db66}@media(max-width:768px){.hero h1{font-size:2.5rem}.grid{grid-template-columns:1fr}}</style></head><body><div class="hero"><div><h1>🍔 American 2</h1><p>Premium American Experience</p></div></div><div class="content"><h2 style="text-align:center;font-size:2.5rem;margin-bottom:3rem;color:#3498db">Our Services</h2><div class="grid"><div class="card"><h3>✨ Premium Service</h3><p class="price">$27</p><p>Top-quality service with attention to detail</p></div><div class="card"><h3>🎯 Expert Team</h3><p class="price">$32</p><p>Experienced professionals at your service</p></div><div class="card"><h3>⚡ Fast Delivery</h3><p class="price">$22</p><p>Quick and efficient service guaranteed</p></div><div class="card"><h3>💎 VIP Package</h3><p class="price">$47</p><p>Exclusive premium experience</p></div></div><div style="text-align:center;margin:4rem 0;padding:3rem;background:#1e293b;border-radius:16px;border:1px solid #334155"><h3 style="font-size:2rem;margin-bottom:2rem;color:#3498db">Visit Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 314 Main Street, City 30002</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 302-3002</p><p style="font-size:1.1rem">⏰ Open Daily 9AM - 9PM</p></div></div><footer><h3 style="margin-bottom:1rem;font-size:2rem">American 2</h3><p style="margin-bottom:2rem">Excellence in American Services</p><a href="../../index.html" class="btn">← Back to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smokehouse BBQ | Authentic Texas Barbecue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #3E2723 0%, #5D4037 50%, #6D4C41 100%);
+            color: #FFEAA7;
+        }
+
+        .smoke-effect {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text x="40" y="100" font-size="80" opacity="0.03">💨</text></svg>');
+            background-repeat: repeat;
+            z-index: -1;
+            animation: rise 15s linear infinite;
+        }
+
+        @keyframes rise {
+            from { background-position: 0 0; }
+            to { background-position: 0 -200px; }
+        }
+
+        header {
+            background: linear-gradient(135deg, #2C1810 0%, #1A0F0A 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #FF6B35;
+            box-shadow: 0 10px 40px rgba(44, 24, 16, 0.6);
+            border-bottom: 5px solid #D32F2F;
+        }
+
+        .bbq-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            animation: grill 3s ease-in-out infinite;
+        }
+
+        @keyframes grill {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg) scale(1.05); }
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 6rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #FF6B35;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 3px solid #D32F2F;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .dish::before {
+            content: '🔥';
+            position: absolute;
+            font-size: 10rem;
+            top: -3rem;
+            right: -3rem;
+            opacity: 0.1;
+        }
+
+        .dish:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 60px rgba(211, 47, 47, 0.5);
+            border-color: #FF6B35;
+        }
+
+        .dish h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            color: #FF6B35;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #FFEAA7;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: #E0E0E0;
+            font-weight: 400;
+        }
+
+        .smoke-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #D32F2F, #B71C1C);
+            color: #FFEAA7;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .texas-box {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(211, 47, 47, 0.2) 100%);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            border: 3px solid #D32F2F;
+        }
+
+        .texas-box h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4rem;
+            color: #FF6B35;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .texas-box p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #FFEAA7;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        footer {
+            background: #1A0F0A;
+            color: #FFEAA7;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+            border-top: 3px solid #D32F2F;
+        }
+
+        .footer-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3.5rem;
+            color: #FF6B35;
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #D32F2F, #B71C1C);
+            color: #FFEAA7;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(211, 47, 47, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .section-title { font-size: 3rem; }
+            .bbq-icon { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="smoke-effect"></div>
+
+    <header>
+        <div class="bbq-icon">🍖</div>
+        <h1>Smokehouse BBQ</h1>
+        <p class="tagline">Authentic Texas Barbecue</p>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">Slow-Smoked Meats</h2>
+
+        <div class="menu">
+            <div class="dish">
+                <h3>Beef Brisket</h3>
+                <div class="price">$24</div>
+                <p class="description">14-hour oak-smoked brisket with our signature dry rub. Sliced to order, melt-in-your-mouth tender.</p>
+                <span class="smoke-badge">14 Hours Smoked</span>
+            </div>
+
+            <div class="dish">
+                <h3>Pulled Pork</h3>
+                <div class="price">$18</div>
+                <p class="description">Hickory-smoked pork shoulder, hand-pulled and served with tangy Carolina sauce.</p>
+                <span class="smoke-badge">Hickory Smoked</span>
+            </div>
+
+            <div class="dish">
+                <h3>St. Louis Ribs</h3>
+                <div class="price">$28</div>
+                <p class="description">Full rack of ribs with our award-winning sweet & spicy glaze. Fall-off-the-bone perfection.</p>
+                <span class="smoke-badge">Award Winner</span>
+            </div>
+
+            <div class="dish">
+                <h3>Smoked Sausage Links</h3>
+                <div class="price">$16</div>
+                <p class="description">House-made jalapeño cheddar sausage, mesquite-smoked with a crispy snap.</p>
+            </div>
+
+            <div class="dish">
+                <h3>The Pitmaster Platter</h3>
+                <div class="price">$45</div>
+                <p class="description">Brisket, ribs, pulled pork, and sausage with cornbread, coleslaw, and beans. Feeds 2-3.</p>
+                <span class="smoke-badge">Best Value</span>
+            </div>
+
+            <div class="dish">
+                <h3>Smoked Mac & Cheese</h3>
+                <div class="price">$10</div>
+                <p class="description">Creamy three-cheese mac with bacon, smoked to golden perfection.</p>
+            </div>
+        </div>
+
+        <div class="texas-box">
+            <h3>🔥 Low & Slow Since 1976 🔥</h3>
+            <p>Our custom-built offset smoker runs 24/7, burning premium oak and hickory wood. We use only USDA Prime beef and heritage-breed pork, hand-rubbed with our secret spice blend. Every cut is smoked low and slow, the Texas way. No shortcuts, no gas, just real wood smoke and time.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Smokehouse BBQ</h3>
+        <p>📍 1976 Pitmaster Drive, Austin, TX 78701</p>
+        <p>📞 (512) 197-6197 | ⏰ Tue-Sun: 11AM Until Sold Out</p>
+        <p style="margin-top: 1rem; font-style: italic;">Arrive Early - We Sell Out Daily!</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
