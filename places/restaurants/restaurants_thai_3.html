@@ -1,1 +1,267 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Thai 3</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#e67e22;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#e67e22}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#e67e22}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #e67e22}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#e67e22}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#e67e22;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🍜 Thai 3</h1></div><div class="hero"><h1>Welcome to Thai 3</h1><p>Your trusted Thai destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$25</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$31</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$21</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$38</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#e67e22">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 409 Center Ave, City 40003</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 403-4003</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">Thai 3</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok Street Market | Authentic Street Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background: #2C1810;
+            color: #FFF;
+            overflow-x: hidden;
+        }
+
+        .market-lights {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image:
+                radial-gradient(circle, #FF6B35 5px, transparent 5px),
+                radial-gradient(circle, #FEC601 5px, transparent 5px),
+                radial-gradient(circle, #00CEC9 5px, transparent 5px);
+            background-size: 100px 100px, 100px 100px, 100px 100px;
+            background-position: 0 0, 33px 0, 66px 0;
+            animation: blink 2s infinite;
+            z-index: 100;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        header {
+            background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+            padding: 8rem 2rem 3rem;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .market-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Sriracha', cursive;
+            font-size: 4.5rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Sriracha', cursive;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #FF6B35;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish {
+            background: linear-gradient(135deg, #3D2817 0%, #2C1810 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 3px dashed #E74C3C;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .dish::before {
+            content: '🍜';
+            position: absolute;
+            font-size: 10rem;
+            top: -3rem;
+            right: -3rem;
+            opacity: 0.05;
+            transform: rotate(20deg);
+        }
+
+        .dish:hover {
+            transform: scale(1.05) rotate(-1deg);
+            border-style: solid;
+            box-shadow: 0 15px 50px rgba(231, 76, 60, 0.4);
+        }
+
+        .dish h3 {
+            font-family: 'Sriracha', cursive;
+            font-size: 1.9rem;
+            color: #FF6B35;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #FEC601;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.7;
+            color: #D4C5B9;
+            font-weight: 300;
+        }
+
+        .spice-level {
+            display: inline-block;
+            background: #E74C3C;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+
+        .street-info {
+            background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: 0 10px 40px rgba(231, 76, 60, 0.3);
+        }
+
+        .street-info h3 {
+            font-family: 'Sriracha', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .street-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #1A0F08;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .footer-title {
+            font-family: 'Sriracha', cursive;
+            font-size: 2.5rem;
+            color: #FF6B35;
+            margin-bottom: 1rem;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #E74C3C, #C0392B);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="market-lights"></div>
+
+    <header>
+        <div class="market-icon">🏮</div>
+        <h1>Bangkok Street Market</h1>
+        <p class="tagline">Authentic Thai Street Food</p>
+    </header>
+
+    <div class="content">
+        <h2 class="section-title">Street Cart Favorites</h2>
+
+        <div class="menu">
+            <div class="dish">
+                <h3>Khao Soi</h3>
+                <div class="price">$14</div>
+                <p class="description">Northern Thai curry noodle soup with crispy noodles, pickled mustard greens, and lime.</p>
+                <span class="spice-level">🌶️ Medium Spicy</span>
+            </div>
+
+            <div class="dish">
+                <h3>Boat Noodles</h3>
+                <div class="price">$13</div>
+                <p class="description">Dark, flavorful beef broth with thin rice noodles, meatballs, and morning glory.</p>
+                <span class="spice-level">🌶️🌶️ Very Spicy</span>
+            </div>
+
+            <div class="dish">
+                <h3>Satay Skewers</h3>
+                <div class="price">$12</div>
+                <p class="description">Grilled marinated chicken skewers with peanut sauce and cucumber relish.</p>
+            </div>
+
+            <div class="dish">
+                <h3>Som Tam</h3>
+                <div class="price">$11</div>
+                <p class="description">Spicy green papaya salad with peanuts, tomatoes, lime, and dried shrimp.</p>
+                <span class="spice-level">🌶️🌶️🌶️ Extra Spicy</span>
+            </div>
+
+            <div class="dish">
+                <h3>Kra Pao Moo</h3>
+                <div class="price">$13</div>
+                <p class="description">Minced pork stir-fried with holy basil and chili, served with fried egg and rice.</p>
+                <span class="spice-level">🌶️🌶️ Very Spicy</span>
+            </div>
+
+            <div class="dish">
+                <h3>Roti with Nutella</h3>
+                <div class="price">$8</div>
+                <p class="description">Crispy fried roti bread drizzled with Nutella, condensed milk, and banana.</p>
+            </div>
+        </div>
+
+        <div class="street-info">
+            <h3>🛺 Street Food Experience 🛺</h3>
+            <p>We bring the authentic flavors of Bangkok's bustling night markets straight to you. Each dish is prepared fresh to order using traditional recipes and techniques passed down through generations of street vendors.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Bangkok Street Market</h3>
+        <p style="color: #D4C5B9;">📍 2468 Market Street, Portland, OR 97204</p>
+        <p style="color: #D4C5B9;">📞 (503) 246-8246 | ⏰ Daily: 11AM - 11PM</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
