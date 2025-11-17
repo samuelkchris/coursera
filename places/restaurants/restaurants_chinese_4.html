@@ -1,1 +1,559 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chinese 4</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:#0f172a;color:#e2e8f0}.hero{min-height:100vh;background:linear-gradient(135deg,#e74c3cdd,#e74c3c55),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="#e74c3c" width="1200" height="800"/></svg>');background-size:cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}.hero h1{font-size:4rem;font-weight:800;margin-bottom:1.5rem}.hero p{font-size:1.5rem;margin-bottom:2rem}.content{max-width:1200px;margin:0 auto;padding:4rem 2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}.card{background:#1e293b;padding:2.5rem;border-radius:16px;border:1px solid #334155;transition:.3s}.card:hover{transform:translateY(-5px);border-color:#e74c3c;box-shadow:0 10px 40px rgba(0,0,0,.3)}.card h3{font-size:1.8rem;color:#e74c3c;margin-bottom:1rem}.price{font-size:1.4rem;color:#10b981;font-weight:700;margin:1rem 0}footer{background:#020617;padding:4rem 2rem;text-align:center;margin-top:5rem}.btn{display:inline-block;padding:1rem 2.5rem;background:#e74c3c;color:#fff;text-decoration:none;border-radius:30px;margin-top:2rem;font-weight:600;transition:.3s}.btn:hover{transform:scale(1.05);box-shadow:0 5px 20px #e74c3c66}@media(max-width:768px){.hero h1{font-size:2.5rem}.grid{grid-template-columns:1fr}}</style></head><body><div class="hero"><div><h1>🥢 Chinese 4</h1><p>Premium Chinese Experience</p></div></div><div class="content"><h2 style="text-align:center;font-size:2.5rem;margin-bottom:3rem;color:#e74c3c">Our Services</h2><div class="grid"><div class="card"><h3>✨ Premium Service</h3><p class="price">$29</p><p>Top-quality service with attention to detail</p></div><div class="card"><h3>🎯 Expert Team</h3><p class="price">$34</p><p>Experienced professionals at your service</p></div><div class="card"><h3>⚡ Fast Delivery</h3><p class="price">$24</p><p>Quick and efficient service guaranteed</p></div><div class="card"><h3>💎 VIP Package</h3><p class="price">$49</p><p>Exclusive premium experience</p></div></div><div style="text-align:center;margin:4rem 0;padding:3rem;background:#1e293b;border-radius:16px;border:1px solid #334155"><h3 style="font-size:2rem;margin-bottom:2rem;color:#e74c3c">Visit Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 328 Main Street, City 30004</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 304-3004</p><p style="font-size:1.1rem">⏰ Open Daily 9AM - 9PM</p></div></div><footer><h3 style="margin-bottom:1rem;font-size:2rem">Chinese 4</h3><p style="margin-bottom:2rem">Excellence in Chinese Services</p><a href="../../index.html" class="btn">← Back to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Lantern | Modern Chinese Fusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --crimson: #DC143C;
+            --black: #0a0a0a;
+            --charcoal: #1a1a1a;
+            --light-gray: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: var(--black);
+            color: white;
+        }
+
+        .lanterns {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .lantern {
+            position: absolute;
+            font-size: 4rem;
+            animation: sway 4s ease-in-out infinite;
+            opacity: 0.15;
+        }
+
+        .lantern:nth-child(1) { left: 10%; top: 5%; animation-delay: 0s; }
+        .lantern:nth-child(2) { right: 15%; top: 10%; animation-delay: 1s; }
+        .lantern:nth-child(3) { left: 70%; top: 20%; animation-delay: 2s; }
+        .lantern:nth-child(4) { right: 40%; top: 15%; animation-delay: 1.5s; }
+
+        @keyframes sway {
+            0%, 100% { transform: translateX(0) rotate(0deg); }
+            50% { transform: translateX(20px) rotate(3deg); }
+        }
+
+        header {
+            position: relative;
+            z-index: 10;
+            background: var(--charcoal);
+            padding: 1.5rem 0;
+            border-bottom: 3px solid var(--crimson);
+        }
+
+        .header-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--crimson);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--crimson);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::before { width: 100%; }
+
+        .hero {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--black) 0%, var(--charcoal) 100%);
+            z-index: 1;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(220, 20, 60, 0.03) 10px,
+                rgba(220, 20, 60, 0.03) 20px
+            );
+        }
+
+        .hero-text {
+            text-align: center;
+            z-index: 2;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 6rem;
+            font-weight: 900;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(220, 20, 60, 0.5);
+        }
+
+        .hero .subtitle {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #ddd;
+            letter-spacing: 3px;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 1.5rem 4rem;
+            background: var(--crimson);
+            color: white;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            border: 2px solid var(--crimson);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta:hover {
+            background: transparent;
+            color: var(--crimson);
+        }
+
+        .section {
+            position: relative;
+            z-index: 1;
+            padding: 6rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #999;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+
+        .dish {
+            background: var(--charcoal);
+            border: 1px solid #333;
+            padding: 0;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dish::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(220, 20, 60, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .dish:hover::before {
+            left: 100%;
+        }
+
+        .dish:hover {
+            border-color: var(--crimson);
+            transform: translateY(-5px);
+        }
+
+        .dish-image {
+            height: 180px;
+            background: linear-gradient(135deg, var(--crimson), #8B0000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+        }
+
+        .dish-info {
+            padding: 2rem;
+        }
+
+        .dish h3 {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: white;
+        }
+
+        .dish-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--crimson);
+            margin-bottom: 1rem;
+        }
+
+        .dish-desc {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .reviews-section {
+            background: var(--charcoal);
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .review {
+            background: var(--black);
+            padding: 2.5rem;
+            border-left: 4px solid var(--crimson);
+            transition: all 0.3s;
+        }
+
+        .review:hover {
+            transform: translateX(10px);
+        }
+
+        .rating {
+            color: var(--crimson);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #ccc;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .reviewer-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--crimson);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        .contact {
+            background: var(--black);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 2.5rem;
+            background: var(--charcoal);
+            border: 1px solid #333;
+            transition: all 0.3s;
+        }
+
+        .contact-card:hover {
+            border-color: var(--crimson);
+            transform: scale(1.05);
+        }
+
+        .contact-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card h3 {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--crimson);
+        }
+
+        footer {
+            background: var(--charcoal);
+            padding: 3rem;
+            text-align: center;
+            border-top: 3px solid var(--crimson);
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--crimson);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            nav ul { display: none; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="lanterns">
+        <div class="lantern">🏮</div>
+        <div class="lantern">🏮</div>
+        <div class="lantern">🏮</div>
+        <div class="lantern">🏮</div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">🏮 Red Lantern</div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-text">
+            <h1>RED LANTERN</h1>
+            <p class="subtitle">Modern Chinese Fusion</p>
+            <a href="#menu" class="cta">Explore Menu</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <div class="section-header">
+            <h2 class="section-title">Signature Dishes</h2>
+            <p class="section-subtitle">Bold flavors meet contemporary style</p>
+        </div>
+
+        <div class="menu">
+            <div class="dish">
+                <div class="dish-image">🍜</div>
+                <div class="dish-info">
+                    <h3>Spicy Ramen</h3>
+                    <div class="dish-price">$19</div>
+                    <p class="dish-desc">House-made noodles in fiery chili broth with pork belly, soft egg, and scallions.</p>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-image">🦑</div>
+                <div class="dish-info">
+                    <h3>Crispy Calamari</h3>
+                    <div class="dish-price">$16</div>
+                    <p class="dish-desc">Lightly battered squid with Szechuan peppercorn salt and lime aioli.</p>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-image">🍖</div>
+                <div class="dish-info">
+                    <h3>Char Siu Ribs</h3>
+                    <div class="dish-price">$28</div>
+                    <p class="dish-desc">Slow-roasted pork ribs glazed with our signature BBQ sauce.</p>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-image">🥟</div>
+                <div class="dish-info">
+                    <h3>Truffle Dumplings</h3>
+                    <div class="dish-price">$24</div>
+                    <p class="dish-desc">Pan-fried dumplings filled with pork, mushrooms, and truffle oil.</p>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-image">🍤</div>
+                <div class="dish-info">
+                    <h3>Firecracker Shrimp</h3>
+                    <div class="dish-price">$26</div>
+                    <p class="dish-desc">Wok-tossed shrimp in explosive chili garlic sauce with cashews.</p>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-image">🍛</div>
+                <div class="dish-info">
+                    <h3>Black Pepper Beef</h3>
+                    <div class="dish-price">$30</div>
+                    <p class="dish-desc">Wagyu beef strips with cracked black pepper and crispy vegetables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+        <div class="section-header">
+            <h2 class="section-title">Reviews</h2>
+            <p class="section-subtitle">What our guests are saying</p>
+        </div>
+
+        <div class="reviews">
+            <div class="review">
+                <div class="rating">★★★★★</div>
+                <p class="review-text">"Bold, modern, and absolutely delicious. The Firecracker Shrimp is addictive! The sleek atmosphere makes it perfect for date night."</p>
+                <div class="reviewer">
+                    <div class="reviewer-img">AW</div>
+                    <div>
+                        <strong>Alexandra Wong</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Food Blogger</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="rating">★★★★★</div>
+                <p class="review-text">"Red Lantern reinvents Chinese cuisine for the modern palate. Everything we tried was exceptional. The Truffle Dumplings are a must!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-img">MT</div>
+                    <div>
+                        <strong>Marcus Taylor</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Chef</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="rating">★★★★★</div>
+                <p class="review-text">"The perfect fusion of traditional and contemporary. Amazing flavors, stunning presentation, and great service. Will definitely return!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-img">SK</div>
+                    <div>
+                        <strong>Sophie Kim</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Regular Guest</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Visit Us</h2>
+            <p class="section-subtitle">Located in the heart of downtown</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>777 Lantern Street<br>Downtown District<br>Los Angeles, CA 90012</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p>(213) 777-7777<br>Reservations welcome</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">⏰</div>
+                <h3>Hours</h3>
+                <p>Mon-Thu: 5PM - 11PM<br>Fri-Sun: 5PM - 1AM</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🍸</div>
+                <h3>Bar</h3>
+                <p>Craft cocktails<br>and premium sake</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="font-family: 'Noto Sans SC', sans-serif; font-size: 2rem; margin-bottom: 1rem;">RED LANTERN</h3>
+        <p>Modern Chinese Fusion Since 2020</p>
+        <p style="opacity: 0.5; margin-top: 1rem;">© 2024 Red Lantern. All rights reserved.</p>
+        <a href="../../index.html" class="back">← Back to Directory</a>
+    </footer>
+</body>
+</html>

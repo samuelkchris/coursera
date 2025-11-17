@@ -1,1 +1,488 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chinese 3</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#e74c3c;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#e74c3c}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#e74c3c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #e74c3c}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#e74c3c}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#e74c3c;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🥢 Chinese 3</h1></div><div class="hero"><h1>Welcome to Chinese 3</h1><p>Your trusted Chinese destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$25</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$31</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$21</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$38</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#e74c3c">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 409 Center Ave, City 40003</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 403-4003</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">Chinese 3</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Garden | Fine Chinese Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --royal-blue: #1e3a8a;
+            --silver: #c0c0c0;
+            --platinum: #e5e7eb;
+            --midnight: #0f172a;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #f8fafc;
+            color: var(--midnight);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(to right, var(--royal-blue), #2563eb);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            box-shadow: 0 4px 30px rgba(30, 58, 138, 0.3);
+        }
+
+        .nav-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-family: 'Noto Serif', serif;
+            font-size: 2rem;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover { color: var(--silver); }
+
+        .hero {
+            height: 95vh;
+            background: linear-gradient(135deg, var(--royal-blue) 0%, #1e40af 50%, #3b82f6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+
+        .hero::before {
+            content: '🏛️';
+            position: absolute;
+            font-size: 35rem;
+            opacity: 0.08;
+            left: -10%;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: pulse 10s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.08; transform: translateY(-50%) scale(1); }
+            50% { opacity: 0.12; transform: translateY(-50%) scale(1.05); }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Noto Serif', serif;
+            font-size: 5.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            letter-spacing: 2px;
+        }
+
+        .btn-explore {
+            display: inline-block;
+            padding: 1.3rem 3.5rem;
+            background: var(--silver);
+            color: var(--royal-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 40px rgba(192, 192, 192, 0.4);
+        }
+
+        .btn-explore:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(192, 192, 192, 0.6);
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Noto Serif', serif;
+            font-size: 3.5rem;
+            color: var(--royal-blue);
+            margin-bottom: 1rem;
+        }
+
+        .section-desc {
+            font-size: 1.2rem;
+            color: #64748b;
+        }
+
+        .specialties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .specialty-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s;
+            border-top: 5px solid var(--royal-blue);
+        }
+
+        .specialty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(30, 58, 138, 0.2);
+        }
+
+        .card-icon {
+            height: 180px;
+            background: linear-gradient(135deg, var(--royal-blue), #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+        }
+
+        .card-body {
+            padding: 2.5rem;
+        }
+
+        .card-body h3 {
+            font-family: 'Noto Serif', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--royal-blue);
+        }
+
+        .card-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--silver);
+            margin-bottom: 1rem;
+        }
+
+        .card-desc {
+            color: #475569;
+            line-height: 1.7;
+        }
+
+        .testimonial-section {
+            background: linear-gradient(to bottom, white, var(--platinum));
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--royal-blue);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .stars {
+            color: var(--silver);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote {
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #334155;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--royal-blue), var(--silver));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .contact-section {
+            background: var(--midnight);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+
+        .contact-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            font-family: 'Noto Serif', serif;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--silver);
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--silver);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .nav-menu { display: none; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="brand">Imperial Garden</div>
+            <ul class="nav-menu">
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>🏛️ Imperial Garden</h1>
+            <p class="tagline">Royal Flavors, Imperial Service</p>
+            <a href="#specialties" class="btn-explore">Discover Our Cuisine</a>
+        </div>
+    </div>
+
+    <section class="section" id="specialties">
+        <div class="section-header">
+            <h2 class="section-title">Imperial Specialties</h2>
+            <p class="section-desc">Dishes fit for royalty, crafted with centuries of tradition</p>
+        </div>
+
+        <div class="specialties">
+            <div class="specialty-card">
+                <div class="card-icon">🦞</div>
+                <div class="card-body">
+                    <h3>Imperial Lobster</h3>
+                    <div class="card-price">$48</div>
+                    <p class="card-desc">Fresh lobster prepared with ginger, scallions, and our secret imperial sauce. A dish once served to the Qing dynasty emperors.</p>
+                </div>
+            </div>
+
+            <div class="specialty-card">
+                <div class="card-icon">🍚</div>
+                <div class="card-body">
+                    <h3>Palace Fried Rice</h3>
+                    <div class="card-price">$22</div>
+                    <p class="card-desc">Premium jasmine rice wok-fried with char siu, shrimp, eggs, and seasonal vegetables in golden perfection.</p>
+                </div>
+            </div>
+
+            <div class="specialty-card">
+                <div class="card-icon">🐟</div>
+                <div class="card-body">
+                    <h3>Steamed Sea Bass</h3>
+                    <div class="card-price">$36</div>
+                    <p class="card-desc">Whole sea bass steamed with soy sauce, ginger, and cilantro. Simple yet elegant, highlighting the fish's natural sweetness.</p>
+                </div>
+            </div>
+
+            <div class="specialty-card">
+                <div class="card-icon">🥩</div>
+                <div class="card-body">
+                    <h3>Mongolian Beef</h3>
+                    <div class="card-price">$26</div>
+                    <p class="card-desc">Tender beef slices stir-fried with scallions in a rich, savory sauce. A northern Chinese classic with bold flavors.</p>
+                </div>
+            </div>
+
+            <div class="specialty-card">
+                <div class="card-icon">🍲</div>
+                <div class="card-body">
+                    <h3>Buddha Jumps Over Wall</h3>
+                    <div class="card-price">$58</div>
+                    <p class="card-desc">Legendary soup with abalone, sea cucumber, shark fin alternative, and premium ingredients. Takes three days to prepare.</p>
+                </div>
+            </div>
+
+            <div class="specialty-card">
+                <div class="card-icon">🥠</div>
+                <div class="card-body">
+                    <h3>Hand-Pulled Noodles</h3>
+                    <div class="card-price">$18</div>
+                    <p class="card-desc">Fresh noodles pulled by hand daily, served in rich beef broth with tender braised beef and bok choy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonial-section" id="reviews">
+        <div class="section-header">
+            <h2 class="section-title">Guest Testimonials</h2>
+            <p class="section-desc">Experience shared by our distinguished guests</p>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Imperial Garden serves the most authentic and refined Chinese cuisine I've experienced in America. The Imperial Lobster is a work of art."</p>
+                <div class="reviewer">
+                    <div class="avatar">DL</div>
+                    <div>
+                        <strong>Dr. David Lee</strong>
+                        <div style="opacity: 0.7;">Culinary Historian</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"The attention to detail and traditional preparation methods are extraordinary. Buddha Jumps Over Wall is worth every penny!"</p>
+                <div class="reviewer">
+                    <div class="avatar">YZ</div>
+                    <div>
+                        <strong>Yuki Zhang</strong>
+                        <div style="opacity: 0.7;">Restaurant Reviewer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Elegant atmosphere, impeccable service, and food that transports you to imperial China. A true gem in the city."</p>
+                <div class="reviewer">
+                    <div class="avatar">RP</div>
+                    <div>
+                        <strong>Robert Park</strong>
+                        <div style="opacity: 0.7;">Fine Dining Enthusiast</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title" style="color: var(--silver);">Visit Our Palace</h2>
+            <p class="section-desc" style="color: rgba(255,255,255,0.7);">We welcome you to an imperial dining experience</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <h3>Address</h3>
+                <p>1888 Imperial Boulevard<br>Dynasty District<br>New York, NY 10001</p>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <h3>Reservations</h3>
+                <p>(212) 888-1888<br>Reservations recommended</p>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">⏰</div>
+                <h3>Hours</h3>
+                <p>Tue-Sun: 5PM - 11PM<br>Closed Mondays</p>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🎁</div>
+                <h3>Private Events</h3>
+                <p>Banquet rooms available<br>for special occasions</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="margin-bottom: 1rem; font-family: 'Noto Serif', serif; font-size: 2rem;">Imperial Garden</h3>
+        <p>Fine Chinese Dining Since 1988</p>
+        <p style="opacity: 0.6; margin-top: 1rem;">© 2024 Imperial Garden. All rights reserved.</p>
+        <a href="../../index.html" class="back-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>

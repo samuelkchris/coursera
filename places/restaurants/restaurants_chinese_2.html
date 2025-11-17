@@ -1,1 +1,598 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chinese 2</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:#0f172a;color:#e2e8f0}.hero{min-height:100vh;background:linear-gradient(135deg,#e74c3cdd,#e74c3c55),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="#e74c3c" width="1200" height="800"/></svg>');background-size:cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}.hero h1{font-size:4rem;font-weight:800;margin-bottom:1.5rem}.hero p{font-size:1.5rem;margin-bottom:2rem}.content{max-width:1200px;margin:0 auto;padding:4rem 2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}.card{background:#1e293b;padding:2.5rem;border-radius:16px;border:1px solid #334155;transition:.3s}.card:hover{transform:translateY(-5px);border-color:#e74c3c;box-shadow:0 10px 40px rgba(0,0,0,.3)}.card h3{font-size:1.8rem;color:#e74c3c;margin-bottom:1rem}.price{font-size:1.4rem;color:#10b981;font-weight:700;margin:1rem 0}footer{background:#020617;padding:4rem 2rem;text-align:center;margin-top:5rem}.btn{display:inline-block;padding:1rem 2.5rem;background:#e74c3c;color:#fff;text-decoration:none;border-radius:30px;margin-top:2rem;font-weight:600;transition:.3s}.btn:hover{transform:scale(1.05);box-shadow:0 5px 20px #e74c3c66}@media(max-width:768px){.hero h1{font-size:2.5rem}.grid{grid-template-columns:1fr}}</style></head><body><div class="hero"><div><h1>🥢 Chinese 2</h1><p>Premium Chinese Experience</p></div></div><div class="content"><h2 style="text-align:center;font-size:2.5rem;margin-bottom:3rem;color:#e74c3c">Our Services</h2><div class="grid"><div class="card"><h3>✨ Premium Service</h3><p class="price">$27</p><p>Top-quality service with attention to detail</p></div><div class="card"><h3>🎯 Expert Team</h3><p class="price">$32</p><p>Experienced professionals at your service</p></div><div class="card"><h3>⚡ Fast Delivery</h3><p class="price">$22</p><p>Quick and efficient service guaranteed</p></div><div class="card"><h3>💎 VIP Package</h3><p class="price">$47</p><p>Exclusive premium experience</p></div></div><div style="text-align:center;margin:4rem 0;padding:3rem;background:#1e293b;border-radius:16px;border:1px solid #334155"><h3 style="font-size:2rem;margin-bottom:2rem;color:#e74c3c">Visit Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 314 Main Street, City 30002</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 302-3002</p><p style="font-size:1.1rem">⏰ Open Daily 9AM - 9PM</p></div></div><footer><h3 style="margin-bottom:1rem;font-size:2rem">Chinese 2</h3><p style="margin-bottom:2rem">Excellence in Chinese Services</p><a href="../../index.html" class="btn">← Back to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Wok | Authentic Chinese Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --jade: #00A86B;
+            --gold: #FFD700;
+            --dark: #1a2f1a;
+            --light: #f5f9f5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        .floating-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.05;
+            background-image:
+                radial-gradient(circle at 20% 50%, var(--jade) 2px, transparent 2px),
+                radial-gradient(circle at 60% 80%, var(--gold) 2px, transparent 2px),
+                radial-gradient(circle at 80% 20%, var(--jade) 2px, transparent 2px);
+            background-size: 100px 100px, 150px 150px, 120px 120px;
+            animation: patternMove 30s linear infinite;
+        }
+
+        @keyframes patternMove {
+            0% { background-position: 0 0, 0 0, 0 0; }
+            100% { background-position: 100px 100px, -150px -150px, 120px -120px; }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 168, 107, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--jade), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--jade);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after { width: 100%; }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--jade) 0%, #2d5f3d 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wok-icon {
+            position: absolute;
+            font-size: 30rem;
+            opacity: 0.1;
+            right: -5rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(15deg);
+            animation: wobble 8s ease-in-out infinite;
+        }
+
+        @keyframes wobble {
+            0%, 100% { transform: translateY(-50%) rotate(15deg); }
+            50% { transform: translateY(-45%) rotate(10deg); }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 6rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: var(--gold);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--jade);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 4rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card:hover {
+            border-color: var(--jade);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 168, 107, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .menu-section {
+            background: linear-gradient(to bottom, white, var(--light));
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .menu-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 50px rgba(0, 168, 107, 0.2);
+        }
+
+        .menu-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--jade), #2d5f3d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+        }
+
+        .menu-content {
+            padding: 2rem;
+        }
+
+        .menu-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .menu-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--jade);
+            margin-bottom: 1rem;
+        }
+
+        .menu-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .testimonials {
+            background: var(--dark);
+            color: white;
+            padding: 6rem 2rem;
+        }
+
+        .testimonials .section-title {
+            color: var(--gold);
+        }
+
+        .testimonials .section-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--jade), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        .contact-section {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid var(--jade);
+            transition: all 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0, 168, 107, 0.15);
+        }
+
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--jade);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--jade);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .nav-links { display: none; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-pattern"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">🥘 Golden Wok</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="wok-icon">🥘</div>
+        <div class="hero-content">
+            <h1>Golden Wok</h1>
+            <p>Where Tradition Meets Excellence in Every Dish</p>
+            <a href="#menu" class="cta-btn">Explore Our Menu</a>
+        </div>
+    </div>
+
+    <section class="section" id="about">
+        <h2 class="section-title">Why Choose Golden Wok</h2>
+        <p class="section-subtitle">Experience authentic Chinese cuisine crafted with passion</p>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">👨‍🍳</div>
+                <h3>Master Chefs</h3>
+                <p>Our chefs have over 30 years of combined experience in authentic Chinese cooking techniques.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>Fresh Ingredients</h3>
+                <p>We source the finest ingredients daily to ensure every dish is fresh and flavorful.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎋</div>
+                <h3>Traditional Recipes</h3>
+                <p>Generations-old family recipes passed down and perfected through time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+        <h2 class="section-title">Signature Dishes</h2>
+        <p class="section-subtitle">Each dish tells a story of tradition and flavor</p>
+
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-image">🦐</div>
+                <div class="menu-content">
+                    <h3>Honey Walnut Shrimp</h3>
+                    <div class="menu-price">$24</div>
+                    <p class="menu-description">Crispy jumbo shrimp glazed with honey mayo, topped with candied walnuts. A perfect balance of sweet and savory.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">🥟</div>
+                <div class="menu-content">
+                    <h3>Xiao Long Bao</h3>
+                    <div class="menu-price">$14</div>
+                    <p class="menu-description">Delicate soup dumplings filled with pork and rich broth. Steamed to perfection and served with ginger vinegar.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">🍜</div>
+                <div class="menu-content">
+                    <h3>Beef Chow Fun</h3>
+                    <div class="menu-price">$18</div>
+                    <p class="menu-description">Wide rice noodles wok-tossed with tender beef, bean sprouts, and scallions in savory soy sauce.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">🦆</div>
+                <div class="menu-content">
+                    <h3>Crispy Duck</h3>
+                    <div class="menu-price">$32</div>
+                    <p class="menu-description">Half duck marinated in five-spice, roasted until crispy, served with steamed buns and hoisin sauce.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">🌶️</div>
+                <div class="menu-content">
+                    <h3>Szechuan Spicy Fish</h3>
+                    <div class="menu-price">$28</div>
+                    <p class="menu-description">Fresh fish filets in spicy chili oil with Szechuan peppercorns, creating an unforgettable numbing heat.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">🥬</div>
+                <div class="menu-content">
+                    <h3>Buddha's Delight</h3>
+                    <div class="menu-price">$16</div>
+                    <p class="menu-description">Vegetarian masterpiece with seasonal vegetables, tofu, mushrooms, and bamboo shoots in light sauce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="reviews">
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-subtitle">Join thousands of satisfied customers</p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The Honey Walnut Shrimp is absolutely divine! Best Chinese food I've had outside of Hong Kong. The ambiance is warm and the service impeccable."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MJ</div>
+                    <div>
+                        <strong>Michael Johnson</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Food Critic</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Their Xiao Long Bao are perfection in every bite. You can taste the care and tradition in every dish. This is now our family's favorite restaurant!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LW</div>
+                    <div>
+                        <strong>Linda Wang</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Regular Customer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Authentic flavors that remind me of home. The Szechuan dishes have the perfect level of spice. Highly recommend for anyone seeking real Chinese cuisine."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">ZC</div>
+                    <div>
+                        <strong>Zhang Chen</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Chef</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <h2 class="section-title">Visit Us Today</h2>
+        <p class="section-subtitle">We're open and ready to serve you</p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>888 Golden Plaza<br>Chinatown District<br>San Francisco, CA 94108</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p>(415) 888-8888<br>Call for reservations</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">⏰</div>
+                <h3>Hours</h3>
+                <p>Mon-Fri: 11AM - 10PM<br>Sat-Sun: 10AM - 11PM</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">🚗</div>
+                <h3>Parking</h3>
+                <p>Validated parking<br>in Golden Plaza Garage</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Golden Wok</h3>
+        <p>Serving authentic Chinese cuisine since 1995</p>
+        <p style="opacity: 0.7; margin-top: 1rem;">© 2024 Golden Wok. All rights reserved.</p>
+        <a href="../../index.html" class="back-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>

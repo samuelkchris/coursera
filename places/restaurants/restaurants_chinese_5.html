@@ -1,1 +1,534 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chinese 5</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#e74c3c;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#e74c3c}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#e74c3c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #e74c3c}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#e74c3c}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#e74c3c;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🥢 Chinese 5</h1></div><div class="hero"><h1>Welcome to Chinese 5</h1><p>Your trusted Chinese destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$27</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$33</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$23</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$40</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#e74c3c">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 415 Center Ave, City 40005</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 405-4005</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">Chinese 5</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynasty Restaurant | Imperial Chinese Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --purple: #6B46C1;
+            --gold: #D4AF37;
+            --lavender: #E9D5FF;
+            --deep-purple: #4C1D95;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%);
+            color: white;
+        }
+
+        .imperial-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.05) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(107, 70, 193, 0.05) 2px, transparent 2px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 10, 46, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .nav-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--gold), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .menu-nav {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .menu-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .menu-nav a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '👑';
+            position: absolute;
+            font-size: 40rem;
+            opacity: 0.05;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 2;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Crimson Text', serif;
+            font-size: 7rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--gold), var(--lavender));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--lavender);
+        }
+
+        .btn-imperial {
+            display: inline-block;
+            padding: 1.5rem 4rem;
+            background: linear-gradient(45deg, var(--purple), var(--deep-purple));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            border: 2px solid var(--gold);
+            box-shadow: 0 10px 40px rgba(107, 70, 193, 0.4);
+        }
+
+        .btn-imperial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.6);
+        }
+
+        .section {
+            position: relative;
+            z-index: 1;
+            padding: 6rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Crimson Text', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .section-desc {
+            font-size: 1.3rem;
+            color: var(--lavender);
+        }
+
+        .cuisine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .cuisine-card {
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.2), rgba(76, 29, 149, 0.2));
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            overflow: hidden;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s;
+        }
+
+        .cuisine-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+        }
+
+        .card-header {
+            height: 200px;
+            background: linear-gradient(135deg, var(--purple), var(--deep-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .card-content {
+            padding: 2.5rem;
+        }
+
+        .card-content h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .card-price {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .card-text {
+            color: var(--lavender);
+            line-height: 1.7;
+        }
+
+        .testimonials-section {
+            background: linear-gradient(to bottom, transparent, rgba(76, 29, 149, 0.3));
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: rgba(107, 70, 193, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s;
+        }
+
+        .testimonial:hover {
+            border-color: var(--gold);
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote {
+            font-style: italic;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: var(--lavender);
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .author-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--purple), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .location {
+            background: rgba(26, 10, 46, 0.8);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .location-box {
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(107, 70, 193, 0.2);
+            border-radius: 20px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+        }
+
+        .location-box:hover {
+            border-color: var(--gold);
+            transform: scale(1.05);
+        }
+
+        .location-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .location-box h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        footer {
+            background: rgba(26, 10, 46, 0.95);
+            padding: 3rem;
+            text-align: center;
+            border-top: 2px solid var(--gold);
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            color: var(--lavender);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .menu-nav { display: none; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="imperial-pattern"></div>
+
+    <nav>
+        <div class="nav-wrapper">
+            <div class="brand">👑 Dynasty</div>
+            <ul class="menu-nav">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dynasty Restaurant</h1>
+            <p class="tagline">Where Emperors Dine</p>
+            <a href="#menu" class="btn-imperial">View Imperial Menu</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <div class="section-head">
+            <h2 class="section-title">Imperial Delicacies</h2>
+            <p class="section-desc">Dishes from the royal court</p>
+        </div>
+
+        <div class="cuisine-grid">
+            <div class="cuisine-card">
+                <div class="card-header">🦐</div>
+                <div class="card-content">
+                    <h3>Emperor's Prawns</h3>
+                    <div class="card-price">$42</div>
+                    <p class="card-text">Giant tiger prawns prepared with saffron, ginger, and imperial wine sauce. A favorite of the Qing dynasty.</p>
+                </div>
+            </div>
+
+            <div class="cuisine-card">
+                <div class="card-header">🐉</div>
+                <div class="card-content">
+                    <h3>Dragon's Treasure</h3>
+                    <div class="card-price">$65</div>
+                    <p class="card-text">Whole sea bass steamed with lotus leaves, topped with gold flakes and served with premium soy sauce.</p>
+                </div>
+            </div>
+
+            <div class="cuisine-card">
+                <div class="card-header">🥟</div>
+                <div class="card-content">
+                    <h3>Royal Dumplings</h3>
+                    <div class="card-price">$20</div>
+                    <p class="card-text">Hand-folded dumplings with 18-ingredient filling. Each dumpling crafted to perfection.</p>
+                </div>
+            </div>
+
+            <div class="cuisine-card">
+                <div class="card-header">🍖</div>
+                <div class="card-content">
+                    <h3>Jade Palace Lamb</h3>
+                    <div class="card-price">$38</div>
+                    <p class="card-text">Slow-braised lamb with cumin, chili, and thirteen spices. Melt-in-your-mouth tender.</p>
+                </div>
+            </div>
+
+            <div class="cuisine-card">
+                <div class="card-header">🍲</div>
+                <div class="card-content">
+                    <h3>Dynasty Hot Pot</h3>
+                    <div class="card-price">$55</div>
+                    <p class="card-text">Premium broth with wagyu beef, lobster, abalone, and seasonal vegetables. Serves 2-3 people.</p>
+                </div>
+            </div>
+
+            <div class="cuisine-card">
+                <div class="card-header">🌰</div>
+                <div class="card-content">
+                    <h3>Phoenix Nest</h3>
+                    <div class="card-price">$32</div>
+                    <p class="card-text">Crispy taro basket filled with stir-fried chicken, cashews, and water chestnuts in light sauce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section" id="reviews">
+        <div class="section-head">
+            <h2 class="section-title">Royal Reviews</h2>
+            <p class="section-desc">Testimonials from our honored guests</p>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Dynasty Restaurant is an experience like no other. The Emperor's Prawns are absolutely divine. Every detail reflects royal elegance."</p>
+                <div class="author">
+                    <div class="author-pic">VC</div>
+                    <div>
+                        <strong>Victoria Chen</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Luxury Dining Critic</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"The most exquisite Chinese cuisine I've had. Dragon's Treasure is worth every penny. The ambiance transports you to imperial China."</p>
+                <div class="author">
+                    <div class="author-pic">JH</div>
+                    <div>
+                        <strong>James Harrison</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Michelin Inspector</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Impeccable service, stunning presentation, and flavors that dance on your palate. Dynasty sets the gold standard for fine Chinese dining."</p>
+                <div class="author">
+                    <div class="author-pic">ML</div>
+                    <div>
+                        <strong>Michelle Liu</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Celebrity Chef</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section location" id="location">
+        <div class="section-head">
+            <h2 class="section-title">Visit Our Palace</h2>
+            <p class="section-desc">Experience royal dining</p>
+        </div>
+
+        <div class="location-grid">
+            <div class="location-box">
+                <div class="location-icon">📍</div>
+                <h3>Address</h3>
+                <p>999 Imperial Way<br>Royal District<br>Chicago, IL 60601</p>
+            </div>
+
+            <div class="location-box">
+                <div class="location-icon">📞</div>
+                <h3>Reservations</h3>
+                <p>(312) 999-9999<br>Required for parties of 4+</p>
+            </div>
+
+            <div class="location-box">
+                <div class="location-icon">⏰</div>
+                <h3>Hours</h3>
+                <p>Wed-Mon: 6PM - 12AM<br>Closed Tuesdays</p>
+            </div>
+
+            <div class="location-box">
+                <div class="location-icon">👔</div>
+                <h3>Dress Code</h3>
+                <p>Smart casual<br>to formal attire</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="font-family: 'Crimson Text', serif; font-size: 2.5rem; margin-bottom: 1rem; background: linear-gradient(45deg, var(--gold), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Dynasty Restaurant</h3>
+        <p>Imperial Chinese Cuisine Since 1992</p>
+        <p style="opacity: 0.6; margin-top: 1rem;">© 2024 Dynasty Restaurant. All rights reserved.</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>

@@ -1,1 +1,661 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chinese 1</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#e74c3c;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#e74c3c}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#e74c3c}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #e74c3c}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#e74c3c}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#e74c3c;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🥢 Chinese 1</h1></div><div class="hero"><h1>Welcome to Chinese 1</h1><p>Your trusted Chinese destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$23</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$29</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$19</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$36</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#e74c3c">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 403 Center Ave, City 40001</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 401-4001</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">Chinese 1</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Palace | Authentic Chinese Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
+        }
+
+        .nav-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #FFD700;
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            height: 95vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%238B0000"/><stop offset="100%" style="stop-color:%23000000"/></linearGradient></defs><rect fill="url(%23g)" width="1400" height="900"/><circle fill="%23FFD700" opacity="0.05" cx="300" cy="300" r="200"/><circle fill="%23DC143C" opacity="0.05" cx="1000" cy="600" r="250"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dragon-symbol {
+            position: absolute;
+            font-size: 25rem;
+            opacity: 0.03;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: rgba(220, 20, 60, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 50px;
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(3.5rem, 8vw, 7rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .hero-desc {
+            font-size: 1.5rem;
+            color: #ddd;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.25rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #DC143C, #8B0000);
+            color: #fff;
+            box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(220, 20, 60, 0.6);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #FFD700;
+            border-color: #FFD700;
+        }
+
+        .btn-outline:hover {
+            background: #FFD700;
+            color: #0d0d0d;
+            transform: translateY(-3px);
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            color: #FFD700;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #999;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .menu-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a0a0a 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(220, 20, 60, 0.3);
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #DC143C, #FFD700);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .menu-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+            border-color: #FFD700;
+            box-shadow: 0 20px 50px rgba(220, 20, 60, 0.3);
+        }
+
+        .dish-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .menu-card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            color: #DC143C;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-card p {
+            color: #bbb;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .testimonials {
+            background: linear-gradient(135deg, #8B0000 0%, #0d0d0d 100%);
+            padding: 6rem 2rem;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .testimonial:hover {
+            border-color: #FFD700;
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #ddd;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .customer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .customer-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #DC143C, #FFD700);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .customer-info h4 {
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .customer-info p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .location-section {
+            padding: 6rem 2rem;
+            background: #0d0d0d;
+        }
+
+        .location-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #1a1a1a, #2a0a0a);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #FFD700;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            transition: all 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateX(10px);
+            border-left-width: 6px;
+        }
+
+        .info-icon {
+            font-size: 2.5rem;
+        }
+
+        .info-content h3 {
+            color: #FFD700;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-content p {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .map-placeholder {
+            height: 500px;
+            background: linear-gradient(135deg, #DC143C, #8B0000);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            box-shadow: 0 20px 60px rgba(220, 20, 60, 0.4);
+        }
+
+        footer {
+            background: #000;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(220, 20, 60, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFD700;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-text {
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(220, 20, 60, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #FFD700;
+            color: #0d0d0d;
+            transform: translateY(-5px);
+        }
+
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #DC143C, #8B0000);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(220, 20, 60, 0.5);
+        }
+
+        @media (max-width: 968px) {
+            .nav-menu { display: none; }
+            .location-grid { grid-template-columns: 1fr; }
+            .menu-grid, .testimonial-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">🐉 Dragon Palace</div>
+            <ul class="nav-menu">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#location">Visit Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="dragon-symbol">🐉</div>
+        <div class="hero-content">
+            <div class="hero-badge">✨ Authentic Chinese Cuisine</div>
+            <h1>Dragon Palace</h1>
+            <p class="hero-desc">Experience the timeless flavors of traditional Chinese cuisine, where every dish tells a story of heritage and excellence</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#location" class="btn btn-outline">Reserve Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <div class="section-header">
+            <p class="section-label">OUR SPECIALTIES</p>
+            <h2 class="section-title">Signature Dishes</h2>
+            <p class="section-subtitle">Authentic recipes passed down through generations, prepared with premium ingredients and traditional techniques</p>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-card">
+                <span class="dish-icon">🥟</span>
+                <h3>Peking Duck</h3>
+                <p class="price">$38</p>
+                <p>Crispy golden skin, tender meat, served with thin pancakes, spring onions, and hoisin sauce. A timeless masterpiece.</p>
+            </div>
+
+            <div class="menu-card">
+                <span class="dish-icon">🍜</span>
+                <h3>Dan Dan Noodles</h3>
+                <p class="price">$16</p>
+                <p>Spicy Sichuan noodles with minced pork, preserved vegetables, chili oil, and sesame paste. Bold and addictive.</p>
+            </div>
+
+            <div class="menu-card">
+                <span class="dish-icon">🦐</span>
+                <h3>Kung Pao Shrimp</h3>
+                <p class="price">$26</p>
+                <p>Wok-tossed shrimp with peanuts, dried chilies, and vegetables in a savory-sweet glaze. Classic perfection.</p>
+            </div>
+
+            <div class="menu-card">
+                <span class="dish-icon">🥢</span>
+                <h3>Mapo Tofu</h3>
+                <p class="price">$18</p>
+                <p>Silky tofu in spicy bean sauce with ground pork and Sichuan peppercorns. Comfort in every bite.</p>
+            </div>
+
+            <div class="menu-card">
+                <span class="dish-icon">🍲</span>
+                <h3>Hot Pot Imperial</h3>
+                <p class="price">$45</p>
+                <p>Premium selection of meats, seafood, and vegetables with aromatic broth. A feast for the senses.</p>
+            </div>
+
+            <div class="menu-card">
+                <span class="dish-icon">🥠</span>
+                <h3>Dim Sum Platter</h3>
+                <p class="price">$22</p>
+                <p>Assortment of steamed dumplings, buns, and rolls. Traditional favorites in one beautiful presentation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <p class="section-label">TESTIMONIALS</p>
+            <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The Peking Duck here is simply extraordinary! Crispy, flavorful, and served with such elegance. Best Chinese restaurant I've ever been to."</p>
+                <div class="customer">
+                    <div class="customer-avatar">JL</div>
+                    <div class="customer-info">
+                        <h4>Jennifer Liu</h4>
+                        <p>Food Blogger</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Authentic flavors that remind me of home. The Dan Dan Noodles are perfectly spicy, and the atmosphere is beautiful. A true gem!"</p>
+                <div class="customer">
+                    <div class="customer-avatar">WC</div>
+                    <div class="customer-info">
+                        <h4>Wei Chen</h4>
+                        <p>Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The dim sum is incredible! Fresh, delicate, and beautifully presented. Service is impeccable. Can't wait to return!"</p>
+                <div class="customer">
+                    <div class="customer-avatar">SK</div>
+                    <div class="customer-info">
+                        <h4>Sarah Kim</h4>
+                        <p>Food Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section" id="location">
+        <div class="location-grid">
+            <div class="contact-info">
+                <div>
+                    <p class="section-label">FIND US</p>
+                    <h2 class="section-title">Visit Dragon Palace</h2>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Address</h3>
+                        <p>888 Dragon Way<br>Chinatown District, City 10003</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🕐</div>
+                    <div class="info-content">
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 11:30 AM - 10:00 PM<br>
+                           Saturday - Sunday: 11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Contact</h3>
+                        <p>Phone: (555) 888-8888<br>
+                           Email: info@dragonpalace.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-placeholder">📍</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">🐉 Dragon Palace</div>
+            <p class="footer-text">Serving authentic Chinese cuisine with pride since 1995</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">💼</a>
+            </div>
+            <p style="color: #666; margin: 2rem 0;">&copy; 2024 Dragon Palace. All rights reserved.</p>
+            <a href="../../index.html" class="back-to-home">← Back to Directory</a>
+        </div>
+    </footer>
+</body>
+</html>

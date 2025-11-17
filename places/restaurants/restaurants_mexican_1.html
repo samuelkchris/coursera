@@ -1,1 +1,514 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mexican 1</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#fff;color:#2d3748}.nav{background:#f39c12;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,.1)}.nav h1{color:#fff;font-size:1.8rem;text-align:center}.hero{padding:6rem 2rem;text-align:center;background:linear-gradient(135deg,#f7fafc 0%,#edf2f7 100%)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1rem;color:#f39c12}.hero p{font-size:1.3rem;color:#4a5568;max-width:600px;margin:0 auto 2rem}.container{max-width:1100px;margin:4rem auto;padding:0 2rem}.section-title{font-size:2.5rem;text-align:center;margin-bottom:3rem;color:#f39c12}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.3s;border-left:4px solid #f39c12}.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.card h3{font-size:1.6rem;margin-bottom:1rem;color:#f39c12}.card .price{font-size:1.3rem;color:#38a169;font-weight:600;margin:1rem 0}footer{background:#2d3748;color:#fff;padding:3rem 2rem;text-align:center;margin-top:5rem}.back-link{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#f39c12;color:#fff;text-decoration:none;border-radius:25px;transition:.3s}.back-link:hover{opacity:.9;transform:scale(1.05)}@media(max-width:768px){.hero h1{font-size:2.5rem}.cards{grid-template-columns:1fr}}</style></head><body><div class="nav"><h1>🌮 Mexican 1</h1></div><div class="hero"><h1>Welcome to Mexican 1</h1><p>Your trusted Mexican destination for excellence and quality service</p></div><div class="container"><h2 class="section-title">What We Offer</h2><div class="cards"><div class="card"><h3>🌟 Quality Service</h3><div class="price">$23</div><p>High-standard service you can trust</p></div><div class="card"><h3>💼 Professional</h3><div class="price">$29</div><p>Expert team with years of experience</p></div><div class="card"><h3>⏱️ Convenient</h3><div class="price">$19</div><p>Flexible hours to fit your schedule</p></div><div class="card"><h3>✅ Reliable</h3><div class="price">$36</div><p>Dependable service every time</p></div></div><div style="margin:4rem 0;padding:3rem;background:#f7fafc;border-radius:12px;text-align:center"><h3 style="font-size:2rem;margin-bottom:2rem;color:#f39c12">Find Us</h3><p style="font-size:1.1rem;margin:1rem 0">📍 403 Center Ave, City 40001</p><p style="font-size:1.1rem;margin:1rem 0">📞 (555) 401-4001</p><p style="font-size:1.1rem">⏰ Mon-Sat: 8AM - 8PM</p></div></div><footer><h2 style="margin-bottom:1rem">Mexican 1</h2><p style="margin-bottom:1.5rem">Serving the community with excellence</p><a href="../../index.html" class="back-link">← Return to Directory</a></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Maria | Authentic Mexican Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --terracotta: #E07A5F;
+            --verde: #81B29A;
+            --gold: #F2CC8F;
+            --burgundy: #9D4451;
+            --cream: #F4F1DE;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: var(--cream);
+            color: #333;
+        }
+
+        .fiesta-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(157, 68, 81, 0.03) 35px, rgba(157, 68, 81, 0.03) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(129, 178, 154, 0.03) 35px, rgba(129, 178, 154, 0.03) 70px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--terracotta);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            margin-top: 70px;
+            height: 90vh;
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--terracotta) 50%, var(--verde) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '🌮';
+            position: absolute;
+            font-size: 35rem;
+            opacity: 0.1;
+            left: -10%;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        .hero-text {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 7rem;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .slogan {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.3rem 3.5rem;
+            background: var(--gold);
+            color: var(--burgundy);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            position: relative;
+            z-index: 1;
+            padding: 6rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4.5rem;
+            color: var(--burgundy);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+        }
+
+        .dishes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .dish-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s;
+            border: 3px solid transparent;
+        }
+
+        .dish-card:hover {
+            border-color: var(--terracotta);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(224, 122, 95, 0.3);
+        }
+
+        .dish-img {
+            height: 200px;
+            background: linear-gradient(135deg, var(--terracotta), var(--burgundy));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+        }
+
+        .dish-details {
+            padding: 2.5rem;
+        }
+
+        .dish-details h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--burgundy);
+            letter-spacing: 1px;
+        }
+
+        .dish-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+        }
+
+        .dish-description {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .testimonials {
+            background: linear-gradient(to bottom, var(--cream), white);
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .review {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--verde);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+        }
+
+        .review:hover {
+            transform: translateX(10px);
+        }
+
+        .stars {
+            color: var(--gold);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-text {
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .reviewer-avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--terracotta), var(--verde));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: white;
+        }
+
+        .info-section {
+            background: var(--burgundy);
+            color: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-box {
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .info-box:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+
+        .info-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background: var(--terracotta);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 4rem; }
+            .nav-links { display: none; }
+            .section-title { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="fiesta-pattern"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">🌮 Casa Maria</div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#info">Info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Casa Maria</h1>
+            <p class="slogan">Sabor Auténtico de México</p>
+            <a href="#menu" class="cta-button">Ver Menú</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <div class="section-header">
+            <h2 class="section-title">Nuestros Favoritos</h2>
+            <p class="section-subtitle">Authentic family recipes passed down through generations</p>
+        </div>
+
+        <div class="dishes">
+            <div class="dish-card">
+                <div class="dish-img">🌯</div>
+                <div class="dish-details">
+                    <h3>Burrito Supremo</h3>
+                    <div class="dish-price">$14</div>
+                    <p class="dish-description">Massive burrito filled with seasoned beef, rice, beans, cheese, pico de gallo, and crema.</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-img">🌮</div>
+                <div class="dish-details">
+                    <h3>Tacos al Pastor</h3>
+                    <div class="dish-price">$12</div>
+                    <p class="dish-description">Three soft corn tortillas with marinated pork, pineapple, cilantro, and onions.</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-img">🫔</div>
+                <div class="dish-details">
+                    <h3>Enchiladas Verdes</h3>
+                    <div class="dish-price">$15</div>
+                    <p class="dish-description">Chicken enchiladas smothered in tangy green salsa, topped with queso fresco and crema.</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-img">🥑</div>
+                <div class="dish-details">
+                    <h3>Guacamole Fresco</h3>
+                    <div class="dish-price">$10</div>
+                    <p class="dish-description">Made fresh to order with ripe avocados, lime, cilantro, tomatoes, and jalapeños.</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-img">🍤</div>
+                <div class="dish-details">
+                    <h3>Camarones a la Diabla</h3>
+                    <div class="dish-price">$18</div>
+                    <p class="dish-description">Spicy shrimp cooked in a fiery chile sauce, served with rice and warm tortillas.</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="dish-img">🥘</div>
+                <div class="dish-details">
+                    <h3>Mole Poblano</h3>
+                    <div class="dish-price">$16</div>
+                    <p class="dish-description">Traditional chicken in rich chocolate-chili mole sauce, a true Mexican treasure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials" id="reviews">
+        <div class="section-header">
+            <h2 class="section-title">Lo Que Dicen</h2>
+            <p class="section-subtitle">Testimonials from our beloved customers</p>
+        </div>
+
+        <div class="review-grid">
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Casa Maria serves the most authentic Mexican food I've had outside of Mexico City! The mole poblano is absolutely incredible."</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">CM</div>
+                    <div>
+                        <strong>Carlos Martinez</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Food Enthusiast</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"The tacos al pastor are perfection! Friendly staff, vibrant atmosphere, and prices that can't be beat. This is my go-to spot!"</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">EP</div>
+                    <div>
+                        <strong>Elena Pacheco</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Regular Customer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Fresh ingredients, generous portions, and flavors that transport you to Mexico. The guacamole is made tableside and is amazing!"</p>
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">JR</div>
+                    <div>
+                        <strong>Jessica Rodriguez</strong>
+                        <div style="opacity: 0.7; font-size: 0.9rem;">Foodie</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section info-section" id="info">
+        <div class="section-header">
+            <h2 class="section-title" style="color: var(--gold);">Visítanos</h2>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">Come experience authentic Mexican hospitality</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <div class="info-icon">📍</div>
+                <h3>Ubicación</h3>
+                <p>555 Fiesta Avenue<br>Mission District<br>Austin, TX 78701</p>
+            </div>
+
+            <div class="info-box">
+                <div class="info-icon">📞</div>
+                <h3>Teléfono</h3>
+                <p>(512) 555-5555<br>Walk-ins welcome</p>
+            </div>
+
+            <div class="info-box">
+                <div class="info-icon">⏰</div>
+                <h3>Horario</h3>
+                <p>Mon-Sun: 11AM - 10PM<br>Happy Hour: 3-6PM</p>
+            </div>
+
+            <div class="info-box">
+                <div class="info-icon">🎉</div>
+                <h3>Eventos</h3>
+                <p>Catering available<br>for parties & events</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="font-family: 'Bebas Neue', cursive; font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: 2px;">Casa Maria</h3>
+        <p>Serving Authentic Mexican Cuisine Since 2005</p>
+        <p style="opacity: 0.8; margin-top: 1rem;">© 2024 Casa Maria. All rights reserved.</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
