@@ -1,13 +1,267 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanese 4 | Japanese Cuisine</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Noto Sans JP',sans-serif;background:#f5f5f5;color:#333}.hero{height:90vh;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23c41e3a" width="1200" height="800"/><circle fill="%23ffffff" opacity=".1" cx="600" cy="400" r="300"/></svg>');background-size:cover;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}.hero h1{font-size:4.5rem;font-weight:700;text-shadow:2px 2px 8px rgba(0,0,0,.5)}.container{max-width:1100px;margin:0 auto;padding:5rem 2rem}.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem;margin:3rem 0}.menu-card{background:#fff;padding:2.5rem;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,.1);transition:.3s;border-top:4px solid #c41e3a}.menu-card:hover{transform:translateY(-8px);box-shadow:0 8px 25px rgba(196,30,58,.2)}.menu-card h3{font-size:1.6rem;margin-bottom:1rem;color:#c41e3a}.price{font-size:1.4rem;font-weight:700;color:#2ecc71;margin:1rem 0}.section-title{text-align:center;font-size:2.8rem;margin-bottom:2.5rem;color:#c41e3a;font-weight:700}footer{background:#2c3e50;color:#fff;padding:4rem 2rem;text-align:center;margin-top:5rem}.back-btn{display:inline-block;margin-top:2rem;padding:1rem 3rem;background:#c41e3a;color:#fff;text-decoration:none;border-radius:30px;transition:.3s;font-weight:600}.back-btn:hover{background:#a01828;transform:scale(1.05)}</style></head>
-<body><div class="hero"><div><h1>🍱 Japanese 4</h1><p style="font-size:1.8rem;margin-top:1rem">Authentic Japanese Experience</p></div></div>
-<div class="container"><h2 class="section-title">Signature Menu</h2><div class="menu-grid">
-<div class="menu-card"><h3>🍣 Sushi Platter</h3><p class="price">$32</p><p>Fresh sashimi and nigiri selection</p></div>
-<div class="menu-card"><h3>🍜 Ramen Bowl</h3><p class="price">$20</p><p>Rich tonkotsu broth with premium toppings</p></div>
-<div class="menu-card"><h3>🥟 Gyoza</h3><p class="price">$16</p><p>Pan-fried dumplings with savory filling</p></div>
-<div class="menu-card"><h3>🍱 Bento Box</h3><p class="price">$22</p><p>Complete meal with variety of dishes</p></div>
-</div><div style="background:#fff;padding:3rem;border-radius:8px;margin-top:4rem"><h3 style="font-size:2rem;margin-bottom:2rem;color:#c41e3a;text-align:center">Location & Hours</h3><p style="text-align:center;font-size:1.1rem;margin:1rem 0">📍 220 Sakura Street, City 20004</p><p style="text-align:center;font-size:1.1rem;margin:1rem 0">📞 (555) 204-2004</p><p style="text-align:center;font-size:1.1rem;margin:1rem 0">⏰ Tue-Sun: 12PM - 10PM</p></div></div>
-<footer><h2 style="margin-bottom:1.5rem">Japanese 4</h2><p style="margin-bottom:1.5rem">Traditional Japanese Cuisine</p><a href="../../index.html" class="back-btn">← Return to Directory</a></footer></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Palace | Premium Omakase Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #FAF8F3;
+            color: #1A1A1A;
+        }
+
+        .wave-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(0, 102, 153, 0.03) 35px, rgba(0, 102, 153, 0.03) 70px);
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #006699 0%, #003d5c 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '🍣';
+            position: absolute;
+            font-size: 20rem;
+            top: 50%;
+            right: -5rem;
+            transform: translateY(-50%);
+            opacity: 0.05;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            font-weight: 300;
+            text-transform: uppercase;
+            opacity: 0.95;
+        }
+
+        .content {
+            max-width: 1100px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            font-weight: 300;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #006699;
+            font-weight: 400;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .item {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 102, 153, 0.1);
+            border-left: 4px solid #006699;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, transparent 50%, rgba(0, 102, 153, 0.05) 50%);
+            border-radius: 0 12px 0 0;
+        }
+
+        .item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 102, 153, 0.15);
+        }
+
+        .item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: #006699;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .item-price {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #C49A6C;
+            margin-bottom: 1rem;
+        }
+
+        .item-desc {
+            line-height: 1.7;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .chef-note {
+            background: linear-gradient(135deg, #006699 0%, #003d5c 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .chef-note h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .chef-note p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        footer {
+            background: #1A1A1A;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .footer-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #C49A6C;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: #006699;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .section-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wave-pattern"></div>
+
+    <header>
+        <h1>SUSHI PALACE</h1>
+        <p class="subtitle">Premium Omakase Experience</p>
+    </header>
+
+    <div class="content">
+        <p class="intro">
+            Experience the art of Japanese sushi craftsmanship. Our master chefs hand-select the finest ingredients daily,
+            creating an unforgettable omakase journey that honors centuries of tradition.
+        </p>
+
+        <h2 class="section-title">Omakase Selection</h2>
+
+        <div class="menu">
+            <div class="item">
+                <h3>Premium Omakase</h3>
+                <div class="item-price">$120</div>
+                <p class="item-desc">Chef's selection of 15 seasonal nigiri, premium sashimi, and specialty rolls paired with sake.</p>
+            </div>
+
+            <div class="item">
+                <h3>Toro Tasting</h3>
+                <div class="item-price">$65</div>
+                <p class="item-desc">Three cuts of bluefin tuna toro: akami, chutoro, and otoro with wasabi and soy.</p>
+            </div>
+
+            <div class="item">
+                <h3>Uni & Ikura Don</h3>
+                <div class="item-price">$48</div>
+                <p class="item-desc">Fresh sea urchin and salmon roe over sushi rice, garnished with shiso and nori.</p>
+            </div>
+
+            <div class="item">
+                <h3>Chirashi Deluxe</h3>
+                <div class="item-price">$42</div>
+                <p class="item-desc">Assorted sashimi jewels over seasoned rice with tamago, cucumber, and pickled ginger.</p>
+            </div>
+
+            <div class="item">
+                <h3>A5 Wagyu Tataki</h3>
+                <div class="item-price">$58</div>
+                <p class="item-desc">Lightly seared Japanese A5 wagyu with ponzu, microgreens, and gold flake.</p>
+            </div>
+
+            <div class="item">
+                <h3>Matcha Tiramisu</h3>
+                <div class="item-price">$14</div>
+                <p class="item-desc">Japanese-Italian fusion dessert with layers of matcha cream and sake-soaked ladyfingers.</p>
+            </div>
+        </div>
+
+        <div class="chef-note">
+            <h3>Chef's Philosophy</h3>
+            <p>"At Sushi Palace, we believe that sushi is not just food—it is an art form. Every piece tells a story of the ocean,
+            the season, and the dedication of our craft. We invite you to experience this story with us."</p>
+            <p style="margin-top: 1rem; font-style: italic;">— Chef Takashi Yamamoto</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-title">Sushi Palace</h3>
+        <p>📍 456 Harbor Boulevard, Seattle, WA 98101</p>
+        <p>📞 (206) 456-7890 | ⏰ Tue-Sat: 5PM - 11PM | Reservations Required</p>
+        <a href="../../index.html" class="footer-link">← Back to Directory</a>
+    </footer>
+</body>
+</html>
